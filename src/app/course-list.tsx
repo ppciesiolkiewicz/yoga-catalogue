@@ -182,6 +182,11 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
   )
 
   const { monthKeys, coursesByMonth, undatedCourses } = useMemo(() => {
+    // Only show previous month and onwards
+    const now = new Date()
+    const cutoff = new Date(now.getFullYear(), now.getMonth() - 1, 1)
+    const cutoffKey = `${cutoff.getFullYear()}-${String(cutoff.getMonth() + 1).padStart(2, "0")}`
+
     const byMonth = new Map<string, YogaCourse[]>()
     const undated: YogaCourse[] = []
 
@@ -192,6 +197,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       }
       for (const date of course.upcomingDates) {
         const key = getMonthKey(date)
+        if (key < cutoffKey) continue
         if (!byMonth.has(key)) byMonth.set(key, [])
         byMonth.get(key)!.push({ ...course, upcomingDates: [date] })
       }
