@@ -27,6 +27,11 @@ export const metadata: Metadata = {
   openGraph: {
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
+  other: {
+    ...(process.env.NEXT_PUBLIC_FB_APP_ID && {
+      "fb:app_id": process.env.NEXT_PUBLIC_FB_APP_ID,
+    }),
+  },
 };
 
 export default function RootLayout({

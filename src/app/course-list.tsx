@@ -55,7 +55,7 @@ function getTypes(type: string): string[] {
   if (t.includes("sound healing")) types.push("Sound Healing")
   if (t.includes("meditation")) types.push("Meditation")
   if (types.length === 0) {
-    if (t.includes("200") || t.includes("300") || t.includes("500")) types.push("Multi-Style TTC")
+    if (t.includes("yoga") || t.includes("ytt") || t.includes("teacher training") || t.includes("200") || t.includes("300") || t.includes("500")) types.push("Multi-Style TTC")
     else types.push("Other")
   }
   return types
