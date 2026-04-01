@@ -9,7 +9,6 @@ import { websites } from "../src/data/websites-data"
 import type { WebsiteEntry, YogaCourse } from "../src/data/types"
 
 const anthropic = new Anthropic()
-const force = process.argv.includes("--force")
 const outPath = join(__dirname, "../src/data/index.ts")
 
 function parseMaxAgeDays(): number | null {
@@ -153,20 +152,14 @@ async function main() {
   const existing = loadExistingCourses()
   const freshUrls = getUrlsToSkip(existing)
 
-  const toScrape = force
-    ? websites
-    : websites.filter((w) => !freshUrls.has(w.url))
+  const toScrape = websites.filter((w) => !freshUrls.has(w.url))
 
   if (toScrape.length === 0) {
-    console.log("All websites are up to date. Use --force to re-scrape all.")
+    console.log("All websites are up to date. Use --update-older-than-days 0 to re-scrape all.")
     return
   }
 
-  console.log(
-    force
-      ? `Force re-scraping all ${toScrape.length} websites...\n`
-      : `Scraping ${toScrape.length} new websites (${existing.length} already scraped)...\n`
-  )
+  console.log(`Scraping ${toScrape.length} websites (${existing.length - toScrape.length} up to date)...\n`)
 
   const newCourses: YogaCourse[] = []
 
@@ -182,14 +175,10 @@ async function main() {
     }
   }
 
-  if (force) {
-    writeOutput(newCourses)
-  } else {
-    // Keep fresh existing courses, replace stale ones with new scrapes
-    const scrapedUrls = new Set(toScrape.map((w) => w.url))
-    const kept = existing.filter((c) => !scrapedUrls.has(c.url))
-    writeOutput([...kept, ...newCourses])
-  }
+  // Keep fresh existing courses, replace stale ones with new scrapes
+  const scrapedUrls = new Set(toScrape.map((w) => w.url))
+  const kept = existing.filter((c) => !scrapedUrls.has(c.url))
+  writeOutput([...kept, ...newCourses])
 }
 
 main()
