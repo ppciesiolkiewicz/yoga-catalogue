@@ -479,9 +479,9 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
             <div key={group.date} className="mb-6">
               {/* Date separator */}
               {group.date !== "undated" && (
-                <div className="flex items-center gap-3 py-3">
+                <div className="flex items-center gap-4 pb-6 pt-3">
                   <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" />
-                  <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+                  <span className="text-lg font-semibold text-zinc-500 dark:text-zinc-400">
                     {formatDateGroupLabel(group.date)}
                   </span>
                   <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" />
