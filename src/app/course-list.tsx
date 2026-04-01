@@ -364,7 +364,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
   return (
     <div>
       {/* Header with location switcher */}
-      <header className="relative overflow-hidden bg-zinc-900 dark:bg-zinc-900">
+      <header className="relative overflow-hidden bg-zinc-100 dark:bg-zinc-900">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-purple-500 blur-3xl" />
           <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-amber-500 blur-3xl" />
@@ -379,8 +379,8 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
                 onClick={() => setLocation(loc.id)}
                 className={`cursor-pointer rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
                   location === loc.id
-                    ? "bg-white text-zinc-900 shadow-md"
-                    : "bg-white/10 text-zinc-400 hover:bg-white/20 hover:text-zinc-200"
+                    ? "bg-zinc-900 text-white shadow-md dark:bg-white dark:text-zinc-900"
+                    : "bg-zinc-900/10 text-zinc-500 hover:bg-zinc-900/20 hover:text-zinc-700 dark:bg-white/10 dark:text-zinc-400 dark:hover:bg-white/20 dark:hover:text-zinc-200"
                 }`}
               >
                 {loc.label}
@@ -390,16 +390,16 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
               <ThemeToggle />
             </div>
           </div>
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-zinc-400">
+          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
             {locationInfo.subtitle}
           </p>
-          <h1 className="flex items-center gap-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="flex items-center gap-3 text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
             <img src="/favicon.svg" alt="" className="h-10 w-10 sm:h-12 sm:w-12" />
             Yoga Courses
           </h1>
-          <p className="mt-3 text-base text-zinc-400">
-            <span className="text-white font-semibold">{locationCourses.length}</span> courses from{" "}
-            <span className="text-white font-semibold">{new Set(locationCourses.map((c) => c.schoolName)).size}</span> schools
+          <p className="mt-3 text-base text-zinc-500 dark:text-zinc-400">
+            <span className="text-zinc-900 dark:text-white font-semibold">{locationCourses.length}</span> courses from{" "}
+            <span className="text-zinc-900 dark:text-white font-semibold">{new Set(locationCourses.map((c) => c.schoolName)).size}</span> schools
           </p>
         </div>
       </header>
