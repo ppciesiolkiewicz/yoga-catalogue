@@ -349,8 +349,9 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-zinc-400">
             {locationInfo.subtitle}
           </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Yoga Teacher Training
+          <h1 className="flex items-center gap-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <img src="/favicon.svg" alt="" className="h-10 w-10 sm:h-12 sm:w-12" />
+            Yoga Courses
           </h1>
           <p className="mt-3 text-base text-zinc-400">
             <span className="text-white font-semibold">{locationCourses.length}</span> courses from{" "}
