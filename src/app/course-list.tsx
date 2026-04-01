@@ -37,6 +37,33 @@ function formatAccommodation(val: boolean | string) {
   return String(val).replace(/^string - /i, "")
 }
 
+function normalizeType(type: string): string {
+  const t = type.toLowerCase()
+  if (t.includes("yin") && t.includes("yang")) return "Yin & Yang Yoga"
+  if (t.includes("yin")) return "Yin Yoga"
+  if (t.includes("ashtanga") && t.includes("vinyasa")) return "Ashtanga Vinyasa"
+  if (t.includes("ashtanga")) return "Ashtanga Yoga"
+  if (t.includes("vinyasa")) return "Vinyasa Yoga"
+  if (t.includes("hatha")) return "Hatha Yoga"
+  if (t.includes("kundalini")) return "Kundalini Yoga"
+  if (t.includes("aerial")) return "Aerial Yoga"
+  if (t.includes("retreat")) return "Yoga Retreat"
+  if (t.includes("sound healing")) return "Sound Healing"
+  if (t.includes("meditation")) return "Meditation"
+  return "Other"
+}
+
+function sortByTypeAndDate(courses: YogaCourse[]) {
+  return [...courses].sort((a, b) => {
+    const typeA = normalizeType(a.type)
+    const typeB = normalizeType(b.type)
+    if (typeA !== typeB) return typeA.localeCompare(typeB)
+    const dateA = a.upcomingDates[0] ?? "9999"
+    const dateB = b.upcomingDates[0] ?? "9999"
+    return dateA.localeCompare(dateB)
+  })
+}
+
 function CourseCard({ course }: { course: YogaCourse }) {
   return (
     <a
@@ -108,11 +135,47 @@ function Tag({ children }: { children: React.ReactNode }) {
 }
 
 export function CourseList({ courses }: { courses: YogaCourse[] }) {
+  // Extract all unique normalized types
+  const allTypes = useMemo(() => {
+    const types = new Set(courses.map((c) => normalizeType(c.type)))
+    return [...types].sort()
+  }, [courses])
+
+  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(
+    () => new Set(allTypes)
+  )
+
+  function toggleType(type: string) {
+    setSelectedTypes((prev) => {
+      const next = new Set(prev)
+      if (next.has(type)) {
+        next.delete(type)
+      } else {
+        next.add(type)
+      }
+      return next
+    })
+  }
+
+  function toggleAll() {
+    if (selectedTypes.size === allTypes.length) {
+      setSelectedTypes(new Set())
+    } else {
+      setSelectedTypes(new Set(allTypes))
+    }
+  }
+
+  // Filter courses by selected types
+  const filtered = useMemo(
+    () => courses.filter((c) => selectedTypes.has(normalizeType(c.type))),
+    [courses, selectedTypes]
+  )
+
   const { monthKeys, coursesByMonth, undatedCourses } = useMemo(() => {
     const byMonth = new Map<string, YogaCourse[]>()
     const undated: YogaCourse[] = []
 
-    for (const course of courses) {
+    for (const course of filtered) {
       if (course.upcomingDates.length === 0) {
         undated.push(course)
         continue
@@ -124,14 +187,18 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       }
     }
 
-    // Sort courses within each month by date
+    // Sort courses within each month by type then date
     for (const [, list] of byMonth) {
-      list.sort((a, b) => a.upcomingDates[0].localeCompare(b.upcomingDates[0]))
+      list.splice(0, list.length, ...sortByTypeAndDate(list))
     }
 
     const keys = [...byMonth.keys()].sort()
-    return { monthKeys: keys, coursesByMonth: byMonth, undatedCourses: undated }
-  }, [courses])
+    return {
+      monthKeys: keys,
+      coursesByMonth: byMonth,
+      undatedCourses: sortByTypeAndDate(undated),
+    }
+  }, [filtered])
 
   const allTabs = [...monthKeys, ...(undatedCourses.length > 0 ? ["undated"] : [])]
   const now = new Date()
@@ -146,6 +213,31 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
   return (
     <div>
+      {/* Type filter checkboxes */}
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <label className="flex cursor-pointer items-center gap-1.5 text-sm">
+          <input
+            type="checkbox"
+            checked={selectedTypes.size === allTypes.length}
+            onChange={toggleAll}
+            className="rounded"
+          />
+          <span className="font-medium text-zinc-700 dark:text-zinc-300">All</span>
+        </label>
+        <span className="text-zinc-300 dark:text-zinc-700">|</span>
+        {allTypes.map((type) => (
+          <label key={type} className="flex cursor-pointer items-center gap-1.5 text-sm">
+            <input
+              type="checkbox"
+              checked={selectedTypes.has(type)}
+              onChange={() => toggleType(type)}
+              className="rounded"
+            />
+            <span className="text-zinc-600 dark:text-zinc-400">{type}</span>
+          </label>
+        ))}
+      </div>
+
       {/* Month tabs */}
       <div className="flex gap-1 overflow-x-auto pb-3">
         {monthKeys.map((key) => (
@@ -185,7 +277,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       <div className="mt-4 flex flex-col gap-3">
         {displayedCourses.length === 0 ? (
           <p className="py-8 text-center text-sm text-zinc-400">
-            No courses for this month.
+            No courses match your filters.
           </p>
         ) : (
           displayedCourses.map((course, i) => (

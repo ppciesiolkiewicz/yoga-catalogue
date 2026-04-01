@@ -86,15 +86,15 @@ async function extractCourses(
   const response = await anthropic.messages.create({
     model: "claude-sonnet-4-6",
     max_tokens: 4096,
-    system: `You extract structured data about yin yoga courses from website text.
-Return ONLY a JSON array of course objects. If no yin yoga courses are found, return an empty array [].
+    system: `You extract structured data about yoga courses from website text.
+Return ONLY a JSON array of course objects. If no yoga courses are found, return an empty array [].
 Each course object must match this schema exactly:
 {
   "schoolName": "string - name of the yoga school",
   "courseName": "string - name of the specific course",
   "url": "string - will be provided, use as-is",
-  "type": "string - e.g. Yin Yoga Teacher Training, Yin Yoga Retreat, Yin & Yang TTC",
-  "certificationLevel": "string - e.g. 50hr, 100hr, 200hr RYT, or empty string if not specified",
+  "type": "string - e.g. Yin Yoga Teacher Training, Hatha Yoga TTC, 200-Hour Yoga TTC, Ashtanga Vinyasa TTC, Yoga Retreat, Kundalini Yoga TTC, Aerial Yoga TTC",
+  "certificationLevel": "string - e.g. 50hr, 100hr, 200hr RYT, 300hr, 500hr, or empty string if not specified",
   "durationDays": "number - duration in days, 0 if unknown",
   "price": { "amount": "number", "currency": "string - e.g. USD, EUR, INR" },
   "description": "string - brief description of the course (2-3 sentences)",
@@ -108,7 +108,7 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
     messages: [
       {
         role: "user",
-        content: `Extract yin yoga course information from this website text. The school is "${entry.schoolName}" and the URL is "${entry.url}".\n\nWebsite text:\n${pageText}`,
+        content: `Extract yoga course information from this website text. The school is "${entry.schoolName}" and the URL is "${entry.url}".\n\nWebsite text:\n${pageText}`,
       },
     ],
   })

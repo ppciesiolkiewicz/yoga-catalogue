@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yin Yoga Courses in Rishikesh",
-  description: "Browse yin yoga teacher trainings and retreats in Rishikesh, India",
+  title: "Yoga Courses in Rishikesh",
+  description: "Browse yoga teacher trainings and retreats in Rishikesh, India",
 };
 
 export default function RootLayout({
