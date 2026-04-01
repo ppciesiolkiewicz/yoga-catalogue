@@ -37,25 +37,29 @@ function formatAccommodation(val: boolean | string) {
   return String(val).replace(/^string - /i, "")
 }
 
-function normalizeType(type: string): string {
+function getTypes(type: string): string[] {
   const t = type.toLowerCase()
-  if (t.includes("aerial")) return "Aerial"
-  if (t.includes("kundalini")) return "Kundalini"
-  if (t.includes("yin")) return "Yin"
-  if (t.includes("ashtanga")) return "Ashtanga"
-  if (t.includes("vinyasa")) return "Vinyasa"
-  if (t.includes("hatha")) return "Hatha"
-  if (t.includes("retreat")) return "Retreat"
-  if (t.includes("sound healing")) return "Sound Healing"
-  if (t.includes("meditation")) return "Meditation"
-  if (t.includes("200") || t.includes("300") || t.includes("500")) return "Multi-Style TTC"
-  return "Other"
+  const types: string[] = []
+  if (t.includes("aerial")) types.push("Aerial")
+  if (t.includes("kundalini")) types.push("Kundalini")
+  if (t.includes("yin")) types.push("Yin")
+  if (t.includes("ashtanga")) types.push("Ashtanga")
+  if (t.includes("vinyasa")) types.push("Vinyasa")
+  if (t.includes("hatha")) types.push("Hatha")
+  if (t.includes("retreat")) types.push("Retreat")
+  if (t.includes("sound healing")) types.push("Sound Healing")
+  if (t.includes("meditation")) types.push("Meditation")
+  if (types.length === 0) {
+    if (t.includes("200") || t.includes("300") || t.includes("500")) types.push("Multi-Style TTC")
+    else types.push("Other")
+  }
+  return types
 }
 
 function sortByTypeAndDate(courses: YogaCourse[]) {
   return [...courses].sort((a, b) => {
-    const typeA = normalizeType(a.type)
-    const typeB = normalizeType(b.type)
+    const typeA = getTypes(a.type)[0]
+    const typeB = getTypes(b.type)[0]
     if (typeA !== typeB) return typeA.localeCompare(typeB)
     const dateA = a.upcomingDates[0] ?? "9999"
     const dateB = b.upcomingDates[0] ?? "9999"
@@ -134,9 +138,9 @@ function Tag({ children }: { children: React.ReactNode }) {
 }
 
 export function CourseList({ courses }: { courses: YogaCourse[] }) {
-  // Extract all unique normalized types
+  // Extract all unique types (a course can belong to multiple)
   const allTypes = useMemo(() => {
-    const types = new Set(courses.map((c) => normalizeType(c.type)))
+    const types = new Set(courses.flatMap((c) => getTypes(c.type)))
     return [...types].sort()
   }, [courses])
 
@@ -164,9 +168,9 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     }
   }
 
-  // Filter courses by selected types
+  // Filter courses by selected types (a course matches if any of its types is selected)
   const filtered = useMemo(
-    () => courses.filter((c) => selectedTypes.has(normalizeType(c.type))),
+    () => courses.filter((c) => getTypes(c.type).some((t) => selectedTypes.has(t))),
     [courses, selectedTypes]
   )
 
