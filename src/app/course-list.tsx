@@ -70,7 +70,7 @@ function CourseCard({ course }: { course: YogaCourse }) {
       href={course.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block rounded-lg border border-zinc-200 bg-white p-5 transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+      className={`block rounded-lg border border-zinc-200 border-l-4 ${TYPE_BORDER[getTypes(course.type)[0]] ?? "border-l-zinc-300"} bg-white p-5 transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900`}
     >
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
@@ -137,6 +137,19 @@ const TYPE_COLORS: Record<string, string> = {
   Meditation: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300",
   "Sound Healing": "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300",
   "Multi-Style TTC": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-300",
+}
+
+const TYPE_BORDER: Record<string, string> = {
+  Yin: "border-l-purple-400",
+  Hatha: "border-l-green-400",
+  Ashtanga: "border-l-orange-400",
+  Vinyasa: "border-l-blue-400",
+  Kundalini: "border-l-amber-400",
+  Aerial: "border-l-pink-400",
+  Retreat: "border-l-teal-400",
+  Meditation: "border-l-indigo-400",
+  "Sound Healing": "border-l-rose-400",
+  "Multi-Style TTC": "border-l-cyan-400",
 }
 
 function Tag({ children }: { children: React.ReactNode }) {
@@ -268,14 +281,19 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
         </label>
         <span className="text-zinc-300 dark:text-zinc-700">|</span>
         {allTypes.map((type) => (
-          <label key={type} className="flex cursor-pointer items-center gap-1.5 text-sm">
+          <label
+            key={type}
+            className={`flex cursor-pointer items-center gap-1.5 rounded-full px-3 py-1 text-sm transition-opacity ${
+              TYPE_COLORS[type] ?? "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+            } ${selectedTypes.has(type) ? "opacity-100" : "opacity-40"}`}
+          >
             <input
               type="checkbox"
               checked={selectedTypes.has(type)}
               onChange={() => toggleType(type)}
-              className="rounded"
+              className="sr-only"
             />
-            <span className="text-zinc-600 dark:text-zinc-400">{type}</span>
+            {type}
           </label>
         ))}
       </div>
@@ -288,12 +306,12 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
             onClick={() => setActiveTab(key)}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               activeTab === key
-                ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-                : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
+                ? "bg-emerald-600 text-white dark:bg-emerald-500 dark:text-white"
+                : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400 dark:hover:bg-emerald-900"
             }`}
           >
             {formatMonthLabel(key)}
-            <span className="ml-1.5 text-xs opacity-60">
+            <span className="ml-1.5 text-xs opacity-70">
               ({coursesByMonth.get(key)?.length ?? 0})
             </span>
           </button>
@@ -303,7 +321,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
             onClick={() => setActiveTab("undated")}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               activeTab === "undated"
-                ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                ? "bg-zinc-700 text-white dark:bg-zinc-300 dark:text-zinc-900"
                 : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
             }`}
           >
