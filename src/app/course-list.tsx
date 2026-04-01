@@ -198,7 +198,7 @@ function CourseCard({ course }: { course: YogaCourse }) {
             <span className="text-2xl font-bold text-zinc-800 dark:text-zinc-200 sm:text-3xl">
               {new Date(course.upcomingDates[0]).getDate()}
             </span>
-            <span className="text-xs font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+            <span className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
               {new Date(course.upcomingDates[0]).toLocaleDateString("en-US", { month: "short" })}
             </span>
           </div>
@@ -211,20 +211,20 @@ function CourseCard({ course }: { course: YogaCourse }) {
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
                 <div className="min-w-0">
-                  <h3 className="text-base font-semibold leading-tight text-zinc-900 dark:text-zinc-100">
+                  <h3 className="text-lg font-semibold leading-tight text-zinc-900 dark:text-zinc-100">
                     {course.courseName}
                   </h3>
-                  <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-400">
+                  <p className="mt-0.5 text-base text-zinc-500 dark:text-zinc-400">
                     {course.schoolName}
                   </p>
                 </div>
-                <span className="shrink-0 rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
+                <span className="shrink-0 rounded-full bg-emerald-100 px-3 py-0.5 text-base font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
                   {formatPrice(course.price)}
                 </span>
               </div>
 
               {/* Description — 2 lines max */}
-              <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 line-clamp-2 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
                 {course.description}
               </p>
 
@@ -233,25 +233,25 @@ function CourseCard({ course }: { course: YogaCourse }) {
                 {getTypes(course.type).map((t) => (
                   <span
                     key={t}
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${getStyle(t).pill}`}
+                    className={`rounded-full px-2.5 py-0.5 text-sm font-medium ${getStyle(t).pill}`}
                   >
                     {t}
                   </span>
                 ))}
                 {course.certificationLevel && (
-                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+                  <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-sm font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
                     {course.certificationLevel}
                   </span>
                 )}
                 {course.durationDays > 0 && (
-                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+                  <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
                     {course.durationDays} days
                   </span>
                 )}
               </div>
 
               {/* Details row */}
-              <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+              <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
                 {course.accommodation && (
                   <span>🏠 {formatDetail(course.accommodation)}</span>
                 )}
@@ -373,7 +373,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
               <button
                 key={loc.id}
                 onClick={() => setLocation(loc.id)}
-                className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
+                className={`cursor-pointer rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
                   location === loc.id
                     ? "bg-white text-zinc-900 shadow-md"
                     : "bg-white/10 text-zinc-400 hover:bg-white/20 hover:text-zinc-200"
@@ -404,7 +404,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
         <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={toggleAll}
-            className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
+            className={`cursor-pointer rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
               selectedTypes.size === allTypes.length
                 ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
                 : "border-zinc-300 text-zinc-500 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-500"
@@ -419,10 +419,10 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
               <button
                 key={type}
                 onClick={() => toggleType(type)}
-                className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
+                className={`cursor-pointer flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all hover:brightness-125 ${
                   selected
                     ? `${style.pill} border-transparent shadow-sm`
-                    : "border-zinc-200 text-zinc-400 dark:border-zinc-700"
+                    : "border-zinc-200 text-zinc-400 hover:border-zinc-400 dark:border-zinc-700"
                 }`}
               >
                 <span>{style.emoji}</span>
@@ -439,7 +439,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
           <button
             key={key}
             onClick={() => setActiveTab(key)}
-            className={`shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 sm:py-2 ${
+            className={`cursor-pointer shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 sm:py-2 ${
               activeTab === key
                 ? "bg-emerald-600 text-white shadow-md dark:bg-emerald-500"
                 : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400 dark:hover:bg-emerald-900"
@@ -454,7 +454,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
         {undatedCourses.length > 0 && (
           <button
             onClick={() => setActiveTab("undated")}
-            className={`shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 sm:py-2 ${
+            className={`cursor-pointer shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 sm:py-2 ${
               activeTab === "undated"
                 ? "bg-zinc-700 text-white shadow-md dark:bg-zinc-300 dark:text-zinc-900"
                 : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
