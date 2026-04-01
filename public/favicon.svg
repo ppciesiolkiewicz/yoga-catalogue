@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F48FB1"/>
+      <stop offset="100%" stop-color="#E91E63"/>
+    </linearGradient>
+  </defs>
+  <!-- Center petal -->
+  <ellipse cx="50" cy="38" rx="8" ry="22" fill="url(#petalGrad)" opacity="0.95"/>
+  <!-- Inner left petals -->
+  <ellipse cx="50" cy="38" rx="8" ry="22" fill="url(#petalGrad)" opacity="0.85" transform="rotate(-25 50 55)"/>
+  <ellipse cx="50" cy="38" rx="8" ry="22" fill="url(#petalGrad)" opacity="0.85" transform="rotate(25 50 55)"/>
+  <!-- Mid left/right petals -->
+  <ellipse cx="50" cy="38" rx="7" ry="20" fill="url(#petalGrad)" opacity="0.7" transform="rotate(-50 50 55)"/>
+  <ellipse cx="50" cy="38" rx="7" ry="20" fill="url(#petalGrad)" opacity="0.7" transform="rotate(50 50 55)"/>
+  <!-- Outer petals -->
+  <ellipse cx="50" cy="40" rx="6" ry="18" fill="url(#petalGrad)" opacity="0.55" transform="rotate(-72 50 55)"/>
+  <ellipse cx="50" cy="40" rx="6" ry="18" fill="url(#petalGrad)" opacity="0.55" transform="rotate(72 50 55)"/>
+  <!-- Water base -->
+  <path d="M 28 68 Q 50 60 72 68 Q 50 74 28 68 Z" fill="#E91E63" opacity="0.4"/>
+  <path d="M 32 72 Q 50 66 68 72 Q 50 77 32 72 Z" fill="#E91E63" opacity="0.25"/>
+</svg>

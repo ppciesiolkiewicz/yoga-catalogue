@@ -30,7 +30,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:40:33.160Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:40:33.160Z"
   },
   {
     "schoolName": "Yin Yoga Foundation",
@@ -49,7 +49,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:41:42.157Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:41:42.157Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -68,7 +68,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:41:48.766Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:41:48.766Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -87,7 +87,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:41:55.487Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:41:55.487Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -106,7 +106,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:02.974Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:02.974Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -125,7 +125,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:09.811Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:09.811Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -144,7 +144,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:16.146Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:16.146Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -163,7 +163,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and herbal tea",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:24.155Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:24.155Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -182,7 +182,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:31.675Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:31.675Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -201,7 +201,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:39.253Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:39.253Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -233,7 +233,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegan, vegetarian and gluten-free meals daily included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:49.124Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:49.124Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -265,7 +265,7 @@ export const courses: YogaCourse[] = [
     "meals": "Food is included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:42:58.771Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:42:58.771Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -297,7 +297,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:13.777Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:13.777Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -329,7 +329,7 @@ export const courses: YogaCourse[] = [
     "meals": "Meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:13.777Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:13.777Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -348,7 +348,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:21.274Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:21.274Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -367,7 +367,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:28.056Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:28.056Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -386,7 +386,7 @@ export const courses: YogaCourse[] = [
     "meals": "Three fresh organic nutritious vegetarian meals each day, all-day filtered water and herbal teas",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:37.075Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:37.075Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -407,7 +407,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 plant-based and Ayurvedic dosha-balanced meals daily included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:47.672Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:47.672Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -436,7 +436,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 Indian vegetarian meals daily included in the fee",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:43:56.318Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:43:56.318Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -455,7 +455,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:09.996Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:09.996Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -474,7 +474,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 Sattvic vegetarian meals daily plus two teas",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:09.996Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:09.996Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -493,7 +493,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 Sattvic vegetarian meals daily plus two teas",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:09.996Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:09.996Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -516,7 +516,7 @@ export const courses: YogaCourse[] = [
     "meals": "true",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:17.744Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:17.744Z"
   },
   {
     "schoolName": "Rishikesh Yoga Association",
@@ -544,7 +544,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 times daily nutritious vegetarian meals and teas",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:26.421Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:26.421Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -563,7 +563,7 @@ export const courses: YogaCourse[] = [
     "meals": "Yogic food included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:35.035Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:35.035Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -582,7 +582,7 @@ export const courses: YogaCourse[] = [
     "meals": "Yogic food included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:41.335Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:41.335Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -601,7 +601,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:47.618Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:47.618Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -629,7 +629,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:44:57.070Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:44:57.070Z"
   },
   {
     "schoolName": "Yin Yoga International",
@@ -661,7 +661,7 @@ export const courses: YogaCourse[] = [
     "meals": "Vegetarian Sattvic meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:05.392Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:05.392Z"
   },
   {
     "schoolName": "Yin Yoga International",
@@ -693,7 +693,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:13.661Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:13.661Z"
   },
   {
     "schoolName": "Yin Yoga International",
@@ -725,7 +725,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:21.405Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:21.405Z"
   },
   {
     "schoolName": "Nirvana Yoga School",
@@ -744,7 +744,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily based on yogic and Ayurvedic principles",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:29.636Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:29.636Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -763,7 +763,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:39.154Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:39.154Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -782,7 +782,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:50.204Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:50.204Z"
   },
   {
     "schoolName": "Adhiroha Yoga Ashram",
@@ -801,7 +801,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:45:58.317Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:45:58.317Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -835,7 +835,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily (breakfast, lunch, dinner)",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:46:12.000Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:46:12.000Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -867,7 +867,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily (breakfast, lunch, dinner)",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:46:24.039Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:46:24.039Z"
   },
   {
     "schoolName": "Hatha Yoga World",
@@ -899,7 +899,7 @@ export const courses: YogaCourse[] = [
     "meals": "Available for additional $150 USD (includes accommodation)",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:46:32.993Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:46:32.993Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -918,7 +918,7 @@ export const courses: YogaCourse[] = [
     "meals": "Nutritious vegetarian meals, herbal teas, and detox drinks provided daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:46:40.112Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:46:40.112Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -950,7 +950,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian sattvic meals daily included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:46:57.772Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:46:57.772Z"
   },
   {
     "schoolName": "Ishavasyam Yoga School",
@@ -969,7 +969,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 yogic meals and tea daily",
     "rating": 4.5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:47:09.038Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:47:09.038Z"
   },
   {
     "schoolName": "Ishavasyam Yoga School",
@@ -988,7 +988,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 yogic meals and tea daily",
     "rating": 4.5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:47:09.038Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:47:09.038Z"
   },
   {
     "schoolName": "Om Shanti Om Yoga Ashram",
@@ -1007,7 +1007,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:47:17.128Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:47:17.128Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -1026,7 +1026,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T10:47:25.627Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T10:47:25.627Z"
   },
   {
     "schoolName": "Yin Yoga Foundation",
@@ -1058,7 +1058,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:00:22.278Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:00:22.278Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -1077,7 +1077,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:00:29.756Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:00:29.756Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -1096,7 +1096,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:00:37.687Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:00:37.687Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -1115,7 +1115,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:00:44.781Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:00:44.781Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -1147,7 +1147,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:00:53.606Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:00:53.606Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -1183,7 +1183,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:01:02.629Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:01:02.629Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -1202,7 +1202,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:01:10.763Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:01:10.763Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -1236,7 +1236,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:01:20.237Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:01:20.237Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -1255,7 +1255,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:01:27.941Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:01:27.941Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -1287,7 +1287,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian, gluten-free, vegan meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:01:38.634Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:01:38.634Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -1319,7 +1319,7 @@ export const courses: YogaCourse[] = [
     "meals": "Food is included in all pricing options",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:01:49.899Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:01:49.899Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -1351,7 +1351,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian, gluten-free, vegan meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:01.262Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:01.262Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -1370,7 +1370,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:08.741Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:08.741Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -1389,7 +1389,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:16.797Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:16.797Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -1408,7 +1408,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:24.265Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:24.265Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -1427,7 +1427,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:31.637Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:31.637Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -1446,7 +1446,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:38.775Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:38.775Z"
   },
   {
     "schoolName": "World Peace Yoga School",
@@ -1465,7 +1465,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:02:46.320Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:02:46.320Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1484,7 +1484,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 daily meals (breakfast, lunch, dinner) available at additional cost; organic vegetarian yogic food",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:00.267Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:00.267Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1503,7 +1503,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 daily meals (breakfast, lunch, dinner) available at additional cost; organic vegetarian yogic food",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:00.267Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:00.267Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1522,7 +1522,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 daily meals (breakfast, lunch, dinner) available at additional cost; organic vegetarian yogic food",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:00.267Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:00.267Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1541,7 +1541,7 @@ export const courses: YogaCourse[] = [
     "meals": "Meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:08.388Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:08.388Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1560,7 +1560,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:15.866Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:15.866Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1579,7 +1579,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:23.080Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:23.080Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1598,7 +1598,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian organic meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:35.473Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:35.473Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1617,7 +1617,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian organic meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:35.473Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:35.473Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -1636,7 +1636,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian organic meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:35.473Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:35.473Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -1655,7 +1655,7 @@ export const courses: YogaCourse[] = [
     "meals": "Healthy meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:44.664Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:44.664Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -1674,7 +1674,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:03:52.878Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:03:52.878Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -1695,7 +1695,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:04:03.072Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:03.072Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -1725,7 +1725,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": 75,
-    "updatedAt": "2026-04-01T11:04:12.659Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:12.659Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -1755,7 +1755,7 @@ export const courses: YogaCourse[] = [
     "meals": "Healthy organic Sattvic diet included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:04:23.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:23.607Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -1774,7 +1774,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic diet provided with balanced, nutritious meals",
     "rating": null,
     "reviewCount": 75,
-    "updatedAt": "2026-04-01T11:04:32.083Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:32.083Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -1793,7 +1793,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:04:39.676Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:39.676Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -1815,7 +1815,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily (breakfast, lunch, dinner) plus two times tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:04:47.971Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:47.971Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -1836,7 +1836,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 satvik vegetarian meals daily plus two times tea, cooked in RO purified water",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:04:56.776Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:04:56.776Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -1866,7 +1866,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:06.709Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:06.709Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -1896,7 +1896,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:14.799Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:14.799Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -1915,7 +1915,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian/yogic meals daily plus herbal tea 3 times daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:21.150Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:21.150Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -1934,7 +1934,7 @@ export const courses: YogaCourse[] = [
     "meals": "Breakfast, lunch, and dinner included; vegan and gluten-free options available on request",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:27.907Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:27.907Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -1953,7 +1953,7 @@ export const courses: YogaCourse[] = [
     "meals": "Saatvik vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:34.835Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:34.835Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -1981,7 +1981,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:44.015Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:44.015Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -2005,7 +2005,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:52.585Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:52.585Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -2024,7 +2024,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:05:59.260Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:05:59.260Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -2059,7 +2059,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian Sattvik meals daily including breakfast, lunch, and dinner; gluten-free and vegan options available",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:09.430Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:09.430Z"
   },
   {
     "schoolName": "Rishikesh Yoga Association",
@@ -2078,7 +2078,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:18.201Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:18.201Z"
   },
   {
     "schoolName": "Rishikesh Yoga Association",
@@ -2097,7 +2097,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:25.455Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:25.455Z"
   },
   {
     "schoolName": "Rishikesh Yoga Association",
@@ -2116,7 +2116,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:33.670Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:33.670Z"
   },
   {
     "schoolName": "Rishikesh Yoga Association",
@@ -2142,7 +2142,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily plus teas",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:40.524Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:40.524Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -2161,7 +2161,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:49.460Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:49.460Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -2180,7 +2180,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:06:58.085Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:06:58.085Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -2199,7 +2199,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:07:06.631Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:06.631Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -2218,7 +2218,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:07:15.939Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:15.939Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -2237,7 +2237,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian yogic meals daily plus detox tea and juices",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:07:23.211Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:23.211Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2256,7 +2256,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily healthy vegetarian breakfast, lunch and dinner",
     "rating": null,
     "reviewCount": 156,
-    "updatedAt": "2026-04-01T11:07:32.837Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:32.837Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2287,7 +2287,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily",
     "rating": null,
     "reviewCount": 156,
-    "updatedAt": "2026-04-01T11:07:41.847Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:41.847Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2306,7 +2306,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:07:50.528Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:50.528Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2325,7 +2325,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily healthy sattvic vegetarian breakfast, lunch, and dinner",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:07:59.869Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:07:59.869Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2344,7 +2344,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:08:07.549Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:08:07.549Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2375,7 +2375,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily healthy vegetarian breakfast, lunch and dinner",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:08:16.766Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:08:16.766Z"
   },
   {
     "schoolName": "Adi Yogpeeth",
@@ -2402,7 +2402,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:08:26.524Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:08:26.524Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2421,7 +2421,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily wholesome vegetarian meals and herbal tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:08:36.325Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:08:36.325Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2440,7 +2440,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:08:44.619Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:08:44.619Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2459,7 +2459,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian sattvic meals daily plus herbal teas twice a day",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:08:53.158Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:08:53.158Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2478,7 +2478,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:02.335Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:02.335Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2497,7 +2497,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:12.574Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:12.574Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2516,7 +2516,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily nutritious vegetarian meals and tea included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:12.574Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:12.574Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2535,7 +2535,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2554,7 +2554,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2573,7 +2573,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2592,7 +2592,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2611,7 +2611,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2630,7 +2630,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2649,7 +2649,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2668,7 +2668,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2687,7 +2687,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2706,7 +2706,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2725,7 +2725,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Adi Yoga Ashram",
@@ -2744,7 +2744,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 fresh organic vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:42.597Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:42.597Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2763,7 +2763,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:50.226Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:50.226Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2782,7 +2782,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:09:59.334Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:09:59.334Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2801,7 +2801,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:07.702Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:07.702Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2820,7 +2820,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:15.245Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:15.245Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2852,7 +2852,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian/vegan meals daily, herbal teas and fresh fruit juices included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:24.950Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:24.950Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2871,7 +2871,7 @@ export const courses: YogaCourse[] = [
     "meals": "Healthy vegetarian sattvic meals prepared in-house daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:31.543Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:31.543Z"
   },
   {
     "schoolName": "Rishikesh Traditional Yoga School",
@@ -2890,7 +2890,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:39.232Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:39.232Z"
   },
   {
     "schoolName": "Hatha Yoga World",
@@ -2909,7 +2909,7 @@ export const courses: YogaCourse[] = [
     "meals": "Freshly prepared vegetarian and vegan meals served daily (Monday–Saturday)",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:48.251Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:48.251Z"
   },
   {
     "schoolName": "Hatha Yoga World",
@@ -2928,7 +2928,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:10:56.202Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:10:56.202Z"
   },
   {
     "schoolName": "Hatha Yoga World",
@@ -2947,7 +2947,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily vegetarian delicious meals included (3 meals daily made with fresh local produce)",
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:04.908Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:04.908Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -2966,7 +2966,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:12.893Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:12.893Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -2997,7 +2997,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:22.726Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:22.726Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3028,7 +3028,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:22.726Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:22.726Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3053,7 +3053,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:29.997Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:29.997Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3072,7 +3072,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic food included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:42.033Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:42.033Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3091,7 +3091,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic food included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:42.033Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:42.033Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3110,7 +3110,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:42.033Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:42.033Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3129,7 +3129,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:49.441Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:49.441Z"
   },
   {
     "schoolName": "Rishikesh Yog Nirvana",
@@ -3148,7 +3148,7 @@ export const courses: YogaCourse[] = [
     "meals": "Three sattvic vegetarian meals prepared fresh daily, plus herbal tea and light snacks during breaks",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:11:57.404Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:11:57.404Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3171,7 +3171,7 @@ export const courses: YogaCourse[] = [
     "meals": "Daily vegetarian/sattvic meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:05.633Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:05.633Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3203,7 +3203,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian/yogic meals daily (Breakfast, Lunch & Dinner)",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:15.969Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:15.969Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3235,7 +3235,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian/yogic meals daily (Breakfast, Lunch & Dinner)",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:27.117Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:27.117Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3254,7 +3254,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:38.502Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:38.502Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3273,7 +3273,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:38.502Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:38.502Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3292,7 +3292,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:38.502Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:38.502Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3311,7 +3311,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:47.079Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:47.079Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3343,7 +3343,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:53.932Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:53.932Z"
   },
   {
     "schoolName": "Rishikesh Vinyasa Yoga School",
@@ -3362,7 +3362,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:12:59.853Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:12:59.853Z"
   },
   {
     "schoolName": "Ishavasyam Yoga School",
@@ -3381,7 +3381,7 @@ export const courses: YogaCourse[] = [
     "meals": "Healthy vegetarian meals included",
     "rating": 4.5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:13:08.031Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:13:08.031Z"
   },
   {
     "schoolName": "Ishavasyam Yoga School",
@@ -3400,7 +3400,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian/yogic meals daily plus tea",
     "rating": 4.5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:13:16.210Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:13:16.210Z"
   },
   {
     "schoolName": "Ishavasyam Yoga School",
@@ -3419,7 +3419,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 yogic meals daily plus tea",
     "rating": 4.5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:13:24.487Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:13:24.487Z"
   },
   {
     "schoolName": "Ishavasyam Yoga School",
@@ -3438,7 +3438,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 vegetarian (yogic) meals and tea daily",
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:13:31.760Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:13:31.760Z"
   },
   {
     "schoolName": "Nirvana Yoga School",
@@ -3457,7 +3457,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:13:40.871Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:13:40.871Z"
   },
   {
     "schoolName": "Nirvana Yoga School",
@@ -3476,7 +3476,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:13:49.136Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:13:49.136Z"
   },
   {
     "schoolName": "Nirvana Yoga School",
@@ -3495,7 +3495,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic foods included",
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:02.528Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:02.528Z"
   },
   {
     "schoolName": "Nirvana Yoga School",
@@ -3514,7 +3514,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic foods included",
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:02.528Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:02.528Z"
   },
   {
     "schoolName": "Nirvana Yoga School",
@@ -3533,7 +3533,7 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvic foods included",
     "rating": 5,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:02.528Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:02.528Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3559,7 +3559,7 @@ export const courses: YogaCourse[] = [
     "meals": "Vegetarian organic Sattvic meals included daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:12.085Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:12.085Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3583,7 +3583,7 @@ export const courses: YogaCourse[] = [
     "meals": "Yogic/organic food included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:21.109Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:21.109Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3602,7 +3602,7 @@ export const courses: YogaCourse[] = [
     "meals": "Yogic Food included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:29.406Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:29.406Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3621,7 +3621,7 @@ export const courses: YogaCourse[] = [
     "meals": "Organic satvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:46.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:46.607Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3640,7 +3640,7 @@ export const courses: YogaCourse[] = [
     "meals": "Organic satvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:46.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:46.607Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3659,7 +3659,7 @@ export const courses: YogaCourse[] = [
     "meals": "Organic satvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:46.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:46.607Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3678,7 +3678,7 @@ export const courses: YogaCourse[] = [
     "meals": "Organic satvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:46.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:46.607Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3697,7 +3697,7 @@ export const courses: YogaCourse[] = [
     "meals": "Organic satvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:46.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:46.607Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -3716,7 +3716,7 @@ export const courses: YogaCourse[] = [
     "meals": "Organic satvic vegetarian meals included",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:46.607Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:46.607Z"
   },
   {
     "schoolName": "Om Shanti Om Yoga Ashram",
@@ -3735,7 +3735,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:14:55.516Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:14:55.516Z"
   },
   {
     "schoolName": "Om Shanti Om Yoga Ashram",
@@ -3756,7 +3756,7 @@ export const courses: YogaCourse[] = [
     "meals": "Vegetarian sattvic meals included in food packages",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:04.628Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:04.628Z"
   },
   {
     "schoolName": "Om Shanti Om Yoga Ashram",
@@ -3775,7 +3775,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:13.594Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:13.594Z"
   },
   {
     "schoolName": "Adhiroha Yoga Ashram",
@@ -3807,7 +3807,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:23.244Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:23.244Z"
   },
   {
     "schoolName": "Adhiroha Yoga Ashram",
@@ -3839,7 +3839,7 @@ export const courses: YogaCourse[] = [
     "meals": "true",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:31.561Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:31.561Z"
   },
   {
     "schoolName": "Adhiroha Yoga Ashram",
@@ -3868,7 +3868,7 @@ export const courses: YogaCourse[] = [
     "meals": "Wholesome vegetarian (Satvik and Ayurvedic) meals served three times daily, paired with Adhiroha's Signature Herbal Tea",
     "rating": 4.9,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:39.886Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:39.886Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -3887,7 +3887,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:51.327Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:51.327Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -3906,7 +3906,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:15:51.327Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:15:51.327Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -3925,7 +3925,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:16:00.337Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:16:00.337Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -3944,7 +3944,7 @@ export const courses: YogaCourse[] = [
     "meals": true,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:16:07.486Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:16:07.486Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -3974,7 +3974,7 @@ export const courses: YogaCourse[] = [
     "meals": false,
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:16:15.081Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:16:15.081Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -4004,7 +4004,7 @@ export const courses: YogaCourse[] = [
     "meals": "3 Sattvik vegetarian meals daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:16:22.701Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:16:22.701Z"
   },
   {
     "schoolName": "Rishikesh Yoga Ashram",
@@ -4036,6 +4036,380 @@ export const courses: YogaCourse[] = [
     "meals": "Sattvik breakfast, lunch, afternoon tea, and dinner daily",
     "rating": null,
     "reviewCount": null,
-    "updatedAt": "2026-04-01T11:16:31.158Z"
+    "location": "Rishikesh", "updatedAt": "2026-04-01T11:16:31.158Z"
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "courseName": "100 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://mahiyoga.com/100-hour-yoga-teacher-training-dharamshala/",
+    "type": "Multi-Style Yoga Teacher Training",
+    "certificationLevel": "100hr",
+    "durationDays": 12,
+    "price": {
+      "amount": 799,
+      "currency": "USD"
+    },
+    "description": "A 100-hour foundational yoga teacher training in the Kangra Valley of Dharamshala, covering Hatha, Vinyasa, and Ashtanga styles along with meditation, pranayama, and yoga philosophy. Ideal for beginners seeking a solid foundation in yoga practice and teaching.",
+    "upcomingDates": [],
+    "accommodation": "Private or shared room included",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://mahiyoga.com/200-hour-yoga-teacher-training-india/",
+    "type": "Multi-Style Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 1299,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour multi-style yoga teacher training in Dharamshala covering traditional Hatha, Vinyasa, and Ashtanga styles along with meditation, breathwork, anatomy, and yoga philosophy. Yoga Alliance USA certified. Set against the backdrop of the majestic Dhauladhar mountain range.",
+    "upcomingDates": [],
+    "accommodation": "Private or shared room included",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "courseName": "300 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://mahiyoga.com/300-hour-yoga-teacher-training-india/",
+    "type": "Multi-Style Yoga Teacher Training",
+    "certificationLevel": "300hr",
+    "durationDays": 28,
+    "price": {
+      "amount": 1599,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour yoga teacher training for those who have completed a 200-hour TTC. Explores advanced Hatha, Vinyasa, and Ashtanga practices along with sound healing, Ayurveda, and teaching refinement. Graduates qualify as 500hr RYT.",
+    "upcomingDates": [],
+    "accommodation": "Private or shared room included",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "courseName": "500 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://mahiyoga.com/500-hour-yoga-teacher-training-india/",
+    "type": "Multi-Style Yoga Teacher Training",
+    "certificationLevel": "500hr",
+    "durationDays": 55,
+    "price": {
+      "amount": 2499,
+      "currency": "USD"
+    },
+    "description": "A complete 500-hour yoga teacher training combining 200-hour and 300-hour programs. Covers Hatha, Vinyasa, Ashtanga, sound healing, Ayurveda, meditation, pranayama, and advanced teaching methodology in the scenic Kangra Valley of Dharamshala.",
+    "upcomingDates": [],
+    "accommodation": "Private or shared room included",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Shiva Darshan Yoga",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://shivadarshanyoga.com/yoga-teacher-training/yoga-teacher-training/",
+    "type": "Hatha Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A fully residential 200-hour Yoga Alliance certified teacher training in Bhagsu village, Dharamshala. Multi-style approach covering Hatha, Ashtanga, and Vinyasa yoga. Small batches of 8-10 students with personally taught classes by teachers with 30+ years of experience.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mantra Yoga & Meditation",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://mantrayogameditation.org/200-hour-yoga-teacher-training-in-dharamsala/",
+    "type": "Ashtanga Vinyasa Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 24-day Yoga Alliance accredited teacher training emphasizing Ashtanga Primary & Secondary series and Vinyasa flow yoga. Includes Traditional Hatha Yoga, Eastern and Western philosophies, and meditation techniques. Accommodation, meals, excursions, and certification included.",
+    "upcomingDates": [
+      "2026-04-12",
+      "2026-05-10",
+      "2026-06-07"
+    ],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mantra Yoga & Meditation",
+    "courseName": "Meditation Teacher Training in Dharamshala",
+    "url": "https://mantrayogameditation.org/meditation-teacher-training-india/",
+    "type": "Meditation Teacher Training",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A meditation teacher training course in Dharamshala covering various meditation techniques, mindfulness practices, yoga philosophy, and teaching methodology. Set in the peaceful Himalayan foothills near the Tibetan Buddhist community.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mantra Yoga & Meditation",
+    "courseName": "Yoga Retreat in Dharamshala",
+    "url": "https://mantrayogameditation.org/yoga-retreat-in-dharamsala/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A yoga and meditation retreat in the Himalayan foothills of Dharamshala. Combines daily yoga practice, meditation sessions, and exploration of the local Tibetan Buddhist culture. Ideal for practitioners seeking relaxation and spiritual renewal.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Prakruti Yogashala",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://www.prakrutiyogashala.com/yttcdharamshala",
+    "type": "Hatha Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 23-day comprehensive Yoga Alliance certified teacher training rooted in traditional Hatha Yoga. Integrates philosophy, pranayama, meditation, and anatomy with maximum 9 students per batch. Located in a serene mountain setting surrounded by forests and Tibetan culture.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Om Yoga Ashram",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://www.omashram.in/200-hour-yoga-teacher-training",
+    "type": "Hatha Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A residential 200-hour yoga teacher training based on traditional Hatha Yoga. Covers Ashtanga Vinyasa, Kundalini Yoga, meditation, yogic philosophy, anatomy, pranayama, mudra, bandha, and satkarma. Monthly sessions available throughout the year. Yoga Alliance certified.",
+    "upcomingDates": [
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "100 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/100hr-yoga-teacher-training-india/",
+    "type": "Hatha Yoga Teacher Training",
+    "certificationLevel": "100hr",
+    "durationDays": 14,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 100-hour foundational yoga teacher training at Aranya Yoga in Bhagsu Nag, Dharamshala. All-inclusive fee covers certification, practical training, accommodation and food. Small groups of up to 15 students for personalized attention on alignments and breathing.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "200 Hour Ashtanga Yoga Teacher Training in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/",
+    "type": "Ashtanga Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A Yoga Alliance registered 200-hour Ashtanga yoga teacher training in Bhagsu Nag, Dharamshala. All-inclusive with certification, one month practical training, accommodation and food. Set in pristine natural surroundings ideal for yoga and meditation practice.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "Sound Healing Training Course in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/sound-healing/",
+    "type": "Sound Healing Teacher Training",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A sound healing training course at Aranya Yoga in Dharamshala covering singing bowl techniques, sound therapy principles, and healing practices. Located in the peaceful setting of Bhagsu Nag near McLeod Ganj.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Kailash Tribal Yoga School",
+    "courseName": "Yoga Teacher Training in Dharamshala",
+    "url": "https://www.yogatribe.org/",
+    "type": "Multi-Style Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "Yoga Alliance certified teacher training at Kailash Tribal Yoga School in Dharamkot, Dharamshala. Operating since 2000 with small group sizes and courses personally taught by Master teacher Yogi Sivadas. Includes holistic training with Reiki, meditation, philosophy, and Ayurveda.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Kailash Tribal Yoga School",
+    "courseName": "Meditation Teacher Training in Dharamshala",
+    "url": "https://www.yogatribe.org/meditation-courses-dharamsala-india.html",
+    "type": "Meditation Teacher Training",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A meditation teacher training course at Kailash Tribal Yoga School in Dharamkot, Dharamshala. Covers various meditation techniques and mindfulness practices in the serene Himalayan foothills near McLeod Ganj.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Kailash Tribal Yoga School",
+    "courseName": "Holistic Ayurveda Yoga Course in Dharamshala",
+    "url": "https://www.yogatribe.org/ayurvedic-yoga-courses-dharamsala-india.html",
+    "type": "Ayurveda Yoga Course",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A holistic Ayurveda and yoga course at Kailash Tribal Yoga School in Dharamkot, Dharamshala. Combines traditional yoga practice with Ayurvedic principles, herbal medicine, and holistic wellness practices.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://swarajyogaandretreats.com/",
+    "type": "Hatha Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A government-recognized 200-hour yoga teacher training at Swaraj Yoga in Dharamkot, Dharamshala. Teaches Traditional Hatha Yoga, Suksham Vyayama, and Kurunta practices. Also offers 50hr and 500hr advanced courses and Indian Yoga Association (IYA) certification.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
+  },
+  {
+    "schoolName": "D'vine Yoga",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://www.artdivine.org/yoga-teacher-training-in-dharamshala.php",
+    "type": "Hatha Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A month-long 200-hour traditional Hatha Yoga teacher training in the hillside of Dharamshala. Covers yoga asanas, pranayama, meditation, chanting, yoga philosophy, and holistic living. Founded in 2013 by Swami with a focus on Vedic Knowledge.",
+    "upcomingDates": [],
+    "accommodation": "Included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-01T12:00:00.000Z"
   }
 ]

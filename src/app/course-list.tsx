@@ -1,7 +1,12 @@
 "use client"
 
-import { useState, useMemo } from "react"
-import type { YogaCourse } from "@/data/types"
+import { useState, useMemo, useEffect } from "react"
+import type { YogaCourse, Location } from "@/data/types"
+
+const LOCATIONS: { id: Location; label: string; subtitle: string }[] = [
+  { id: "Rishikesh", label: "Rishikesh", subtitle: "Uttarakhand, India" },
+  { id: "Dharamshala", label: "Dharamshala", subtitle: "Himachal Pradesh, India" },
+]
 
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -226,9 +231,16 @@ function CourseCard({ course }: { course: YogaCourse }) {
 }
 
 export function CourseList({ courses }: { courses: YogaCourse[] }) {
+  const [location, setLocation] = useState<Location>("Rishikesh")
+
+  const locationCourses = useMemo(
+    () => courses.filter((c) => c.location === location),
+    [courses, location]
+  )
+
   const allTypes = useMemo(() => {
     const counts = new Map<string, number>()
-    for (const course of courses) {
+    for (const course of locationCourses) {
       for (const t of getTypes(course.type)) {
         counts.set(t, (counts.get(t) ?? 0) + 1)
       }
@@ -236,7 +248,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     return [...counts.entries()]
       .sort((a, b) => b[1] - a[1])
       .map(([type]) => type)
-  }, [courses])
+  }, [locationCourses])
 
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(
     () => new Set(allTypes)
@@ -256,9 +268,16 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     else setSelectedTypes(new Set(allTypes))
   }
 
+  // Reset filters when location changes
+  useEffect(() => {
+    setSelectedTypes(new Set(allTypes))
+  }, [location]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const locationInfo = LOCATIONS.find((l) => l.id === location)!
+
   const filtered = useMemo(
-    () => courses.filter((c) => getTypes(c.type).some((t) => selectedTypes.has(t))),
-    [courses, selectedTypes]
+    () => locationCourses.filter((c) => getTypes(c.type).some((t) => selectedTypes.has(t))),
+    [locationCourses, selectedTypes]
   )
 
   const { monthKeys, coursesByMonth, undatedCourses } = useMemo(() => {
@@ -303,8 +322,46 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
   return (
     <div>
+      {/* Header with location switcher */}
+      <header className="relative overflow-hidden bg-zinc-900 dark:bg-zinc-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-purple-500 blur-3xl" />
+          <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-amber-500 blur-3xl" />
+          <div className="absolute top-8 left-1/2 h-40 w-40 rounded-full bg-teal-500 blur-3xl" />
+        </div>
+        <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-12">
+          {/* Location switcher */}
+          <div className="mb-4 flex gap-2">
+            {LOCATIONS.map((loc) => (
+              <button
+                key={loc.id}
+                onClick={() => setLocation(loc.id)}
+                className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
+                  location === loc.id
+                    ? "bg-white text-zinc-900 shadow-md"
+                    : "bg-white/10 text-zinc-400 hover:bg-white/20 hover:text-zinc-200"
+                }`}
+              >
+                {loc.label}
+              </button>
+            ))}
+          </div>
+          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-zinc-400">
+            {locationInfo.subtitle}
+          </p>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            Yoga Teacher Training
+          </h1>
+          <p className="mt-3 text-base text-zinc-400">
+            <span className="text-white font-semibold">{locationCourses.length}</span> courses from{" "}
+            <span className="text-white font-semibold">{new Set(locationCourses.map((c) => c.schoolName)).size}</span> schools
+          </p>
+        </div>
+      </header>
+
+      <div className="mx-auto max-w-5xl px-4 py-6">
       {/* Type filter */}
-      <div className="-mt-8 relative z-10 mb-5 rounded-xl border border-zinc-200 bg-white/80 p-4 shadow-lg backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/80 sm:p-5">
+      <div className="relative z-10 mb-5 rounded-xl border border-zinc-200 bg-white/80 p-4 shadow-lg backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/80 sm:p-5">
         <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-zinc-400">Filter by style</p>
         <div className="flex flex-wrap items-center gap-2">
           <button
@@ -384,6 +441,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
             <CourseCard key={`${course.url}-${i}`} course={course} />
           ))
         )}
+      </div>
       </div>
     </div>
   )

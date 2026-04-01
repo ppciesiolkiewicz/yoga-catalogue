@@ -1,6 +1,9 @@
+export type Location = "Rishikesh" | "Dharamshala"
+
 export interface WebsiteEntry {
   schoolName: string
   url: string
+  location: Location
 }
 
 export interface YogaCourse {
@@ -20,5 +23,6 @@ export interface YogaCourse {
   meals: boolean | string
   rating: number | null
   reviewCount: number | null
+  location: Location
   updatedAt: string
 }
