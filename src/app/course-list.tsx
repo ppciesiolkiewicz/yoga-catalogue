@@ -303,36 +303,36 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
   return (
     <div>
-      {/* Type filter — checkbox style */}
-      <div className="mb-5 rounded-lg border border-zinc-200 bg-white p-3 dark:border-zinc-800 dark:bg-zinc-900 sm:p-4">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <label className="flex cursor-pointer items-center gap-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
-            <input
-              type="checkbox"
-              checked={selectedTypes.size === allTypes.length}
-              onChange={toggleAll}
-              className="h-4 w-4 rounded accent-zinc-900 dark:accent-zinc-100"
-            />
-            All styles
-          </label>
-          <span className="hidden text-zinc-300 dark:text-zinc-700 sm:inline">|</span>
+      {/* Type filter */}
+      <div className="-mt-8 relative z-10 mb-5 rounded-xl border border-zinc-200 bg-white/80 p-4 shadow-lg backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/80 sm:p-5">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-zinc-400">Filter by style</p>
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            onClick={toggleAll}
+            className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
+              selectedTypes.size === allTypes.length
+                ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
+                : "border-zinc-300 text-zinc-500 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-500"
+            }`}
+          >
+            All
+          </button>
           {allTypes.map((type) => {
             const style = getStyle(type)
+            const selected = selectedTypes.has(type)
             return (
-              <label
+              <button
                 key={type}
-                className={`flex cursor-pointer items-center gap-2 rounded-full px-2.5 py-1 text-sm transition-opacity ${style.pill} ${
-                  selectedTypes.has(type) ? "opacity-100" : "opacity-40"
+                onClick={() => toggleType(type)}
+                className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
+                  selected
+                    ? `${style.pill} border-transparent shadow-sm`
+                    : "border-zinc-200 text-zinc-400 dark:border-zinc-700"
                 }`}
               >
-                <input
-                  type="checkbox"
-                  checked={selectedTypes.has(type)}
-                  onChange={() => toggleType(type)}
-                  className={`h-3.5 w-3.5 rounded ${style.check}`}
-                />
-                {style.emoji} {type}
-              </label>
+                <span>{style.emoji}</span>
+                {type}
+              </button>
             )
           })}
         </div>
