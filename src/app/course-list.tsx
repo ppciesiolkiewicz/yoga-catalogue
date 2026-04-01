@@ -134,7 +134,10 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
   }, [courses])
 
   const allTabs = [...monthKeys, ...(undatedCourses.length > 0 ? ["undated"] : [])]
-  const [activeTab, setActiveTab] = useState(allTabs[0] ?? "undated")
+  const now = new Date()
+  const currentMonthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`
+  const defaultTab = monthKeys.includes(currentMonthKey) ? currentMonthKey : allTabs[0] ?? "undated"
+  const [activeTab, setActiveTab] = useState(defaultTab)
 
   const displayedCourses =
     activeTab === "undated"
