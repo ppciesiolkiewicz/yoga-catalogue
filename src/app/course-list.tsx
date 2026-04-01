@@ -31,6 +31,32 @@ function formatDate(date: string) {
   })
 }
 
+function ordinal(n: number) {
+  const s = ["th", "st", "nd", "rd"]
+  const v = n % 100
+  return n + (s[(v - 20) % 10] || s[v] || s[0])
+}
+
+function formatDateGroupLabel(date: string) {
+  const d = new Date(date)
+  return `${ordinal(d.getDate())} ${MONTHS[d.getMonth()]}`
+}
+
+function groupByDate(courses: YogaCourse[]) {
+  const groups: { date: string; courses: YogaCourse[] }[] = []
+  const map = new Map<string, YogaCourse[]>()
+  for (const course of courses) {
+    const key = course.upcomingDates[0] ?? "undated"
+    if (!map.has(key)) {
+      const list: YogaCourse[] = []
+      map.set(key, list)
+      groups.push({ date: key, courses: list })
+    }
+    map.get(key)!.push(course)
+  }
+  return groups
+}
+
 function formatPrice(price: { amount: number; currency: string }) {
   if (price.amount === 0) return "Contact"
   return `${price.currency} ${price.amount.toLocaleString()}`
@@ -163,66 +189,77 @@ function CourseCard({ course }: { course: YogaCourse }) {
       href={course.url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`block rounded-lg border border-zinc-200 border-l-4 ${style.border} bg-gradient-to-r ${style.bg} to-white p-4 transition-all hover:shadow-lg hover:-translate-y-0.5 dark:border-zinc-800 dark:to-zinc-900 sm:p-5`}
+      className={`block rounded-lg border border-zinc-200 border-l-4 ${style.border} bg-gradient-to-r ${style.bg} to-white transition-all hover:shadow-lg hover:-translate-y-0.5 dark:border-zinc-800 dark:to-zinc-900`}
     >
-      {/* Top row: emoji + title + price */}
-      <div className="flex items-start gap-3">
-        <span className="mt-0.5 text-xl leading-none" role="img">{style.emoji}</span>
-        <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
-            <div className="min-w-0">
-              <h3 className="text-base font-semibold leading-tight text-zinc-900 dark:text-zinc-100">
-                {course.courseName}
-              </h3>
-              <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-400">
-                {course.schoolName}
-              </p>
-            </div>
-            <span className="shrink-0 rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
-              {formatPrice(course.price)}
+      <div className="flex">
+        {/* Date column */}
+        {course.upcomingDates.length > 0 && (
+          <div className="flex w-20 shrink-0 flex-col items-center justify-center border-r border-zinc-200 px-2 py-4 dark:border-zinc-800 sm:w-24">
+            <span className="text-2xl font-bold text-zinc-800 dark:text-zinc-200 sm:text-3xl">
+              {new Date(course.upcomingDates[0]).getDate()}
+            </span>
+            <span className="text-xs font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+              {new Date(course.upcomingDates[0]).toLocaleDateString("en-US", { month: "short" })}
             </span>
           </div>
+        )}
+        {/* Content */}
+        <div className="min-w-0 flex-1 p-4 sm:p-5">
+          {/* Top row: emoji + title + price */}
+          <div className="flex items-start gap-3">
+            <span className="mt-0.5 text-xl leading-none" role="img">{style.emoji}</span>
+            <div className="min-w-0 flex-1">
+              <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
+                <div className="min-w-0">
+                  <h3 className="text-base font-semibold leading-tight text-zinc-900 dark:text-zinc-100">
+                    {course.courseName}
+                  </h3>
+                  <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-400">
+                    {course.schoolName}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
+                  {formatPrice(course.price)}
+                </span>
+              </div>
 
-          {/* Description — 2 lines max */}
-          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-            {course.description}
-          </p>
+              {/* Description — 2 lines max */}
+              <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                {course.description}
+              </p>
 
-          {/* Tags row */}
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {getTypes(course.type).map((t) => (
-              <span
-                key={t}
-                className={`rounded-full px-2 py-0.5 text-xs font-medium ${getStyle(t).pill}`}
-              >
-                {t}
-              </span>
-            ))}
-            {course.certificationLevel && (
-              <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
-                {course.certificationLevel}
-              </span>
-            )}
-            {course.durationDays > 0 && (
-              <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
-                {course.durationDays} days
-              </span>
-            )}
-          </div>
+              {/* Tags row */}
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {getTypes(course.type).map((t) => (
+                  <span
+                    key={t}
+                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${getStyle(t).pill}`}
+                  >
+                    {t}
+                  </span>
+                ))}
+                {course.certificationLevel && (
+                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+                    {course.certificationLevel}
+                  </span>
+                )}
+                {course.durationDays > 0 && (
+                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+                    {course.durationDays} days
+                  </span>
+                )}
+              </div>
 
-          {/* Details row */}
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-zinc-500 dark:text-zinc-400">
-            {course.accommodation && (
-              <span>🏠 {formatDetail(course.accommodation)}</span>
-            )}
-            {course.meals && (
-              <span>🍽️ {formatDetail(course.meals)}</span>
-            )}
-            {course.upcomingDates.length > 0 && (
-              <span className="font-medium text-zinc-700 dark:text-zinc-300">
-                📅 {course.upcomingDates.map(formatDate).join(", ")}
-              </span>
-            )}
+              {/* Details row */}
+              <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+                {course.accommodation && (
+                  <span>🏠 {formatDetail(course.accommodation)}</span>
+                )}
+                {course.meals && (
+                  <span>🍽️ {formatDetail(course.meals)}</span>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -431,15 +468,31 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
         )}
       </div>
 
-      {/* Course cards */}
-      <div className="mt-4 flex flex-col gap-3">
+      {/* Course cards grouped by date */}
+      <div className="mt-4">
         {displayedCourses.length === 0 ? (
           <p className="py-12 text-center text-sm text-zinc-400">
             No courses match your filters.
           </p>
         ) : (
-          displayedCourses.map((course, i) => (
-            <CourseCard key={`${course.url}-${i}`} course={course} />
+          groupByDate(displayedCourses).map((group) => (
+            <div key={group.date} className="mb-6">
+              {/* Date separator */}
+              {group.date !== "undated" && (
+                <div className="flex items-center gap-3 py-3">
+                  <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" />
+                  <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+                    {formatDateGroupLabel(group.date)}
+                  </span>
+                  <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" />
+                </div>
+              )}
+              <div className="flex flex-col gap-3">
+                {group.courses.map((course, i) => (
+                  <CourseCard key={`${course.url}-${i}`} course={course} />
+                ))}
+              </div>
+            </div>
           ))
         )}
       </div>
