@@ -27,21 +27,16 @@ function formatDate(date: string) {
 }
 
 function formatPrice(price: { amount: number; currency: string }) {
-  if (price.amount === 0) return "Contact for price"
+  if (price.amount === 0) return "Contact"
   return `${price.currency} ${price.amount.toLocaleString()}`
 }
 
-function formatAccommodation(val: boolean | string) {
-  if (val === true) return "Included"
-  if (val === false) return "Not included"
+function formatDetail(val: boolean | string) {
+  if (val === true || val === "true") return "Included"
+  if (val === false || val === "false") return "Not included"
   return String(val).replace(/^string - /i, "")
 }
 
-// Yoga style categories:
-// Yang (warm/active): Ashtanga, Vinyasa, Hatha — often combined in multi-style TTC
-// Yin (cool/passive): Yin yoga
-// Specialty: Kundalini, Aerial
-// Experience: Retreat, Meditation, Sound Healing
 function getTypes(type: string): string[] {
   const t = type.toLowerCase()
   const types: string[] = []
@@ -61,81 +56,86 @@ function getTypes(type: string): string[] {
   return types
 }
 
-// Style config: colors reflect the energy of each style
-// Yang styles = warm tones (orange, amber, red)
-// Yin = cool purple
-// Specialty = distinctive colors
-// Retreats = earthy teal
-const STYLE_CONFIG: Record<string, { pill: string; border: string; card: string; emoji: string }> = {
+const STYLE_CONFIG: Record<string, { pill: string; border: string; bg: string; check: string; emoji: string }> = {
   Ashtanga: {
     pill: "bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300",
     border: "border-l-orange-500",
-    card: "bg-gradient-to-r from-orange-50 to-white dark:from-orange-950/20 dark:to-zinc-900",
+    bg: "from-orange-50 dark:from-orange-950/20",
+    check: "accent-orange-500",
     emoji: "🔥",
   },
   Vinyasa: {
     pill: "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300",
     border: "border-l-amber-500",
-    card: "bg-gradient-to-r from-amber-50 to-white dark:from-amber-950/20 dark:to-zinc-900",
+    bg: "from-amber-50 dark:from-amber-950/20",
+    check: "accent-amber-500",
     emoji: "🌊",
   },
   Hatha: {
     pill: "bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300",
     border: "border-l-red-400",
-    card: "bg-gradient-to-r from-red-50 to-white dark:from-red-950/20 dark:to-zinc-900",
+    bg: "from-red-50 dark:from-red-950/20",
+    check: "accent-red-500",
     emoji: "☀️",
   },
   Yin: {
     pill: "bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300",
     border: "border-l-purple-500",
-    card: "bg-gradient-to-r from-purple-50 to-white dark:from-purple-950/20 dark:to-zinc-900",
+    bg: "from-purple-50 dark:from-purple-950/20",
+    check: "accent-purple-500",
     emoji: "🌙",
   },
   Kundalini: {
     pill: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300",
     border: "border-l-yellow-500",
-    card: "bg-gradient-to-r from-yellow-50 to-white dark:from-yellow-950/20 dark:to-zinc-900",
+    bg: "from-yellow-50 dark:from-yellow-950/20",
+    check: "accent-yellow-500",
     emoji: "⚡",
   },
   Aerial: {
     pill: "bg-pink-100 text-pink-800 dark:bg-pink-900/50 dark:text-pink-300",
     border: "border-l-pink-500",
-    card: "bg-gradient-to-r from-pink-50 to-white dark:from-pink-950/20 dark:to-zinc-900",
+    bg: "from-pink-50 dark:from-pink-950/20",
+    check: "accent-pink-500",
     emoji: "🦋",
   },
   Retreat: {
     pill: "bg-teal-100 text-teal-800 dark:bg-teal-900/50 dark:text-teal-300",
     border: "border-l-teal-500",
-    card: "bg-gradient-to-r from-teal-50 to-white dark:from-teal-950/20 dark:to-zinc-900",
+    bg: "from-teal-50 dark:from-teal-950/20",
+    check: "accent-teal-500",
     emoji: "🏔️",
   },
   Meditation: {
     pill: "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-300",
     border: "border-l-indigo-500",
-    card: "bg-gradient-to-r from-indigo-50 to-white dark:from-indigo-950/20 dark:to-zinc-900",
+    bg: "from-indigo-50 dark:from-indigo-950/20",
+    check: "accent-indigo-500",
     emoji: "🧘",
   },
   "Sound Healing": {
     pill: "bg-rose-100 text-rose-800 dark:bg-rose-900/50 dark:text-rose-300",
     border: "border-l-rose-500",
-    card: "bg-gradient-to-r from-rose-50 to-white dark:from-rose-950/20 dark:to-zinc-900",
+    bg: "from-rose-50 dark:from-rose-950/20",
+    check: "accent-rose-500",
     emoji: "🔔",
   },
   "Multi-Style TTC": {
     pill: "bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300",
     border: "border-l-sky-500",
-    card: "bg-gradient-to-r from-sky-50 to-white dark:from-sky-950/20 dark:to-zinc-900",
+    bg: "from-sky-50 dark:from-sky-950/20",
+    check: "accent-sky-500",
     emoji: "🕉️",
-  },
-  Other: {
-    pill: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
-    border: "border-l-zinc-400",
-    card: "bg-white dark:bg-zinc-900",
-    emoji: "📿",
   },
 }
 
-const DEFAULT_STYLE = STYLE_CONFIG.Other
+const DEFAULT_STYLE = {
+  pill: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
+  border: "border-l-zinc-400",
+  bg: "",
+  check: "accent-zinc-500",
+  emoji: "📿",
+}
 
 function getStyle(type: string) {
   return STYLE_CONFIG[type] ?? DEFAULT_STYLE
@@ -158,78 +158,74 @@ function CourseCard({ course }: { course: YogaCourse }) {
       href={course.url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`block rounded-lg border border-zinc-200 border-l-4 ${style.border} ${style.card} p-5 transition-all hover:shadow-lg hover:-translate-y-0.5 dark:border-zinc-800`}
+      className={`block rounded-lg border border-zinc-200 border-l-4 ${style.border} bg-gradient-to-r ${style.bg} to-white p-4 transition-all hover:shadow-lg hover:-translate-y-0.5 dark:border-zinc-800 dark:to-zinc-900 sm:p-5`}
     >
-      <div className="flex flex-wrap items-start justify-between gap-2">
-        <div className="flex items-center gap-2">
-          <span className="text-lg" role="img">{style.emoji}</span>
-          <div>
-            <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
-              {course.courseName}
-            </h3>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              {course.schoolName}
-            </p>
-          </div>
-        </div>
-        <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
-          {formatPrice(course.price)}
-        </span>
-      </div>
-
-      <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-        {course.description}
-      </p>
-
-      <div className="mt-4 flex flex-wrap gap-2">
-        {getTypes(course.type).map((t) => (
-          <span
-            key={t}
-            className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${getStyle(t).pill}`}
-          >
-            {t}
-          </span>
-        ))}
-        {course.certificationLevel && (
-          <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
-            {course.certificationLevel}
-          </span>
-        )}
-        {course.durationDays > 0 && (
-          <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
-            {course.durationDays} days
-          </span>
-        )}
-      </div>
-
-      <div className="mt-3 grid grid-cols-1 gap-1 text-xs text-zinc-500 dark:text-zinc-400 sm:grid-cols-2">
-        {course.accommodation && (
-          <div>
-            <span className="font-medium">Accommodation:</span>{" "}
-            {formatAccommodation(course.accommodation)}
-          </div>
-        )}
-        {course.meals && (
-          <div>
-            <span className="font-medium">Meals:</span>{" "}
-            {formatAccommodation(course.meals)}
-          </div>
-        )}
-        {course.upcomingDates.length > 0 && (
-          <div className="sm:col-span-2">
-            <span className="font-medium">Starts:</span>{" "}
-            <span className="font-semibold text-zinc-700 dark:text-zinc-300">
-              {course.upcomingDates.map(formatDate).join(", ")}
+      {/* Top row: emoji + title + price */}
+      <div className="flex items-start gap-3">
+        <span className="mt-0.5 text-xl leading-none" role="img">{style.emoji}</span>
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
+            <div className="min-w-0">
+              <h3 className="text-base font-semibold leading-tight text-zinc-900 dark:text-zinc-100">
+                {course.courseName}
+              </h3>
+              <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-400">
+                {course.schoolName}
+              </p>
+            </div>
+            <span className="shrink-0 rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
+              {formatPrice(course.price)}
             </span>
           </div>
-        )}
+
+          {/* Description — 2 lines max */}
+          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            {course.description}
+          </p>
+
+          {/* Tags row */}
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            {getTypes(course.type).map((t) => (
+              <span
+                key={t}
+                className={`rounded-full px-2 py-0.5 text-xs font-medium ${getStyle(t).pill}`}
+              >
+                {t}
+              </span>
+            ))}
+            {course.certificationLevel && (
+              <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+                {course.certificationLevel}
+              </span>
+            )}
+            {course.durationDays > 0 && (
+              <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+                {course.durationDays} days
+              </span>
+            )}
+          </div>
+
+          {/* Details row */}
+          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+            {course.accommodation && (
+              <span>🏠 {formatDetail(course.accommodation)}</span>
+            )}
+            {course.meals && (
+              <span>🍽️ {formatDetail(course.meals)}</span>
+            )}
+            {course.upcomingDates.length > 0 && (
+              <span className="font-medium text-zinc-700 dark:text-zinc-300">
+                📅 {course.upcomingDates.map(formatDate).join(", ")}
+              </span>
+            )}
+          </div>
+        </div>
       </div>
     </a>
   )
 }
 
 export function CourseList({ courses }: { courses: YogaCourse[] }) {
-  // Extract all unique types, ordered by popularity (most courses first)
   const allTypes = useMemo(() => {
     const counts = new Map<string, number>()
     for (const course of courses) {
@@ -249,31 +245,23 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
   function toggleType(type: string) {
     setSelectedTypes((prev) => {
       const next = new Set(prev)
-      if (next.has(type)) {
-        next.delete(type)
-      } else {
-        next.add(type)
-      }
+      if (next.has(type)) next.delete(type)
+      else next.add(type)
       return next
     })
   }
 
   function toggleAll() {
-    if (selectedTypes.size === allTypes.length) {
-      setSelectedTypes(new Set())
-    } else {
-      setSelectedTypes(new Set(allTypes))
-    }
+    if (selectedTypes.size === allTypes.length) setSelectedTypes(new Set())
+    else setSelectedTypes(new Set(allTypes))
   }
 
-  // Filter courses by selected types (a course matches if any of its types is selected)
   const filtered = useMemo(
     () => courses.filter((c) => getTypes(c.type).some((t) => selectedTypes.has(t))),
     [courses, selectedTypes]
   )
 
   const { monthKeys, coursesByMonth, undatedCourses } = useMemo(() => {
-    // Only show previous month and onwards
     const now = new Date()
     const cutoff = new Date(now.getFullYear(), now.getMonth() - 1, 1)
     const cutoffKey = `${cutoff.getFullYear()}-${String(cutoff.getMonth() + 1).padStart(2, "0")}`
@@ -299,11 +287,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     }
 
     const keys = [...byMonth.keys()].sort()
-    return {
-      monthKeys: keys,
-      coursesByMonth: byMonth,
-      undatedCourses: sortByDate(undated),
-    }
+    return { monthKeys: keys, coursesByMonth: byMonth, undatedCourses: sortByDate(undated) }
   }, [filtered])
 
   const allTabs = [...monthKeys, ...(undatedCourses.length > 0 ? ["undated"] : [])]
@@ -319,32 +303,39 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
   return (
     <div>
-      {/* Type filter pills */}
-      <div className="mb-5 flex flex-wrap items-center gap-2">
-        <button
-          onClick={toggleAll}
-          className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
-            selectedTypes.size === allTypes.length
-              ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-              : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-500"
-          }`}
-        >
-          All
-        </button>
-        {allTypes.map((type) => {
-          const style = getStyle(type)
-          return (
-            <button
-              key={type}
-              onClick={() => toggleType(type)}
-              className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${style.pill} ${
-                selectedTypes.has(type) ? "opacity-100 shadow-sm" : "opacity-30"
-              }`}
-            >
-              {style.emoji} {type}
-            </button>
-          )
-        })}
+      {/* Type filter — checkbox style */}
+      <div className="mb-5 rounded-lg border border-zinc-200 bg-white p-3 dark:border-zinc-800 dark:bg-zinc-900 sm:p-4">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <label className="flex cursor-pointer items-center gap-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            <input
+              type="checkbox"
+              checked={selectedTypes.size === allTypes.length}
+              onChange={toggleAll}
+              className="h-4 w-4 rounded accent-zinc-900 dark:accent-zinc-100"
+            />
+            All styles
+          </label>
+          <span className="hidden text-zinc-300 dark:text-zinc-700 sm:inline">|</span>
+          {allTypes.map((type) => {
+            const style = getStyle(type)
+            return (
+              <label
+                key={type}
+                className={`flex cursor-pointer items-center gap-2 rounded-full px-2.5 py-1 text-sm transition-opacity ${style.pill} ${
+                  selectedTypes.has(type) ? "opacity-100" : "opacity-40"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={selectedTypes.has(type)}
+                  onChange={() => toggleType(type)}
+                  className={`h-3.5 w-3.5 rounded ${style.check}`}
+                />
+                {style.emoji} {type}
+              </label>
+            )
+          })}
+        </div>
       </div>
 
       {/* Month tabs */}
@@ -353,14 +344,14 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
           <button
             key={key}
             onClick={() => setActiveTab(key)}
-            className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+            className={`shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 sm:py-2 ${
               activeTab === key
                 ? "bg-emerald-600 text-white shadow-md dark:bg-emerald-500"
                 : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400 dark:hover:bg-emerald-900"
             }`}
           >
             {formatMonthLabel(key)}
-            <span className="ml-1.5 text-xs opacity-70">
+            <span className="ml-1 text-xs opacity-70">
               ({coursesByMonth.get(key)?.length ?? 0})
             </span>
           </button>
@@ -368,14 +359,14 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
         {undatedCourses.length > 0 && (
           <button
             onClick={() => setActiveTab("undated")}
-            className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+            className={`shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 sm:py-2 ${
               activeTab === "undated"
                 ? "bg-zinc-700 text-white shadow-md dark:bg-zinc-300 dark:text-zinc-900"
                 : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
             }`}
           >
             Dates TBD
-            <span className="ml-1.5 text-xs opacity-60">
+            <span className="ml-1 text-xs opacity-60">
               ({undatedCourses.length})
             </span>
           </button>
