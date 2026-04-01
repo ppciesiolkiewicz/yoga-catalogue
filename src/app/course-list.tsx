@@ -255,7 +255,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       </div>
 
       {/* Month tabs */}
-      <div className="flex gap-1 overflow-x-auto pb-3">
+      <div className="flex gap-1 overflow-x-auto pb-3 scrollbar-none" style={{ scrollbarWidth: "none" }}>
         {monthKeys.map((key) => (
           <button
             key={key}
