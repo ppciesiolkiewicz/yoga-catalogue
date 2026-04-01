@@ -4,12 +4,12 @@ import { CourseList } from "./course-list"
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
-      <header className="border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
-        <div className="mx-auto max-w-5xl px-4 py-6">
-          <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+      <header className="bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-700 dark:from-emerald-900 dark:via-teal-900 dark:to-cyan-900">
+        <div className="mx-auto max-w-5xl px-4 py-8">
+          <h1 className="text-3xl font-bold tracking-tight text-white">
             Yoga Courses in Rishikesh
           </h1>
-          <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+          <p className="mt-2 text-sm text-emerald-100/80">
             {courses.length} courses from {new Set(courses.map((c) => c.schoolName)).size} schools
           </p>
         </div>

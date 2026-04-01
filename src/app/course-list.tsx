@@ -37,6 +37,11 @@ function formatAccommodation(val: boolean | string) {
   return String(val).replace(/^string - /i, "")
 }
 
+// Yoga style categories:
+// Yang (warm/active): Ashtanga, Vinyasa, Hatha — often combined in multi-style TTC
+// Yin (cool/passive): Yin yoga
+// Specialty: Kundalini, Aerial
+// Experience: Retreat, Meditation, Sound Healing
 function getTypes(type: string): string[] {
   const t = type.toLowerCase()
   const types: string[] = []
@@ -56,6 +61,86 @@ function getTypes(type: string): string[] {
   return types
 }
 
+// Style config: colors reflect the energy of each style
+// Yang styles = warm tones (orange, amber, red)
+// Yin = cool purple
+// Specialty = distinctive colors
+// Retreats = earthy teal
+const STYLE_CONFIG: Record<string, { pill: string; border: string; card: string; emoji: string }> = {
+  Ashtanga: {
+    pill: "bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300",
+    border: "border-l-orange-500",
+    card: "bg-gradient-to-r from-orange-50 to-white dark:from-orange-950/20 dark:to-zinc-900",
+    emoji: "🔥",
+  },
+  Vinyasa: {
+    pill: "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300",
+    border: "border-l-amber-500",
+    card: "bg-gradient-to-r from-amber-50 to-white dark:from-amber-950/20 dark:to-zinc-900",
+    emoji: "🌊",
+  },
+  Hatha: {
+    pill: "bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300",
+    border: "border-l-red-400",
+    card: "bg-gradient-to-r from-red-50 to-white dark:from-red-950/20 dark:to-zinc-900",
+    emoji: "☀️",
+  },
+  Yin: {
+    pill: "bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300",
+    border: "border-l-purple-500",
+    card: "bg-gradient-to-r from-purple-50 to-white dark:from-purple-950/20 dark:to-zinc-900",
+    emoji: "🌙",
+  },
+  Kundalini: {
+    pill: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300",
+    border: "border-l-yellow-500",
+    card: "bg-gradient-to-r from-yellow-50 to-white dark:from-yellow-950/20 dark:to-zinc-900",
+    emoji: "⚡",
+  },
+  Aerial: {
+    pill: "bg-pink-100 text-pink-800 dark:bg-pink-900/50 dark:text-pink-300",
+    border: "border-l-pink-500",
+    card: "bg-gradient-to-r from-pink-50 to-white dark:from-pink-950/20 dark:to-zinc-900",
+    emoji: "🦋",
+  },
+  Retreat: {
+    pill: "bg-teal-100 text-teal-800 dark:bg-teal-900/50 dark:text-teal-300",
+    border: "border-l-teal-500",
+    card: "bg-gradient-to-r from-teal-50 to-white dark:from-teal-950/20 dark:to-zinc-900",
+    emoji: "🏔️",
+  },
+  Meditation: {
+    pill: "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-300",
+    border: "border-l-indigo-500",
+    card: "bg-gradient-to-r from-indigo-50 to-white dark:from-indigo-950/20 dark:to-zinc-900",
+    emoji: "🧘",
+  },
+  "Sound Healing": {
+    pill: "bg-rose-100 text-rose-800 dark:bg-rose-900/50 dark:text-rose-300",
+    border: "border-l-rose-500",
+    card: "bg-gradient-to-r from-rose-50 to-white dark:from-rose-950/20 dark:to-zinc-900",
+    emoji: "🔔",
+  },
+  "Multi-Style TTC": {
+    pill: "bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300",
+    border: "border-l-sky-500",
+    card: "bg-gradient-to-r from-sky-50 to-white dark:from-sky-950/20 dark:to-zinc-900",
+    emoji: "🕉️",
+  },
+  Other: {
+    pill: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
+    border: "border-l-zinc-400",
+    card: "bg-white dark:bg-zinc-900",
+    emoji: "📿",
+  },
+}
+
+const DEFAULT_STYLE = STYLE_CONFIG.Other
+
+function getStyle(type: string) {
+  return STYLE_CONFIG[type] ?? DEFAULT_STYLE
+}
+
 function sortByDate(courses: YogaCourse[]) {
   return [...courses].sort((a, b) => {
     const dateA = a.upcomingDates[0] ?? "9999"
@@ -65,23 +150,29 @@ function sortByDate(courses: YogaCourse[]) {
 }
 
 function CourseCard({ course }: { course: YogaCourse }) {
+  const primaryType = getTypes(course.type)[0]
+  const style = getStyle(primaryType)
+
   return (
     <a
       href={course.url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`block rounded-lg border border-zinc-200 border-l-4 ${TYPE_BORDER[getTypes(course.type)[0]] ?? "border-l-zinc-300"} bg-white p-5 transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900`}
+      className={`block rounded-lg border border-zinc-200 border-l-4 ${style.border} ${style.card} p-5 transition-all hover:shadow-lg hover:-translate-y-0.5 dark:border-zinc-800`}
     >
       <div className="flex flex-wrap items-start justify-between gap-2">
-        <div>
-          <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
-            {course.courseName}
-          </h3>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            {course.schoolName}
-          </p>
+        <div className="flex items-center gap-2">
+          <span className="text-lg" role="img">{style.emoji}</span>
+          <div>
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
+              {course.courseName}
+            </h3>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              {course.schoolName}
+            </p>
+          </div>
         </div>
-        <span className="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+        <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
           {formatPrice(course.price)}
         </span>
       </div>
@@ -91,14 +182,23 @@ function CourseCard({ course }: { course: YogaCourse }) {
       </p>
 
       <div className="mt-4 flex flex-wrap gap-2">
+        {getTypes(course.type).map((t) => (
+          <span
+            key={t}
+            className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${getStyle(t).pill}`}
+          >
+            {t}
+          </span>
+        ))}
         {course.certificationLevel && (
-          <Tag>{course.certificationLevel}</Tag>
+          <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+            {course.certificationLevel}
+          </span>
         )}
         {course.durationDays > 0 && (
-          <Tag>{course.durationDays} days</Tag>
-        )}
-        {course.type && (
-          <TypeTag type={course.type} />
+          <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+            {course.durationDays} days
+          </span>
         )}
       </div>
 
@@ -117,62 +217,14 @@ function CourseCard({ course }: { course: YogaCourse }) {
         )}
         {course.upcomingDates.length > 0 && (
           <div className="sm:col-span-2">
-            <span className="font-medium">Dates:</span>{" "}
-            {course.upcomingDates.map(formatDate).join(", ")}
+            <span className="font-medium">Starts:</span>{" "}
+            <span className="font-semibold text-zinc-700 dark:text-zinc-300">
+              {course.upcomingDates.map(formatDate).join(", ")}
+            </span>
           </div>
         )}
       </div>
     </a>
-  )
-}
-
-const TYPE_COLORS: Record<string, string> = {
-  Yin: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300",
-  Hatha: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
-  Ashtanga: "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300",
-  Vinyasa: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300",
-  Kundalini: "bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300",
-  Aerial: "bg-pink-100 text-pink-700 dark:bg-pink-900 dark:text-pink-300",
-  Retreat: "bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-300",
-  Meditation: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300",
-  "Sound Healing": "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300",
-  "Multi-Style TTC": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-300",
-}
-
-const TYPE_BORDER: Record<string, string> = {
-  Yin: "border-l-purple-400",
-  Hatha: "border-l-green-400",
-  Ashtanga: "border-l-orange-400",
-  Vinyasa: "border-l-blue-400",
-  Kundalini: "border-l-amber-400",
-  Aerial: "border-l-pink-400",
-  Retreat: "border-l-teal-400",
-  Meditation: "border-l-indigo-400",
-  "Sound Healing": "border-l-rose-400",
-  "Multi-Style TTC": "border-l-cyan-400",
-}
-
-function Tag({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="rounded bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
-      {children}
-    </span>
-  )
-}
-
-function TypeTag({ type }: { type: string }) {
-  const types = getTypes(type)
-  return (
-    <>
-      {types.map((t) => (
-        <span
-          key={t}
-          className={`rounded px-2 py-0.5 text-xs font-medium ${TYPE_COLORS[t] ?? "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"}`}
-        >
-          {t}
-        </span>
-      ))}
-    </>
   )
 }
 
@@ -242,7 +294,6 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       }
     }
 
-    // Sort courses within each month by type then date
     for (const [, list] of byMonth) {
       list.splice(0, list.length, ...sortByDate(list))
     }
@@ -268,45 +319,43 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
   return (
     <div>
-      {/* Type filter checkboxes */}
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        <label className="flex cursor-pointer items-center gap-1.5 text-sm">
-          <input
-            type="checkbox"
-            checked={selectedTypes.size === allTypes.length}
-            onChange={toggleAll}
-            className="rounded"
-          />
-          <span className="font-medium text-zinc-700 dark:text-zinc-300">All</span>
-        </label>
-        <span className="text-zinc-300 dark:text-zinc-700">|</span>
-        {allTypes.map((type) => (
-          <label
-            key={type}
-            className={`flex cursor-pointer items-center gap-1.5 rounded-full px-3 py-1 text-sm transition-opacity ${
-              TYPE_COLORS[type] ?? "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
-            } ${selectedTypes.has(type) ? "opacity-100" : "opacity-40"}`}
-          >
-            <input
-              type="checkbox"
-              checked={selectedTypes.has(type)}
-              onChange={() => toggleType(type)}
-              className="sr-only"
-            />
-            {type}
-          </label>
-        ))}
+      {/* Type filter pills */}
+      <div className="mb-5 flex flex-wrap items-center gap-2">
+        <button
+          onClick={toggleAll}
+          className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
+            selectedTypes.size === allTypes.length
+              ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+              : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-500"
+          }`}
+        >
+          All
+        </button>
+        {allTypes.map((type) => {
+          const style = getStyle(type)
+          return (
+            <button
+              key={type}
+              onClick={() => toggleType(type)}
+              className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${style.pill} ${
+                selectedTypes.has(type) ? "opacity-100 shadow-sm" : "opacity-30"
+              }`}
+            >
+              {style.emoji} {type}
+            </button>
+          )
+        })}
       </div>
 
       {/* Month tabs */}
-      <div className="flex gap-1 overflow-x-auto pb-3 scrollbar-none" style={{ scrollbarWidth: "none" }}>
+      <div className="flex gap-1.5 overflow-x-auto pb-3" style={{ scrollbarWidth: "none" }}>
         {monthKeys.map((key) => (
           <button
             key={key}
             onClick={() => setActiveTab(key)}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               activeTab === key
-                ? "bg-emerald-600 text-white dark:bg-emerald-500 dark:text-white"
+                ? "bg-emerald-600 text-white shadow-md dark:bg-emerald-500"
                 : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400 dark:hover:bg-emerald-900"
             }`}
           >
@@ -321,8 +370,8 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
             onClick={() => setActiveTab("undated")}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               activeTab === "undated"
-                ? "bg-zinc-700 text-white dark:bg-zinc-300 dark:text-zinc-900"
-                : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
+                ? "bg-zinc-700 text-white shadow-md dark:bg-zinc-300 dark:text-zinc-900"
+                : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
             }`}
           >
             Dates TBD
@@ -336,7 +385,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       {/* Course cards */}
       <div className="mt-4 flex flex-col gap-3">
         {displayedCourses.length === 0 ? (
-          <p className="py-8 text-center text-sm text-zinc-400">
+          <p className="py-12 text-center text-sm text-zinc-400">
             No courses match your filters.
           </p>
         ) : (
