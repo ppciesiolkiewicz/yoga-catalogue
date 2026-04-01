@@ -39,17 +39,16 @@ function formatAccommodation(val: boolean | string) {
 
 function normalizeType(type: string): string {
   const t = type.toLowerCase()
-  if (t.includes("yin") && t.includes("yang")) return "Yin & Yang Yoga"
-  if (t.includes("yin")) return "Yin Yoga"
+  if (t.includes("aerial")) return "Aerial"
+  if (t.includes("kundalini")) return "Kundalini"
+  if (t.includes("yin")) return "Yin"
   if (t.includes("ashtanga") && t.includes("vinyasa")) return "Ashtanga Vinyasa"
-  if (t.includes("ashtanga")) return "Ashtanga Yoga"
-  if (t.includes("vinyasa")) return "Vinyasa Yoga"
-  if (t.includes("hatha")) return "Hatha Yoga"
-  if (t.includes("kundalini")) return "Kundalini Yoga"
-  if (t.includes("aerial")) return "Aerial Yoga"
-  if (t.includes("retreat")) return "Yoga Retreat"
+  if (t.includes("ashtanga")) return "Ashtanga"
+  if (t.includes("hatha")) return "Hatha"
+  if (t.includes("retreat")) return "Retreat"
   if (t.includes("sound healing")) return "Sound Healing"
   if (t.includes("meditation")) return "Meditation"
+  if (t.includes("200") || t.includes("300") || t.includes("500")) return "Multi-Style TTC"
   return "Other"
 }
 

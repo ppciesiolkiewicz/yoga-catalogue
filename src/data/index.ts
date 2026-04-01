@@ -1027,5 +1027,3015 @@ export const courses: YogaCourse[] = [
     "rating": null,
     "reviewCount": null,
     "updatedAt": "2026-04-01T10:47:25.627Z"
+  },
+  {
+    "schoolName": "Yin Yoga Foundation",
+    "courseName": "100 Hour Yin Yoga Teacher Training in Rishikesh",
+    "url": "https://www.yinyogafoundation.com/yin-yoga-certification.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "100hr",
+    "durationDays": 12,
+    "price": {
+      "amount": 600,
+      "currency": "USD"
+    },
+    "description": "A Yoga Alliance (YACEP) accredited 100-hour Yin Yoga Teacher Training held in Rishikesh, India, combining theory and practical experience with insights from Traditional Chinese Medicine, mindfulness, and modern anatomy. The intensive 12-day program covers Yin Yoga philosophy, functional anatomy, fascia and connective tissue, and meridian theory. It is suitable for yoga practitioners, certified instructors seeking CE credits, bodyworkers, and wellness professionals.",
+    "upcomingDates": [
+      "2025-10-02",
+      "2025-11-02",
+      "2025-12-02",
+      "2026-01-02",
+      "2026-02-02",
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02"
+    ],
+    "accommodation": "Twin share accommodation included (single room available for $700)",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:00:22.278Z"
+  },
+  {
+    "schoolName": "Himalayan Yoga Association",
+    "courseName": "200 Hour Vinyasa Flow Yoga Teacher Training in Rishikesh",
+    "url": "https://www.himalayanyogaashram.com/200-hour-vinyasa-flow-yoga-teacher-training-in-rishikesh/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 25-day/24-night foundational 200-hour yoga teacher training course in Rishikesh, India, based on the teachings of Ashtanga Yoga, Hatha Yoga, and Vinyasa Flow. The program covers asanas, meditation, pranayama, yoga philosophy, anatomy and physiology, alignment and adjustment, teaching methodology, and Ayurveda fundamentals. Suitable for beginners and intermediate practitioners seeking personal development or a professional yoga teaching certification recognized by Yoga Alliance USA.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:00:29.756Z"
+  },
+  {
+    "schoolName": "Himalayan Yoga Association",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.himalayanyogaashram.com/300-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced 28-day Yoga Alliance USA registered 300-hour yoga teacher training in Rishikesh, India, covering advanced Ashtanga, Hatha, and Vinyasa Flow yoga. The program includes advanced asanas, pranayama, yoga philosophy, anatomy & physiology, yoga therapy, and meditation. It is designed for those who have already completed a 200-hour yoga teacher training and wish to advance toward RYT-500 certification.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:00:37.687Z"
+  },
+  {
+    "schoolName": "Himalayan Yoga Association",
+    "courseName": "500 Hours Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.himalayanyogaashram.com/500-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 58,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 58-day, 57-night master-level 500-hour Yoga Teacher Training course in Rishikesh, India, combining a 200-hour foundational and 300-hour advanced yoga teacher training. Registered with Yoga Alliance (RYT500), the residential program covers asanas, anatomy, philosophy, mantra chanting, and meditation. Upon completion, graduates are certified to teach yoga anywhere in the world.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:00:44.781Z"
+  },
+  {
+    "schoolName": "Arogya Yoga School",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.arogyayogaschool.com/200-hour-yoga-teacher-training-course-in-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 599,
+      "currency": "USD"
+    },
+    "description": "A Yoga Alliance USA certified 200-hour yoga teacher training program in Rishikesh, India, integrating Hatha, Ashtanga Vinyasa yoga, Yoga Therapy, Sound Healing, and Ayurveda. The comprehensive curriculum covers Asanas, Pranayama, Meditation, Mantra Chanting, Yoga Philosophy, Anatomy and Physiology, and Teaching Methodology. Graduates earn the RYT200 certification upon completion of this 25-day transformative program.",
+    "upcomingDates": [
+      "2026-01-02",
+      "2026-02-02",
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Options include Triple Sharing ($599), Double Sharing ($899), or Private Room ($1050)",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:00:53.606Z"
+  },
+  {
+    "schoolName": "Arogya Yoga School",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.arogyayogaschool.com/300-hour-yoga-teacher-training-course-in-india.php",
+    "type": "300-Hour Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 28,
+    "price": {
+      "amount": 899,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour multi-style (Hatha/Ashtanga/Vinyasa) Yoga Teacher Training in Rishikesh, India, certified with Yoga Alliance USA. Designed for certified 200-hour teachers, the course covers yoga philosophy, asana alignment, pranayama, meditation, yoga therapy, anatomy, Ayurveda, and Marma therapy. Upon completion, graduates can register as RYT500 and are qualified to teach beginner, intermediate, and advanced students worldwide.",
+    "upcomingDates": [
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02",
+      "2027-01-02",
+      "2027-02-02",
+      "2027-03-02",
+      "2027-04-02",
+      "2027-05-02",
+      "2027-06-02"
+    ],
+    "accommodation": "Shared or private room options available (Triple sharing $899, Double sharing $1050, Single occupancy $1250)",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:01:02.629Z"
+  },
+  {
+    "schoolName": "Arogya Yoga School",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.arogyayogaschool.com/500-hour-yoga-teacher-training-course-in-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 2100,
+      "currency": "USD"
+    },
+    "description": "A two-month comprehensive 500 Hour Yoga Teacher Training in Rishikesh, India, certified by Yoga Alliance USA, combining a 200-hour foundational course and a 300-hour advanced program. The curriculum covers Hatha Yoga, Ashtanga Yoga, Yoga Therapy, Pranayama, Meditation, Yoga Nidra, Ayurveda, Anatomy, Philosophy, and Mantra. Open to all levels from beginners to advanced practitioners, the program includes a free Sound Healing Level 1 Certification.",
+    "upcomingDates": [],
+    "accommodation": "Private room included (additional cost of $300 USD)",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:01:10.763Z"
+  },
+  {
+    "schoolName": "Arogya Yoga School",
+    "courseName": "200-Hour Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://www.arogyayogaschool.com/kundalini-yoga-teacher-training-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 1250,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Kundalini Yoga Teacher Training certified by Yoga Alliance USA, held in Rishikesh, India amidst the Himalayas. The course integrates Kundalini practices, meditation, kriya, Hatha Yoga, pranayama, bandhas, mudras, chakra work, and yogic philosophy to awaken the inner self. It is designed both for aspiring teachers and those seeking personal spiritual growth and transformation.",
+    "upcomingDates": [
+      "2025-11-02",
+      "2025-12-02",
+      "2026-01-02",
+      "2026-02-02",
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Shared room included (single room available at additional cost)",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:01:20.237Z"
+  },
+  {
+    "schoolName": "Arogya Yoga School",
+    "courseName": "300 Hour Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://www.arogyayogaschool.com/300-hour-kundalini-yoga-teacher-training-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 1350,
+      "currency": "USD"
+    },
+    "description": "A 300-hour Kundalini Yoga Teacher Training course in Rishikesh, India, certified with Yoga Alliance USA. The program combines Hatha asana, Kundalini kriyas, pranayama, meditation, mantra chanting, anatomy, and philosophy to awaken dormant Kundalini energy. Students gain a complete understanding of Kundalini and Tantra practices to become certified instructors.",
+    "upcomingDates": [],
+    "accommodation": "Shared room and single room options available",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:01:27.941Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Ashram",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.vinyasayogaashram.com/200-hour-yoga-teacher-training-india",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 899,
+      "currency": "USD"
+    },
+    "description": "A comprehensive, multi-style, Yoga Alliance registered 200-hour yoga teacher training course in Rishikesh, India, covering Ashtanga, Vinyasa, and Hatha yoga styles. This 24-day residential program is designed for beginners to intermediate practitioners seeking to deepen their practice or become certified yoga teachers. Set in the Himalayan landscape alongside the Ganges, the course covers asana, pranayama, meditation, yoga philosophy, anatomy, and teaching methodology.",
+    "upcomingDates": [
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01",
+      "2026-12-01",
+      "2027-01-01",
+      "2027-02-01",
+      "2027-03-01",
+      "2027-04-01"
+    ],
+    "accommodation": "Private or shared room included (23 nights/24 days)",
+    "meals": "Daily nutritious vegetarian, gluten-free, vegan meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:01:38.634Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Ashram",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.vinyasayogaashram.com/300-hour-yoga-teacher-training-india",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 29,
+    "price": {
+      "amount": 1199,
+      "currency": "USD"
+    },
+    "description": "An advanced level, Yoga Alliance certified 300 Hour Yoga Teacher Training program in Rishikesh designed for students who have completed 200 Hour YTT and wish to deepen their practice. The course covers advanced Asana, Pranayama, Meditation, Yoga Anatomy & Philosophy, and modern scientific perspectives including neuroscience and physiology. Students study Ashtanga primary and intermediate series, Vinyasa Flow, and Hatha Yoga across 29 days.",
+    "upcomingDates": [
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01",
+      "2026-12-01",
+      "2027-01-01",
+      "2027-02-01",
+      "2027-03-01",
+      "2027-04-01"
+    ],
+    "accommodation": "Private room ($1399 USD) or shared room ($1199 USD) options available; also available without accommodation ($999 USD)",
+    "meals": "Food is included in all pricing options",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:01:49.899Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Ashram",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.vinyasayogaashram.com/500-hour-yoga-teacher-training-india",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 58,
+    "price": {
+      "amount": 1549,
+      "currency": "USD"
+    },
+    "description": "A master level yoga teaching program combining 200-hour and 300-hour TTCs, covering Ashtanga, Vinyasa, and Hatha yoga styles. The course covers yoga philosophy, anatomy, pranayama, meditation, teaching methodology, and shatkarma cleansing practices. Upon completion, graduates earn a 500 Hour RYT certification recognized by Yoga Alliance.",
+    "upcomingDates": [
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01",
+      "2026-12-01",
+      "2027-01-01",
+      "2027-02-01",
+      "2027-03-01",
+      "2027-04-01"
+    ],
+    "accommodation": "Private or shared room included (8 weeks)",
+    "meals": "Daily nutritious vegetarian, gluten-free, vegan meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:01.262Z"
+  },
+  {
+    "schoolName": "World Peace Yoga School",
+    "courseName": "200 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://worldpeaceyogaschool.com/200-hours-yoga-teacher-training-in-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Yoga Alliance registered teacher training course based on Hatha and Ashtanga Vinyasa yoga, designed for beginners and intermediate practitioners in Rishikesh, India. Led by Yogi Vishnu with 35 years of experience, the course covers 100+ yoga postures, pranayama, meditation, yoga philosophy, anatomy, and teaching methodology. The residential program runs monthly (1st to 25th) and includes books, notes, excursions, and taxi pick-up from Dehradun Airport.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:08.741Z"
+  },
+  {
+    "schoolName": "World Peace Yoga School",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://worldpeaceyogaschool.com/300-hours-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 30,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 300-hour advanced yoga teacher training course in Rishikesh, India, covering Ashtanga Vinyasa, Hatha Yoga, Yoga Philosophy, Anatomy, Mudra, and Mantra chanting. Led by Guru Vishnu and a team of experienced masters and PhD-holder teachers, the course is Yoga Alliance registered and globally certified. Includes a complimentary 50-hour Yin Yoga Teacher Training and free taxi pickup from Dehradun Airport.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:16.797Z"
+  },
+  {
+    "schoolName": "World Peace Yoga School",
+    "courseName": "500 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://worldpeaceyogaschool.com/500-hours-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A combined 200 Hour + 300 Hour advanced yoga teacher training course held at World Peace Yoga Centre in Laxman Jhula, Rishikesh, India. The two-month intensive program covers traditional classical yoga practices, Ashtanga, Vinyasa, Hatha, yoga philosophy, anatomy, pranayama, meditation, and teaching methodology. Upon completion, graduates receive Yoga Alliance USA certification and are eligible for RYT-500 registration.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:24.265Z"
+  },
+  {
+    "schoolName": "World Peace Yoga School",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training In Rishikesh",
+    "url": "https://worldpeaceyogaschool.com/kundalini-yoga-teacher-training-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Kundalini Yoga Teacher Training Course in Rishikesh, India, based on ancient philosophies of tantras and kriya yoga. The course covers Kundalini chakra activation, yoga philosophy, pranayama, mantra jaap, and meditation to deepen consciousness and awaken dormant spiritual energy. The curriculum is Yoga Alliance approved and includes a free preparatory online course and one year of free online live classes.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:31.637Z"
+  },
+  {
+    "schoolName": "World Peace Yoga School",
+    "courseName": "300 Hour Kundalini Yoga Teacher Training In Rishikesh",
+    "url": "https://worldpeaceyogaschool.com/300-hour-kundalini-yoga-teacher-training-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 30,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 300-Hour Kundalini Yoga Teacher Training Course held at World Peace Yoga School in Laxman Jhula, Rishikesh, India. The program covers Kundalini Sadhana, chakra awakening, yoga philosophy, pranayama, mantra jaap, and meditation, guided by skilled yogis led by Guru Vishnu. The curriculum is Yoga Alliance approved and includes a complimentary 50-Hour Yin Yoga Teacher Training.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:38.775Z"
+  },
+  {
+    "schoolName": "World Peace Yoga School",
+    "courseName": "500 Hour Kundalini Yoga Teacher Training In Rishikesh",
+    "url": "https://worldpeaceyogaschool.com/500-hours-kundalini-yttc-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 500-Hour Kundalini Yoga Teacher Training Course in Rishikesh, India, designed to help practitioners awaken the Kundalini energy and master the seven chakras. The program covers Kundalini tantra, yoga philosophy, pranayama, Mantra Jaap, and meditation under the guidance of skilled yogis led by Guru Vishnu. This is an advanced-level course building upon 300-hour Kundalini training, and is Yoga Alliance approved.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:02:46.320Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "200 Hour Yoga TTC - 15 Days",
+    "url": "https://vinyasayogaacademy.com/200-hours-yoga-teacher-training-in-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 15,
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "description": "A 15-day 200-hour Yoga Teacher Training in Rishikesh, India, covering Ashtanga, Hatha, Vinyasa, Yin, Kundalini, and Acro yoga styles along with pranayama, meditation, yoga philosophy, Ayurveda, and sound healing. Students receive a free online self-paced Complete Yoga TTC upon enrollment. The course is Yoga Alliance certified and includes various excursions and cultural activities.",
+    "upcomingDates": [],
+    "accommodation": "Optional - private, double-shared, triple-shared, and squad rooms available at additional cost",
+    "meals": "3 daily meals (breakfast, lunch, dinner) available at additional cost; organic vegetarian yogic food",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:00.267Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "200 Hour Yoga TTC - 20 Days",
+    "url": "https://vinyasayogaacademy.com/200-hours-yoga-teacher-training-in-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 20,
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "description": "A 20-day 200-hour Yoga Teacher Training in Rishikesh, India, with a focus on detox alongside comprehensive yoga education covering Ashtanga, Hatha, Vinyasa, Yin, Kundalini, and Acro yoga. The Yoga Alliance certified course includes pranayama, meditation, yoga philosophy, Ayurveda, and sound healing. Accommodation and meals are available at additional cost.",
+    "upcomingDates": [],
+    "accommodation": "Optional - private, double-shared, triple-shared, and squad rooms available at additional cost",
+    "meals": "3 daily meals (breakfast, lunch, dinner) available at additional cost; organic vegetarian yogic food",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:00.267Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "200 Hour Yoga TTC - 25 Days",
+    "url": "https://vinyasayogaacademy.com/200-hours-yoga-teacher-training-in-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "description": "A 25-day 200-hour Yoga Teacher Training in Rishikesh, India, covering Ashtanga, Hatha, Vinyasa, Yin, Kundalini, and Acro yoga along with pranayama, meditation, yoga philosophy, Ayurveda, and sound healing. Students receive a free online self-paced Complete YTTC included in the training. The course is Yoga Alliance certified and includes cultural excursions and Himalayan activities.",
+    "upcomingDates": [],
+    "accommodation": "Optional - private, double-shared, triple-shared, and squad rooms available at additional cost",
+    "meals": "3 daily meals (breakfast, lunch, dinner) available at additional cost; organic vegetarian yogic food",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:00.267Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "300 Hour Yoga Teacher Training Course In Rishikesh India",
+    "url": "https://vinyasayogaacademy.com/300-hours-yoga-teacher-training-in-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 21,
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 300-hour Yoga Alliance-certified teacher training program in Rishikesh, India, covering advanced asanas, pranayama, meditation, yoga philosophy, anatomy, Ashtanga, Vinyasa, Hatha, Yin, and Kundalini yoga styles. The program is designed for those who have completed a 200-hour YTT and wish to deepen their knowledge and teaching skills. It includes accommodation, meals, sound healing, mud bath, excursions, and various other activities.",
+    "upcomingDates": [],
+    "accommodation": "Shared (2-person) room included; private accommodation available at extra cost",
+    "meals": "Meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:08.388Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "500 Hour Yoga Teacher Training Course In Rishikesh India",
+    "url": "https://vinyasayogaacademy.com/500-hours-yoga-teacher-training-in-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 56,
+    "price": {
+      "amount": 1199,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 500-hour Yoga Teacher Training in Rishikesh, India covering Ashtanga, Hatha, Vinyasa, Yin, Kundalini, and Acro yoga styles. The curriculum includes yoga philosophy, anatomy, therapy, Ayurveda, pranayama, meditation, and various experiential activities such as sound healing, mud bath, and Himalayan excursions. Upon completion, graduates qualify for Yoga Alliance RYT 500 certification.",
+    "upcomingDates": [],
+    "accommodation": "Private room included (2 sharing free, private costs extra)",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:15.866Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training Course",
+    "url": "https://vinyasayogaacademy.com/kundalini-meditation-teacher-training.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 29,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 200-hour Kundalini Yoga Teacher Training Course in Rishikesh, India, based on the ancient philosophy of Tantras and Kriya Yoga. The curriculum includes Traditional Hatha and Kriya Yoga practices, Chakra and Nadi Systems, Pranayama, Mudras, Bandhas, Mantra Chanting, and various Meditation practices from Tantric and Kundalini Yoga traditions. The 29-day course is held at the foothills of the Himalayan Mountains and is open to students of all levels from around the world.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": false,
+    "rating": 5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:23.080Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "3 Day / 2 Night Yoga Retreat in Rishikesh",
+    "url": "https://vinyasayogaacademy.com/yoga-retreat-in-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 3,
+    "price": {
+      "amount": 75,
+      "currency": "USD"
+    },
+    "description": "A condensed 3-day yoga retreat at Vinyasa Yoga Academy in Rishikesh, India, covering yoga fundamentals, pranayama, meditation, and spiritual lectures. Guests participate in daily yoga asana sessions, breathwork, and meditation, along with a visit to sacred locations such as Kunjapuri Temple or Vashishtha Cave. Suitable for all levels, from complete beginners to seasoned practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Shared or private room included",
+    "meals": "3 vegetarian organic meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:35.473Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "5 Day / 4 Night Yoga Retreat in Rishikesh",
+    "url": "https://vinyasayogaacademy.com/yoga-retreat-in-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 5,
+    "price": {
+      "amount": 139,
+      "currency": "USD"
+    },
+    "description": "A 5-day yoga retreat at Vinyasa Yoga Academy in Rishikesh, India, featuring daily yoga asana sessions, meditation, breathwork, and excursions to spiritual locations. The retreat is open to all levels and is designed to help practitioners deepen their spiritual practice and restore balance to mind and body. Accommodation and 3 daily meals are included in the course fee.",
+    "upcomingDates": [],
+    "accommodation": "Shared or private room included",
+    "meals": "3 vegetarian organic meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:35.473Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Academy",
+    "courseName": "7 Day / 6 Night Yoga Retreat in Rishikesh",
+    "url": "https://vinyasayogaacademy.com/yoga-retreat-in-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 199,
+      "currency": "USD"
+    },
+    "description": "A 7-day yoga retreat at Vinyasa Yoga Academy in Rishikesh, India, offering daily yoga asana classes, meditation, pranayama, and nature excursions in the Himalayan foothills. The program is suitable for all levels and combines spiritual teachings with practical yoga sessions to promote overall well-being. Accommodation and 3 daily organic vegetarian meals are included in the course fee.",
+    "upcomingDates": [],
+    "accommodation": "Shared or private room included",
+    "meals": "3 vegetarian organic meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:35.473Z"
+  },
+  {
+    "schoolName": "Mind Flow Harmony",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh, India",
+    "url": "https://mindflowharmony.com/200-hour-yoga-teacher-training-in-rishikesh-india/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 899,
+      "currency": "USD"
+    },
+    "description": "A 25-day residential 200 Hour Yoga Teacher Training program in Rishikesh, India, covering Hatha Yoga, Ashtanga Vinyasa, pranayama, meditation, anatomy, philosophy, and teaching methodology. The course is Yoga Alliance USA certified (RYT 200), designed for beginners to intermediate practitioners from around the world. Set in the Himalayan foothills near the holy Ganga River, it combines traditional yogic wisdom with modern teaching methods.",
+    "upcomingDates": [],
+    "accommodation": "Twin Shared Room or Private Room included",
+    "meals": "Healthy meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:44.664Z"
+  },
+  {
+    "schoolName": "Mind Flow Harmony",
+    "courseName": "300 Hour Yoga Teacher Training Course in Rishikesh, India",
+    "url": "https://mindflowharmony.com/300-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 42,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour Yoga Teacher Training program in Rishikesh designed for practitioners who have already completed a 200-hour YTT. The course offers in-depth study of advanced asanas, pranayama, yoga philosophy, teaching methodology, anatomy, and Vedantic traditions. Graduates are prepared to teach internationally, lead retreats, and deepen their personal practice.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:03:52.878Z"
+  },
+  {
+    "schoolName": "Mind Flow Harmony",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training in Rishikesh India",
+    "url": "https://mindflowharmony.com/kundalini-yoga-teacher-training-in-rishikesh-india/",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 899,
+      "currency": "USD"
+    },
+    "description": "A 25-day 200 Hour Kundalini Yoga Teacher Training held in Rishikesh, India, covering Shatkarma, Mudra, Bandha, Pranayama, Kundalini philosophy, meditation, and chakra-focused asana practice. The program is designed for beginners to intermediate practitioners seeking to become certified Kundalini Yoga teachers or deepen their personal practice. Set in the mountains of Rishikesh, the training combines traditional Kundalini techniques with a Yoga Alliance certification.",
+    "upcomingDates": [
+      "2026-03-02"
+    ],
+    "accommodation": "Private room or twin shared room included",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:04:03.072Z"
+  },
+  {
+    "schoolName": "Mind Flow Harmony",
+    "courseName": "5 Days Holistic Meditation, Yoga Nidra & Mindfulness Retreat",
+    "url": "https://mindflowharmony.com/5-days-yoga-and-meditation-retreat-in-rishikesh/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 5,
+    "price": {
+      "amount": 249,
+      "currency": "USD"
+    },
+    "description": "A 5-day holistic retreat in Rishikesh, India, combining meditation, Yoga Nidra, pranayama, asana, and mindfulness practices surrounded by the Himalayan mountains, lush forests, and waterfalls. Participants explore breathing techniques, guided visualizations, history and philosophy of meditation, and sattvic diet to cultivate inner peace and balance. The retreat also includes opportunities to explore local villages, temples, hiking, and rafting.",
+    "upcomingDates": [
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Private room included",
+    "meals": true,
+    "rating": null,
+    "reviewCount": 75,
+    "updatedAt": "2026-04-01T11:04:12.659Z"
+  },
+  {
+    "schoolName": "Mind Flow Harmony",
+    "courseName": "7 Days Holistic Meditation, Yoga Nidra & Mindfulness Retreat",
+    "url": "https://mindflowharmony.com/7-days-yoga-and-meditation-retreat-in-rishikesh/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 349,
+      "currency": "USD"
+    },
+    "description": "A 7-day holistic retreat in Rishikesh, India combining meditation, Yoga Nidra, and mindfulness practices in a serene natural environment surrounded by mountains and the Ganga River. Participants learn ancient yoga techniques including Pranayama, Asana, various meditation methods, and follow a Sattvic diet. The program is designed for those seeking a peaceful escape from hectic city life while cultivating inner awareness, emotional balance, and expanded consciousness.",
+    "upcomingDates": [
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Private room included",
+    "meals": "Healthy organic Sattvic diet included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:04:23.607Z"
+  },
+  {
+    "schoolName": "Mind Flow Harmony",
+    "courseName": "10 Days Holistic Meditation, Yoga Nidra & Mindfulness Retreat",
+    "url": "https://mindflowharmony.com/10-days-yoga-and-meditation-retreat-in-rishikesh/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 10,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 10-day holistic retreat in Rishikesh combining yoga asanas, pranayama, meditation, yoga nidra, and mindfulness practices. The program is designed to help participants reconnect with their inner selves, manage stress, and achieve emotional balance in a serene environment by the Holy River Ganga. Curriculum includes history and philosophy of meditation, sattvic diet, nature excursions, and a tour of the Himalayas.",
+    "upcomingDates": [],
+    "accommodation": "Twin-sharing or private room available based on preference and budget",
+    "meals": "Sattvic diet provided with balanced, nutritious meals",
+    "rating": null,
+    "reviewCount": 75,
+    "updatedAt": "2026-04-01T11:04:32.083Z"
+  },
+  {
+    "schoolName": "Sri Yoga Ashram",
+    "courseName": "200 Hour Yoga Alliance Teacher Training Course In Rishikesh",
+    "url": "https://sriyogaashram.com/200-hour-yoga-teacher-training-rishikesh.html",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 28,
+    "price": {
+      "amount": 699,
+      "currency": "USD"
+    },
+    "description": "Sri Yoga Ashram offers a Yoga Alliance USA-certified 200-hour yoga teacher training in Rishikesh, integrating Kundalini Yoga, Hatha Yoga, Ashtanga Yoga, and Vedic Astrology for a holistic spiritual experience. The program blends ancient yogic wisdom with astrological insights, covering pranayama, meditation, yoga philosophy, anatomy, and teaching methodology. Suitable for beginners and intermediate practitioners, graduates can register with Yoga Alliance as RYT 200.",
+    "upcomingDates": [],
+    "accommodation": "Twin sharing or private room included depending on package",
+    "meals": "3 meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:04:39.676Z"
+  },
+  {
+    "schoolName": "Sri Yoga Ashram",
+    "courseName": "300 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://sriyogaashram.com/300-hour-yoga-teacher-training-in-rishikesh.html",
+    "type": "Hatha Yoga TTC, Ashtanga Vinyasa TTC, Kundalini Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 27,
+    "price": {
+      "amount": 1450,
+      "currency": "USD"
+    },
+    "description": "A 300-hour multi-style Yoga Teacher Training Course at Sri Yoga Ashram in Rishikesh covering Hatha, Ashtanga Vinyasa, Kundalini, Yin Yoga, and Yoga Therapy. The course is designed for intermediate and advanced practitioners seeking to deepen their knowledge of Asanas, Pranayama, Philosophy, Chakras, and Kundalini. Upon completion, participants can register with Yoga Alliance USA as RYT 300, and combined with a prior 200-hour certification, can register as a 500-hour yoga teacher.",
+    "upcomingDates": [
+      "2026-04-02",
+      "2026-10-02"
+    ],
+    "accommodation": "Private or twin shared accommodation with attached bathroom and running hot water included",
+    "meals": "3 vegetarian meals daily (breakfast, lunch, dinner) plus two times tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:04:47.971Z"
+  },
+  {
+    "schoolName": "Sri Yoga Ashram",
+    "courseName": "500 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://sriyogaashram.com/500-hour-yoga-teacher-training-rishikesh.html",
+    "type": "500-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 57,
+    "price": {
+      "amount": 1650,
+      "currency": "USD"
+    },
+    "description": "A comprehensive multi-style 500 Hour Yoga Teacher Training Course at Sri Yoga Ashram in Rishikesh, covering Hatha, Ashtanga, Vinyasa, and Yin yoga styles, along with meditation, pranayama, anatomy, physiology, philosophy, and Shatkarma. The residential program is certified by Yoga Alliance USA, qualifying graduates as RYT-500 teachers. Set at the base of the Himalayas near the banks of the Ganga, the course prepares students to teach yoga at the highest level of accreditation.",
+    "upcomingDates": [
+      "2026-09-02"
+    ],
+    "accommodation": "Private or twin shared accommodation with attached bathroom, running hot water, and power backup included",
+    "meals": "3 satvik vegetarian meals daily plus two times tea, cooked in RO purified water",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:04:56.776Z"
+  },
+  {
+    "schoolName": "Sri Yoga Ashram",
+    "courseName": "Intensive Ashtanga Vinyasa Yoga Teacher Training",
+    "url": "https://sriyogaashram.com/intensive-ashtanga-yoga-teacher-training-india.html",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 699,
+      "currency": "USD"
+    },
+    "description": "Sri Yoga Ashram's Intensive Ashtanga Vinyasa Yoga Teacher Training in Rishikesh is a 200-hour Yoga Alliance USA-certified program covering the Primary Series, Ujjayi Pranayama, asana alignment, philosophy, anatomy, meditation, and teaching methodology. The course includes spiritual and cultural immersion with Ayurveda massage, astrology consultation, and sightseeing. It is designed for dedicated practitioners and aspiring instructors seeking authentic Indian yoga training and globally recognized teaching credentials.",
+    "upcomingDates": [
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Twin sharing or private room included",
+    "meals": "3 meals daily included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:06.709Z"
+  },
+  {
+    "schoolName": "Sri Yoga Ashram",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training Course",
+    "url": "https://sriyogaashram.com/kundalini-yoga-teacher-training-india.html",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 699,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Kundalini Yoga Teacher Training Course in Rishikesh, India, rooted in ancient Tantra and Hatha Yoga traditions. The curriculum covers pranayama, kriyas, bandhas, mudras, meditation, mantra chanting, chakra awakening, and yoga philosophy. Graduates receive a globally recognized Yoga Alliance USA certification, empowering them to teach Kundalini Yoga worldwide.",
+    "upcomingDates": [
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Twin sharing or private room included",
+    "meals": "3 meals daily included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:14.799Z"
+  },
+  {
+    "schoolName": "Sri Yoga Ashram",
+    "courseName": "7 Days Yoga Retreat",
+    "url": "https://sriyogaashram.com/yoga-retreats-rishikesh.html",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A one-week residential yoga retreat in Rishikesh covering various yogic techniques, meditation on chakras, and opportunities to explore the city. The retreat is designed for all levels of practitioners and includes accommodation, yogic food, and sightseeing activities. It aims to provide a rejuvenating getaway from modern stress while deepening one's yoga practice.",
+    "upcomingDates": [],
+    "accommodation": "Private or double sharing room with attached bathroom and hot water",
+    "meals": "3 vegetarian/yogic meals daily plus herbal tea 3 times daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:21.150Z"
+  },
+  {
+    "schoolName": "Vinyasa Yogashala",
+    "courseName": "200 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://vinyasayogashala.com/200-hour-yoga-teacher-training-in-rishikesh.html",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive and intensive 200-hour yoga teacher training course in Rishikesh, India, covering traditional Hatha, Ashtanga, and Vinyasa flow yoga. The course includes extensive anatomy, physiology, yogic philosophy, pranayama, mudras, karma yoga, chakra healing, and meditation. Upon completion, students receive a globally recognized Yoga Alliance USA certificate.",
+    "upcomingDates": [],
+    "accommodation": "Included in course fee",
+    "meals": "Breakfast, lunch, and dinner included; vegan and gluten-free options available on request",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:27.907Z"
+  },
+  {
+    "schoolName": "Vinyasa Yogashala",
+    "courseName": "300 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://vinyasayogashala.com/300-hours-yoga-teacher-training-india.html",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour Yoga Alliance certified teacher training course in Rishikesh, India, designed to build upon the 200-hour foundation. The program deepens knowledge of Hatha yoga, advanced teaching skills, anatomy, philosophy, and meditation. Upon graduation, students are eligible to register as RYT500 with the International Yoga Alliance.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Saatvik vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:34.835Z"
+  },
+  {
+    "schoolName": "Vinyasa Yogashala",
+    "courseName": "500 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://vinyasayogashala.com/500-hour-yoga-teacher-training-in-rishikesh.html",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 59,
+    "price": {
+      "amount": 2049,
+      "currency": "USD"
+    },
+    "description": "A master-level 500-hour yoga teacher training program in Rishikesh, India, fully accredited by Yoga Alliance USA, enabling graduates to register as RYT 500. The course covers all topics from 200-hour and 300-hour YTT programs, combining traditional yogic teachings with modern scientific methods. Upon completion, students gain comprehensive knowledge of asana, pranayama, meditation, philosophy, and yoga therapy.",
+    "upcomingDates": [
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01"
+    ],
+    "accommodation": "Shared or private room options available (4-sharing, 3-sharing, 2-sharing, private)",
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:44.015Z"
+  },
+  {
+    "schoolName": "Vinyasa Yogashala",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://vinyasayogashala.com/200-hour-kundalini-yoga-teacher-training-in-rishikesh.html",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 649,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Kundalini Yoga Teacher Training course held in Rishikesh, covering chakra theory, asanas, meditation, pranayama, and yogic knowledge. The course is designed for both aspiring yoga teachers and dedicated students wishing to deepen their practice. Participants explore the seven main chakras and their awakening through systematic Kundalini practices under qualified guidance.",
+    "upcomingDates": [
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01"
+    ],
+    "accommodation": "Multiple room options available: 4-sharing, 3-sharing, 2-sharing, and private room",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:52.585Z"
+  },
+  {
+    "schoolName": "Vinyasa Yogashala",
+    "courseName": "Aerial Yoga Teacher Training Course in Rishikesh",
+    "url": "https://vinyasayogashala.com/aerial-yoga-teacher-training-course-in-rishikesh-india.html",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An innovative aerial yoga teacher training program in Rishikesh combining traditional yoga with aerial arts and acrobatics using a silk hammock. The course covers techniques, hands-on practice, anatomy, alignment, breathing, and safety for all skill levels. Designed for students looking to advance their yoga practice and gain teaching expertise in aerial yoga.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:05:59.260Z"
+  },
+  {
+    "schoolName": "Vinyasa Yogashala",
+    "courseName": "Yoga Retreat In Rishikesh",
+    "url": "https://vinyasayogashala.com/yoga-retreat-in-rishikesh.html",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 349,
+      "currency": "USD"
+    },
+    "description": "A one-week yoga retreat in Rishikesh, India designed to help participants attain self-understanding through relaxation and rejuvenation. The program includes asana, pranayama, meditation, mantra chanting, and Sattvik vegetarian meals. Complimentary sound healing or Reiki session, accommodation, meals, and airport pickup from Dehradun are included.",
+    "upcomingDates": [
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-12-01",
+      "2027-01-01",
+      "2027-02-01",
+      "2027-03-01",
+      "2027-04-01",
+      "2027-05-01",
+      "2027-06-01",
+      "2027-07-01",
+      "2027-08-01"
+    ],
+    "accommodation": "Shared or private rooms available with attached bathrooms, hot/cold water, Wi-Fi, and CCTV",
+    "meals": "3 vegetarian Sattvik meals daily including breakfast, lunch, and dinner; gluten-free and vegan options available",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:09.430Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Association",
+    "courseName": "200 Hour Multi Style Yoga Teacher Training in Rishikesh",
+    "url": "https://www.rishikeshyogaassociation.com/200-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "The 200-Hour Multi-Style Yoga Teacher Training in Rishikesh covers Hatha, Ashtanga, and Vinyasa yoga styles and is affiliated with Yoga Alliance USA, providing a globally recognized certificate upon completion. The course places full emphasis on asana, kriyas, meditation, pranayama, alignment, and philosophy, making students eligible to teach yoga globally. Taught by highly experienced teachers in Rishikesh, the yoga capital of the world, this course builds both practical and theoretical knowledge of yoga.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:18.201Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Association",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.rishikeshyogaassociation.com/300-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced intensive yoga teacher training course designed for practitioners who already hold a 200-hour yoga certificate. The curriculum covers pranayama, meditation, yoga anatomy, mantra chanting, teaching methodology, yoga nidra, bandhas, shatkarma, Vinyasa Flow, and Ashtanga Primary and Secondary Series. Upon completion, graduates are equipped to teach beginner, intermediate, and advanced students with confidence.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:25.455Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Association",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.rishikeshyogaassociation.com/500-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "The 500-Hour Yoga Teacher Training in Rishikesh is a master-level yoga TTC program combining a 200-hour and 300-hour yoga teacher training course over two months. It covers yoga asana, pranayama, shatkarma, anatomy, yoga philosophy, meditation, chakras & mantras, asana alignment and adjustment techniques. Registered with Yoga Alliance USA (RYS 200, 300), the course is designed to develop professional yogic masters with confidence to teach and open their own yoga schools.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:33.670Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Association",
+    "courseName": "Aerial Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.rishikeshyogaassociation.com/aerial-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 250,
+      "currency": "USD"
+    },
+    "description": "A comprehensive aerial yoga teacher training course in Rishikesh that covers aerial postures, alignment, safety, injury prevention, and hammock techniques. Participants will learn how to teach aerial yoga classes and develop their own unique style. By the end of the course, students will be fully qualified aerial yoga teachers with the skills needed to teach classes successfully.",
+    "upcomingDates": [
+      "2026-03-24",
+      "2026-04-24",
+      "2026-05-24",
+      "2026-06-24",
+      "2026-09-24",
+      "2026-10-24"
+    ],
+    "accommodation": "6 Nights Twin shared accommodation with hot water, attached bath & toilet (Private room available for $50 extra)",
+    "meals": "3 vegetarian meals daily plus teas",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:40.524Z"
+  },
+  {
+    "schoolName": "Samadhi Yoga Ashram",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://samadhiyogaashram.com/200-hours-yoga-teacher-training-in-rishikesh.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour multi-style yoga teacher training program in Rishikesh, India, covering Hatha, Ashtanga, Vinyasa, and Yin yoga. The curriculum includes asanas, pranayama, meditation, anatomy, philosophy, and teaching methodology with personalized guidance from certified teachers. Upon completion, graduates receive a Yoga Alliance USA accredited certification valid worldwide.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:49.460Z"
+  },
+  {
+    "schoolName": "Samadhi Yoga Ashram",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://samadhiyogaashram.com/300-hours-yoga-teacher-training-in-rishikesh.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 300-hour yoga teacher training program held at Samadhi Yoga Ashram in Rishikesh, India, covering Asana, Pranayama, Mudra, Bandha, Meditation, Ashtanga, Hatha, Yin Yoga, Yoga Philosophy, Anatomy, Ayurveda, and more. The program is Yoga Alliance certified and is designed to deepen practice and prepare students for a career in yoga teaching. Held on the banks of the Ganges River in the yoga capital of the world, the course includes accommodation, 3 daily meals, books, and various complementary activities.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "3 meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:06:58.085Z"
+  },
+  {
+    "schoolName": "Samadhi Yoga Ashram",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://samadhiyogaashram.com/500-hours-yoga-teacher-training.php",
+    "type": "500-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 58,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 58-day yoga teacher training program in Rishikesh combining 200-hour and 300-hour courses into one transformative experience. The curriculum covers Hatha Yoga, Ashtanga Yoga, Kundalini Yoga, Raja Yoga, Karma Yoga, Bhakti Yoga, pranayama, meditation, yoga philosophy, anatomy, and Ayurveda healing. Registered with Yoga Alliance USA, this course prepares graduates to teach yoga professionally at an advanced level.",
+    "upcomingDates": [],
+    "accommodation": "true",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:07:06.631Z"
+  },
+  {
+    "schoolName": "Samadhi Yoga Ashram",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://samadhiyogaashram.com/kundalini-yoga-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Kundalini Yoga Teacher Training held at Samadhi Yoga Ashram in Rishikesh, India, covering Kundalini and Tantra practices, Hatha Yoga, Pranayama, Meditation, Bandhas, Mudras, Chakra Sadhana, and Yoga Philosophy. The program is suitable for both beginners and advanced practitioners with at least 6 months of yoga experience, and leads to a Yoga Alliance certification upon completion. Included extras include 3 meals daily, accommodation, books and manual, free Ayurveda consultancy, sound healing, cooking class, Himalayan tour, and more.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "3 meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:07:15.939Z"
+  },
+  {
+    "schoolName": "Samadhi Yoga Ashram",
+    "courseName": "4 Days Yoga & Meditation Retreat",
+    "url": "https://samadhiyogaashram.com/yoga-and-meditation-retreat-in-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "description": "A compact 4-day residential yoga and meditation retreat in Rishikesh combining Hatha and Ashtanga Vinyasa Yoga with Pranayama, Meditation, Kriya, and Mantra Recitation. The program includes daily yoga sessions, sacred fire rituals, nature excursions, Ayurvedic massage, and a Himalayan Sunrise Tour. Suitable for all levels from beginners to advanced practitioners seeking rest, rejuvenation, and spiritual exploration.",
+    "upcomingDates": [],
+    "accommodation": "Shared accommodation included; private room available for additional $50 USD",
+    "meals": "3 vegetarian yogic meals daily plus detox tea and juices",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:07:23.211Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "200 Hours Ashtanga Yoga Teacher Training Course in Rishikesh, India",
+    "url": "https://www.adiyogpeeth.com/200-hours-ashtanga-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An immersive 200-hour Ashtanga Yoga Teacher Training Course in Rishikesh, India, designed for both aspiring teachers and dedicated practitioners. Students learn the traditional Ashtanga Vinyasa system, yogic philosophy, anatomy, meditation, pranayama, and mantra chanting under experienced certified instructors. Upon completion, graduates receive a globally recognized Yoga Alliance USA certification.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Daily healthy vegetarian breakfast, lunch and dinner",
+    "rating": null,
+    "reviewCount": 156,
+    "updatedAt": "2026-04-01T11:07:32.837Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "200 Hours Vinyasa Flow Yoga Teacher Training",
+    "url": "https://www.adiyogpeeth.com/200-hours-vinyasa-flow-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 200-hour Vinyasa Flow Yoga Teacher Training program in Rishikesh, India, certified by Yoga Alliance USA. The course integrates Ashtanga Vinyasa and Hatha Yoga, covering asanas, pranayama, mantra chanting, and more. Set in a peaceful ashram on the banks of the Ganges, it is suitable for beginner and intermediate levels.",
+    "upcomingDates": [
+      "2024-02-02",
+      "2024-03-02",
+      "2024-04-02",
+      "2024-05-02",
+      "2024-06-02",
+      "2024-07-02",
+      "2024-08-02",
+      "2024-09-02",
+      "2024-10-02",
+      "2024-11-02",
+      "2024-12-02"
+    ],
+    "accommodation": true,
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": 156,
+    "updatedAt": "2026-04-01T11:07:41.847Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "200 Hours Kundalini Yoga Teacher Training Course",
+    "url": "https://www.adiyogpeeth.com/200-hours-kundalini-yoga-teacher-training-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Kundalini Yoga Teacher Training program held in Rishikesh, India, covering Kundalini philosophy, chakra science, kriyas, pranayama, meditation, mantra chanting, and energy-awakening techniques. The course is designed for beginners and runs from the 2nd to the 24th of every month with small batch sizes of 10-12 students. Guided by experienced Himalayan yoga teachers at Adi Yogpeeth in Tapovan, Laxman Jhula, the program offers both theoretical and practical sessions for deep personal and spiritual transformation.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:07:50.528Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "300 Hours Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.adiyogpeeth.com/300-hours-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 27,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced 300 Hour Yoga Teacher Training Course in Rishikesh, India, designed for yoga teachers who have already completed a 200 Hour YTT. The program focuses on refining alignment, deepening yogic philosophy, enhancing teaching techniques, and expanding self-awareness through advanced practices of Hatha, Ashtanga, and Vinyasa Yoga. It is a fully residential course certified by Yoga Alliance, with small batch sizes of up to 8 students.",
+    "upcomingDates": [],
+    "accommodation": "Shared and private accommodation included",
+    "meals": "Daily healthy sattvic vegetarian breakfast, lunch, and dinner",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:07:59.869Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "300 Hours Kundalini Yoga Teacher Training Course",
+    "url": "https://www.adiyogpeeth.com/300-hours-kundalini-yoga-teacher-training-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 26,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour Kundalini Yoga Teacher Training program held in Rishikesh, India, designed for practitioners who wish to explore the deeper dimensions of Kundalini Yoga. The course covers energy activation, chakra science, kriyas, advanced pranayama, meditation techniques, mudras, and yogic philosophy. Students gain both personal transformation and professional teaching skills certified by the highest yoga bodies.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:08:07.549Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "500 Hours Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.adiyogpeeth.com/500-hours-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "The 500 Hour Yoga Teacher Training Course at Adi Yogpeeth is a comprehensive two-month residential program combining the 200 Hour and 300 Hour YTT courses, covering Hatha and Ashtanga yoga, pranayama, meditation, yogic philosophy, and advanced teaching methodology. Held in Rishikesh, the Yoga Capital of the World, the program prepares students for both foundational and advanced levels of yogic practice. Graduates are eligible to register as RYT 500 with Yoga Alliance USA.",
+    "upcomingDates": [
+      "2025-02-02",
+      "2025-03-02",
+      "2025-04-02",
+      "2025-05-02",
+      "2025-06-02",
+      "2025-07-02",
+      "2025-08-02",
+      "2025-09-02",
+      "2025-10-02",
+      "2025-11-02",
+      "2025-12-02"
+    ],
+    "accommodation": true,
+    "meals": "Daily healthy vegetarian breakfast, lunch and dinner",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:08:16.766Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "500 Hours Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://www.adiyogpeeth.com/500-hours-kundalini-yoga-teacher-training-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An intensive and authentic 500 Hour Kundalini Yoga Teacher Training in Rishikesh, India, designed for serious yoga practitioners and teachers seeking complete mastery over Kundalini Yoga and energy science. The curriculum covers Kundalini philosophy, chakra and nadis science, advanced Kundalini kriyas, pranayama, meditation, mantra chanting, mudras, bandhas, and energy channelization techniques. Upon successful completion, students receive international Yoga Alliance certification enabling them to teach Kundalini Yoga professionally worldwide.",
+    "upcomingDates": [
+      "2025-02-01",
+      "2025-03-01",
+      "2025-04-01",
+      "2025-05-01",
+      "2025-06-01",
+      "2025-07-01",
+      "2025-08-01"
+    ],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:08:26.524Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "200 Hour Multi Style Yoga Teacher Training Course in Rishikesh",
+    "url": "https://adiyogaashram.com/200-hour-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 25-day immersive residential 200-Hour Yoga Teacher Training in Rishikesh, India, accredited by Yoga Alliance USA (RYT 200). The curriculum covers Multi-Style Hatha and Ashtanga Yoga, Pranayama, Meditation, Yoga Philosophy, Anatomy, and teaching methodology. Set in the spiritual town of Rishikesh amidst the Himalayas, the program is designed for beginner to intermediate practitioners seeking personal transformation and professional certification.",
+    "upcomingDates": [],
+    "accommodation": "25 nights stay in comfortable private or shared rooms included",
+    "meals": "Daily wholesome vegetarian meals and herbal tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:08:36.325Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "300 Hour Multi Style Yoga Teacher Training in Rishikesh",
+    "url": "https://adiyogaashram.com/300-hour-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced 28-day residential yoga teacher training program in Rishikesh, India, recognized by Yoga Alliance USA (RYT 300). The curriculum covers Advanced Hatha & Ashtanga-Vinyasa, Pranayama, Yoga Philosophy, Meditation, Yoga Nidra, sound healing, and Aerial Yoga. Designed for practitioners already certified in a 200-hour program, this course deepens teaching skills, anatomical awareness, and personal yogic practice.",
+    "upcomingDates": [],
+    "accommodation": "Private or Twin-Shared room included",
+    "meals": "Daily nutritious vegetarian meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:08:44.619Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://adiyogaashram.com/500-hour-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 59,
+    "price": {
+      "amount": 1798,
+      "currency": "USD"
+    },
+    "description": "An immersive 59-day, 500-hour multi-style yoga teacher training program in Rishikesh recognized by Yoga Alliance, qualifying graduates as RYT-500. The curriculum covers Hatha, Iyengar, Ashtanga, and Vinyasa yoga, along with yoga philosophy, anatomy, pranayama, meditation, Yoga Nidra, Sanskrit chanting, and adjustments and alignments. The program can be completed as a full 500-hour training or split into a 200-hour foundational module followed by a 300-hour advanced module.",
+    "upcomingDates": [],
+    "accommodation": "Private room included",
+    "meals": "3 vegetarian sattvic meals daily plus herbal teas twice a day",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:08:53.158Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://adiyogaashram.com/200-hour-kundalini-yoga-teacher-training-in-rishikesh.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 200 Hour Kundalini Tantra Yoga Teacher Training Course held in Rishikesh, India, at the foothills of the Himalayas. The comprehensive curriculum covers chakra healing, asanas, pranayama, meditation, mantra chanting, mudra, bandha, kriya, yoga philosophy, anatomy, and teaching methodology. Students receive Yoga Alliance certification upon completion and are eligible to continue with the 300-Hour program.",
+    "upcomingDates": [],
+    "accommodation": "Private or Shared room included (25 days)",
+    "meals": "Daily nutritious vegetarian meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:02.335Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "Aerial Yoga Teacher Training in Rishikesh (8 Days)",
+    "url": "https://adiyogaashram.com/aerial-yoga-teacher-training-rishikesh.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "50hr",
+    "durationDays": 8,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An 8-day Aerial Yoga Teacher Training program at Adi Yoga Ashram in Rishikesh, India, combining traditional yoga principles with aerial acrobatics using silk hammocks. The program covers Aerial Yoga techniques, sequencing, alignment, anatomy, physiology, teaching methodology, and safety guidelines. Upon completion, participants receive a YACEP certification recognized by Yoga Alliance.",
+    "upcomingDates": [],
+    "accommodation": "Private or Shared room included",
+    "meals": "Daily nutritious vegetarian meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:12.574Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "Aerial Yoga Teacher Training in Rishikesh (13 Days)",
+    "url": "https://adiyogaashram.com/aerial-yoga-teacher-training-rishikesh.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "100hr",
+    "durationDays": 13,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 13-day Aerial Yoga Teacher Training program at Adi Yoga Ashram in Rishikesh, India, offering a comprehensive curriculum that blends Aerial Yoga with traditional yoga philosophy, pranayama, and meditation. The program is open to both beginners and intermediate practitioners and includes daily Aerial Yoga classes, anatomy sessions, and Ashtanga Vinyasa practice. Graduates receive a YACEP certification recognized by Yoga Alliance.",
+    "upcomingDates": [],
+    "accommodation": "Private or Shared room included",
+    "meals": "Daily nutritious vegetarian meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:12.574Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "4 Days Waterfall Hiking Yoga Retreat (Shared Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 299,
+      "currency": "USD"
+    },
+    "description": "A 4-day yoga retreat in Rishikesh combining hatha yoga, pranayama, meditation, and adventure activities including waterfall hiking. Excursions include Neer Waterfall, sunrise at Kunjapuri Temple, Beatles Ashram, and a free full body Ayurvedic massage. Suitable for beginners and advanced practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Shared room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "4 Days Waterfall Hiking Yoga Retreat (Private Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 329,
+      "currency": "USD"
+    },
+    "description": "A 4-day yoga retreat in Rishikesh combining hatha yoga, pranayama, meditation, and adventure activities including waterfall hiking. Excursions include Neer Waterfall, sunrise at Kunjapuri Temple, Beatles Ashram, and a free full body Ayurvedic massage. Suitable for beginners and advanced practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Private room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "6 Days Waterfall Hiking Yoga Retreat (Shared Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 349,
+      "currency": "USD"
+    },
+    "description": "A 6-day yoga retreat in Rishikesh combining hatha yoga, pranayama, meditation, and adventure activities including waterfall hiking. Excursions include Neer Waterfall, Kunjapuri Temple, Beatles Ashram, Ganga Aarti, Vasishtha Cave, beach yoga, holy bath in Ganga, and a free Ayurvedic massage. Suitable for beginners and advanced practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Shared room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "6 Days Waterfall Hiking Yoga Retreat (Private Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 399,
+      "currency": "USD"
+    },
+    "description": "A 6-day yoga retreat in Rishikesh combining hatha yoga, pranayama, meditation, and adventure activities including waterfall hiking. Excursions include Neer Waterfall, Kunjapuri Temple, Beatles Ashram, Ganga Aarti, Vasishtha Cave, beach yoga, holy bath in Ganga, and a free Ayurvedic massage. Suitable for beginners and advanced practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Private room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "4 Days Spiritual Yoga Retreat (Shared Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 310,
+      "currency": "USD"
+    },
+    "description": "A 4-day spiritual yoga retreat in Rishikesh designed for healing, peace, and self-discovery in the heart of the Himalayas. Includes sightseeing, local temple and ashram visits, sunrise at Kunjapuri Temple, Ganga Aarti, and a free Ayurvedic massage. Ideal for those seeking rejuvenation and spiritual connection.",
+    "upcomingDates": [],
+    "accommodation": "Shared room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "4 Days Spiritual Yoga Retreat (Private Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 339,
+      "currency": "USD"
+    },
+    "description": "A 4-day spiritual yoga retreat in Rishikesh designed for healing, peace, and self-discovery in the heart of the Himalayas. Includes sightseeing, local temple and ashram visits, sunrise at Kunjapuri Temple, Ganga Aarti, and a free Ayurvedic massage. Ideal for those seeking rejuvenation and spiritual connection.",
+    "upcomingDates": [],
+    "accommodation": "Private room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "6 Days Spiritual Yoga Retreat (Shared Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 399,
+      "currency": "USD"
+    },
+    "description": "A 6-day spiritual yoga retreat in Rishikesh for deep healing, peace, and self-discovery. Includes sightseeing, temple visits, sunrise at Kunjapuri Temple, Neelkanth Temple, Vasishtha Cave, holy bath in Ganga, and a free full body Ayurvedic massage. Perfect for those recovering from grief or seeking inner transformation.",
+    "upcomingDates": [],
+    "accommodation": "Shared room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "6 Days Spiritual Yoga Retreat (Private Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 449,
+      "currency": "USD"
+    },
+    "description": "A 6-day spiritual yoga retreat in Rishikesh for deep healing, peace, and self-discovery. Includes sightseeing, temple visits, sunrise at Kunjapuri Temple, Neelkanth Temple, Vasishtha Cave, holy bath in Ganga, and a free full body Ayurvedic massage. Perfect for those recovering from grief or seeking inner transformation.",
+    "upcomingDates": [],
+    "accommodation": "Private room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "4 Days Kayakalp Yoga Retreat (Shared Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 200,
+      "currency": "USD"
+    },
+    "description": "A 4-day detox and purification retreat featuring traditional Hatha yoga, pranayama with shatkarmas (Jal Neti, Sutra Neti, Vaman), sattvic diet, meditation, and yoga nidra. Designed to purify the body and restore the free flow of prana to address physical, mental, and emotional ailments. No excursions included.",
+    "upcomingDates": [],
+    "accommodation": "Shared room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "4 Days Kayakalp Yoga Retreat (Private Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 4,
+    "price": {
+      "amount": 230,
+      "currency": "USD"
+    },
+    "description": "A 4-day detox and purification retreat featuring traditional Hatha yoga, pranayama with shatkarmas (Jal Neti, Sutra Neti, Vaman), sattvic diet, meditation, and yoga nidra. Designed to purify the body and restore the free flow of prana to address physical, mental, and emotional ailments. No excursions included.",
+    "upcomingDates": [],
+    "accommodation": "Private room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "6 Days Kayakalp Yoga Retreat (Shared Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 260,
+      "currency": "USD"
+    },
+    "description": "A 6-day intensive detox and purification retreat featuring traditional Hatha yoga, pranayama with comprehensive shatkarmas (Jal Neti, Sutra Neti, Vaman, Dhauti, Shankha Prakshalana), sattvic diet, meditation, and yoga nidra. Aims to deeply cleanse the body and restore pranic flow to heal physical, mental, and emotional imbalances. No excursions included.",
+    "upcomingDates": [],
+    "accommodation": "Shared room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "6 Days Kayakalp Yoga Retreat (Private Room)",
+    "url": "https://adiyogaashram.com/yoga-retreats-rishikesh.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 310,
+      "currency": "USD"
+    },
+    "description": "A 6-day intensive detox and purification retreat featuring traditional Hatha yoga, pranayama with comprehensive shatkarmas (Jal Neti, Sutra Neti, Vaman, Dhauti, Shankha Prakshalana), sattvic diet, meditation, and yoga nidra. Aims to deeply cleanse the body and restore pranic flow to heal physical, mental, and emotional imbalances. No excursions included.",
+    "upcomingDates": [],
+    "accommodation": "Private room with attached bathroom included",
+    "meals": "3 fresh organic vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:42.597Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "200 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/200-hour-yoga-teacher-training-in-rishikesh",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A Yoga Alliance USA-accredited 200-hour Yoga Teacher Training program in Rishikesh, India, rooted in traditional Hatha and Ashtanga Vinyasa practices. The comprehensive curriculum covers asanas, pranayama, meditation, yoga philosophy, anatomy, alignment, teaching methodology, Ayurveda, mudras, bandhas, and more. Upon completion, graduates are qualified to teach yoga internationally and register with Yoga Alliance as an RYT-200.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:50.226Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "300 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/300-hour-yoga-teacher-training-in-rishikesh",
+    "type": "300hr Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 300-hour advanced yoga teacher training program in Rishikesh designed for intermediate and advanced practitioners who have completed a 200-hour RYT certification. The course covers traditional Hatha and Ashtanga yoga, pranayama, meditation, yoga philosophy, anatomy, Ayurveda, mantra science, and teaching methodology. Upon completion, graduates qualify for Yoga Alliance's RYT-500 certification.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:09:59.334Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "500 Hour Yoga Teacher Training In Rishikesh",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/500-hour-yoga-teacher-training-in-rishikesh",
+    "type": "500-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A master-level 500-hour Yoga Teacher Training program in Rishikesh, India, based on the teachings of the Himalayan Yogic Tradition. Students can complete both the 200-hour and 300-hour courses simultaneously, covering asana, pranayama, meditation, yoga philosophy, anatomy, Hatha, and Ashtanga Vinyasa practices. The program is fully certified by Yoga Alliance USA, enabling graduates to register for RYT 500 certification.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:07.702Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training In Rishikesh",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/200-hour-Kundalini-yoga-teacher-training",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A Yoga Alliance USA-approved 200-hour Kundalini Yoga Teacher Training program held in Rishikesh, India, covering Kundalini asanas, Hatha Yoga, pranayama, meditation, yogic philosophy, anatomy, and teaching methodology. Upon completion, graduates are qualified to register with Yoga Alliance as a Registered Yoga Teacher (RYT-200) and teach both domestically and internationally. The program is suitable for beginners and experienced practitioners alike, offering a transformative experience rooted in ancient yogic traditions.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:15.245Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "Ashtanga Yoga Teacher Training",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/ashtanga-yoga-teacher-training-rishikesh",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 750,
+      "currency": "USD"
+    },
+    "description": "An authentic Ashtanga Yoga Teacher Training in Rishikesh covering the Primary Series, Vinyasa and breath synchronization, anatomy, pranayama, meditation, and yoga philosophy. The program is suitable for beginners to advanced practitioners and is led by experienced certified instructors in small batches for personalized attention. Graduates receive a certification upon completion in the spiritual home of yoga.",
+    "upcomingDates": [
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01",
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01",
+      "2026-12-01"
+    ],
+    "accommodation": "Shared room or private room included (shared room standard, private room at additional cost of 995 USD)",
+    "meals": "3 vegetarian/vegan meals daily, herbal teas and fresh fruit juices included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:24.950Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "Aerial Yoga Teacher Training",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/aerial-yoga-teacher-training",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive Aerial Yoga Teacher Training course in Rishikesh that covers hammock setup, rigging basics, alignment principles, creative sequencing, and hands-on teaching methods. Students learn aerial asanas, inversions, breathwork, meditation, anatomy, and professional teaching skills. The course is suitable for beginners to intermediate practitioners and leads to a Yoga Alliance-recognized certification.",
+    "upcomingDates": [],
+    "accommodation": "Spacious rooms with clean bedding, hot water, WiFi, and western-style bathrooms included",
+    "meals": "Healthy vegetarian sattvic meals prepared in-house daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:31.543Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "Yoga Retreat In Rishikesh",
+    "url": "https://www.rishikeshtraditionalyogaschool.com/yoga-retreat-in-rishikesh",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A holistic yoga retreat in Rishikesh, India, offering Traditional Hatha Yoga, Pranayama, meditation, and local cultural excursions in a peaceful ashram environment. Retreats range from 3 to 14 days and are available year-round, tailored to individual needs for beginners and experienced practitioners alike. Participants benefit from a Sattvic vegetarian diet, Ayurvedic therapy, Kirtan sessions, and guided nature excursions including sunrise treks and Ganga Aarti.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Sattvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:39.232Z"
+  },
+  {
+    "schoolName": "Hatha Yoga World",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.hathayogaworld.com/200-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 800,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 24-day immersive 200 Hour Yoga Teacher Training in Rishikesh, India, covering traditional Hatha Yoga and Vinyasa Flow, yoga philosophy, pranayama, meditation, anatomy, and modern teaching methodology. The program is Yoga Alliance USA certified (RYT-200), enabling graduates to teach yoga internationally. Held at Hatha Yoga World in Tapovan, Rishikesh, the course includes accommodation and meals and is suitable for beginners through experienced practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Private room and shared room options included in course fee (Private Room: USD $1100, Shared Room: USD $900)",
+    "meals": "Freshly prepared vegetarian and vegan meals served daily (Monday–Saturday)",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:48.251Z"
+  },
+  {
+    "schoolName": "Hatha Yoga World",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.hathayogaworld.com/300-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced, immersive 300-hour Yoga Teacher Training program in Rishikesh designed for certified 200-hour teachers and dedicated practitioners who wish to deepen their practice and refine their teaching skills. Rooted in traditional Hatha Yoga and Yoga Alliance certified, the course covers asana, pranayama, meditation, philosophy, anatomy, and teaching methodology. The program is limited to 8 students per batch and begins on the 5th of every month, ensuring personalized attention and high-quality instruction.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": "Sattvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:10:56.202Z"
+  },
+  {
+    "schoolName": "Hatha Yoga World",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.hathayogaworld.com/500-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 57,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "The 500-Hour Yoga Teacher Training in Rishikesh at Hatha Yoga World is an advanced, immersive program combining the 200-hour and 300-hour YTTC curricula over 50 days. It integrates Hatha Yoga, Vinyasa Flow, Ashtanga, pranayama, meditation, philosophy, anatomy, and teaching methodology into a comprehensive curriculum. Graduates earn a Yoga Alliance® approved RYT-500 certificate, qualifying them to teach yoga worldwide.",
+    "upcomingDates": [],
+    "accommodation": "56 nights accommodation included",
+    "meals": "Daily vegetarian delicious meals included (3 meals daily made with fresh local produce)",
+    "rating": 5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:04.908Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/200-hour/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 25-day Yoga Alliance USA certified 200-hour yoga teacher training program in Rishikesh combining Ashtanga Vinyasa yoga, Vinyasa Flow, Yin Yoga, pranayama, meditation, yoga philosophy, and yoga anatomy. The program is designed for both aspiring yoga teachers and dedicated practitioners seeking a complete foundation in yoga practice and teaching methodology. Conducted by E-RYT certified instructors at a registered yoga school, it prepares students to teach yoga worldwide.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:12.893Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh (Private Room)",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/300-hour/",
+    "type": "300-Hour Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 27,
+    "price": {
+      "amount": 1099,
+      "currency": "USD"
+    },
+    "description": "An advanced 27-day residential yoga teacher training program in Rishikesh designed for certified 200-hour yoga teachers seeking to deepen their practice and teaching skills. The program integrates advanced asana (Ashtanga, Vinyasa), yoga philosophy, anatomy, meditation, and teaching methodology. Upon completion, students receive a Yoga Alliance-recognized 300-hour certificate contributing toward RYT 500 eligibility.",
+    "upcomingDates": [
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01",
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01"
+    ],
+    "accommodation": "Private room included",
+    "meals": "Sattvic meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:22.726Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh (Shared Room)",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/300-hour/",
+    "type": "300-Hour Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 27,
+    "price": {
+      "amount": 999,
+      "currency": "USD"
+    },
+    "description": "An advanced 27-day residential yoga teacher training program in Rishikesh designed for certified 200-hour yoga teachers seeking to deepen their practice and teaching skills. The program integrates advanced asana (Ashtanga, Vinyasa), yoga philosophy, anatomy, meditation, and teaching methodology. Upon completion, students receive a Yoga Alliance-recognized 300-hour certificate contributing toward RYT 500 eligibility.",
+    "upcomingDates": [
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01",
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01"
+    ],
+    "accommodation": "Shared room included",
+    "meals": "Sattvic meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:22.726Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/500-hour/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 58,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "The 500 Hour Yoga Teacher Training at Rishikesh Yog Nirvana is the highest level of professional yoga education, combining both the 200-hour and 300-hour modules into a single integrated residential program. The curriculum covers Hatha Yoga, Ashtanga Vinyasa Yoga, Vinyasa Flow, pranayama, meditation, yoga philosophy, anatomy, alignment, and teaching methodology. Upon successful completion, students receive a Yoga Alliance USA recognized RYT 500 certification enabling them to teach yoga professionally at an international level.",
+    "upcomingDates": [
+      "2025-08-01",
+      "2025-09-01",
+      "2025-10-01",
+      "2025-11-01",
+      "2025-12-01"
+    ],
+    "accommodation": true,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:29.997Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/kundalini/",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A foundational Yoga Alliance USA approved Kundalini Yoga Teacher Training held in Rishikesh, suitable for beginners and experienced practitioners alike. The curriculum covers traditional Ashtanga Yoga, Kundalini Kriyas, Pranayama, meditation, yoga philosophy, and teaching methodology. Set in a traditional ashram along the sacred Ganges in the Himalayan foothills, new batches start on the 1st of every month.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Sattvic food included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:42.033Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "300 Hour Advanced Kundalini Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/kundalini/",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An advanced Kundalini Yoga Teacher Training designed for those who have completed their 200-hour certification and wish to deepen their practice. The program covers advanced Kriya Yoga, Kundalini Meditation, Yoga Therapy, Chakra Healing, Tantra Philosophy, and refined teaching methodology. New batches start on the 1st of every month at the ashram in Rishikesh.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Sattvic food included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:42.033Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "Short-Term & Specialized Kundalini Yoga Courses",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/kundalini/",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "Focused short-term yoga courses for those who wish to learn or advance specific areas of Kundalini practice in Rishikesh. Topics include Kundalini Pranayama, Yoga Nidra, Yin Yoga, and Kriya Yoga including Maha Mudra Kriya for purification and energy flow. Ideal for practitioners seeking targeted spiritual and energetic development.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:42.033Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "200-Hour Ashtanga Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/ashtanga/",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-Hour Ashtanga Yoga Teacher Training in Rishikesh, India, blending ancient yogic philosophy with modern teaching methodology. The Yoga Alliance Certified curriculum covers Ashtanga Vinyasa asana practice, pranayama, yoga philosophy, anatomy, meditation, mantra, Yin Yoga, and Reiki healing. Set in the Yoga Capital of the World, students graduate as internationally recognized RYT 200 certified yoga teachers.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:49.441Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "Aerial Yoga Teacher Training",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/aerial/",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 7-day, 50-hour Aerial Yoga Teacher Training Course in Rishikesh that blends traditional yoga poses with suspended fabric hammock practice, combining Hatha, Vinyasa, Yin, and Restorative Yoga styles. Designed by experienced instructors and international yoga asana champions, the program covers alignment, safety, creative sequencing, anatomy, yoga philosophy, and teaching methodology. The course is residential and intensive, open to all levels from beginners to certified yoga teachers seeking Yoga Alliance YACEP continuing education hours.",
+    "upcomingDates": [],
+    "accommodation": "Private and shared rooms with attached bathrooms, hot water, Wi-Fi, filtered drinking water, and daily housekeeping included",
+    "meals": "Three sattvic vegetarian meals prepared fresh daily, plus herbal tea and light snacks during breaks",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:11:57.404Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "200 Hour Ashtanga & Vinyasa Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshvinyasayogaschool.com/200-hour-ashtanga-vinyasa-yoga-teacher-training-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 1000,
+      "currency": "USD"
+    },
+    "description": "A 24-day residential 200-hour Yoga Teacher Training combining traditional Ashtanga Primary Series with Vinyasa Flow sequencing, set in Upper Tapovan, Rishikesh. The program covers yoga philosophy, anatomy, pranayama, meditation, and teaching methodology under experienced E-RYT certified faculty. Graduates receive a globally recognized Yoga Alliance RYT-200 certification.",
+    "upcomingDates": [
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02"
+    ],
+    "accommodation": "Shared room or private room included",
+    "meals": "Daily vegetarian/sattvic meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:05.633Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshvinyasayogaschool.com/300-hour-yoga-teacher-training-rishikesh.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 27,
+    "price": {
+      "amount": 1300,
+      "currency": "USD"
+    },
+    "description": "An advanced Level II Vinyasa and Ashtanga Yoga Teacher Training in Rishikesh, India, designed for 200-hour certified yoga teachers and advanced practitioners. The course covers Ashtanga Yoga Intermediate Series, revision of the Primary Series, advanced sequencing, anatomy, philosophy, and teaching methodology. It is a residential program using the ancient gurukula teaching method to transform personal practice and advance teaching skills.",
+    "upcomingDates": [
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02",
+      "2027-01-02",
+      "2027-02-02",
+      "2027-03-02"
+    ],
+    "accommodation": "26 nights accommodation included (shared or private room options available)",
+    "meals": "3 vegetarian/yogic meals daily (Breakfast, Lunch & Dinner)",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:15.969Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "500 Hours Yoga Teacher Training Rishikesh",
+    "url": "https://rishikeshvinyasayogaschool.com/500-hours-yoga-teacher-traning-in-rishikesh.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 56,
+    "price": {
+      "amount": 2300,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 500-hour multi-style Yoga Teacher Training Course in Rishikesh, combining 200-hour and 300-hour programs over 8 weeks. The advanced residential program covers Vinyasa flow, Ashtanga yoga, pranayama, shatkarma, anatomy, yoga philosophy, and meditation under experienced yog-gurus. Graduates receive a Yoga Alliance certification upon completion.",
+    "upcomingDates": [
+      "2025-04-01",
+      "2025-05-01",
+      "2025-06-01",
+      "2025-07-01",
+      "2025-08-01",
+      "2025-09-01",
+      "2025-10-01",
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01"
+    ],
+    "accommodation": "Private room and shared room options included",
+    "meals": "3 vegetarian/yogic meals daily (Breakfast, Lunch & Dinner)",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:27.117Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "200 Hour Residential Yoga Teacher Training",
+    "url": "https://rishikeshvinyasayogaschool.com/vinyasa-yoga-teacher-training-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 200-hour residential yoga teacher training course in Rishikesh, India, rooted in Ashtanga Vinyasa yoga as codified by K. Pattabhi Jois. The curriculum covers breath control, bandhas, drishti, and vinyasa sequencing including the primary and intermediate series. Accommodation options include both private and shared rooms.",
+    "upcomingDates": [],
+    "accommodation": "Private and shared rooms available",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:38.502Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "300 Hour Residential Yoga Teacher Training",
+    "url": "https://rishikeshvinyasayogaschool.com/vinyasa-yoga-teacher-training-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 300-hour residential yoga teacher training course in Rishikesh, India, based on the Ashtanga Vinyasa tradition. The program deepens knowledge of breathwork, vinyasa, and advanced asana series. Accommodation options include both private and shared rooms.",
+    "upcomingDates": [],
+    "accommodation": "Private and shared rooms available",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:38.502Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "500 Hour Residential Yoga Teacher Training",
+    "url": "https://rishikeshvinyasayogaschool.com/vinyasa-yoga-teacher-training-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 500-hour residential yoga teacher training course in Rishikesh, India, grounded in the Ashtanga Vinyasa system. Students gain an in-depth understanding of breath, movement, drishti, bandhas, and the full range of Ashtanga series. Accommodation is available in both private and shared rooms.",
+    "upcomingDates": [],
+    "accommodation": "Private and shared rooms available",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:38.502Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "Ashtanga Yoga Teacher Training in Rishikesh, India",
+    "url": "https://rishikeshvinyasayogaschool.com/ashtanga-yoga-teacher-training-rishikesh-india.php",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "This Ashtanga Yoga Teacher Training in Rishikesh follows the traditional system recorded by sage Vamana Rishi and popularized by Pattabhi Jois, covering the eight limbs of yoga as outlined by Patanjali. The course emphasizes vinyasa, tristhana, bandhas, drishti, and pranayama to purify and strengthen the body, nervous system, and mind. Students learn the Primary and Intermediate Series of asanas along with the philosophical foundations of Ashtanga yoga.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:47.079Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "Aerial Yoga Teacher Training Course in Rishikesh",
+    "url": "https://rishikeshvinyasayogaschool.com/aerial-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "50hr",
+    "durationDays": 5,
+    "price": {
+      "amount": 399,
+      "currency": "USD"
+    },
+    "description": "A 5-day residential Aerial Yoga Teacher Training Course in Rishikesh designed to provide comprehensive knowledge of aerial yoga fundamentals, basic postures, teaching methodology, and sequencing. The program covers yoga philosophy, anatomy, and practical sessions involving a variety of aerial yoga poses and sequences. The course starts on the 25th of every month and includes food, accommodation, and Yoga Alliance certification.",
+    "upcomingDates": [
+      "2026-04-25",
+      "2026-05-25",
+      "2026-06-25",
+      "2026-07-25",
+      "2026-08-25",
+      "2026-09-25",
+      "2026-10-25",
+      "2026-11-25",
+      "2026-12-25",
+      "2027-01-25",
+      "2027-02-25",
+      "2027-03-25"
+    ],
+    "accommodation": "Shared or private room included",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:53.932Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "5 Nights, 6 Days Yoga Retreat in Rishikesh",
+    "url": "https://rishikeshvinyasayogaschool.com/yoga-retreat.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 500,
+      "currency": "USD"
+    },
+    "description": "A 5-night, 6-day yoga retreat in Rishikesh, India running from the 25th to the 30th of every month. Accommodation options include private room at $500 USD or twin sharing room at $350 USD, with a $50 discount for bookings made 30 days in advance. The retreat includes yoga classes, meditation, and opportunities to explore the local area.",
+    "upcomingDates": [],
+    "accommodation": "Private room or twin sharing room included",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:12:59.853Z"
+  },
+  {
+    "schoolName": "Ishavasyam Yoga School",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh (Hatha, Ashtanga, Yin & Ayurveda with Healing Session)",
+    "url": "https://ishavasyamyogaschool.com/200-hours-yoga-teacher-training-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Yoga Alliance Certified (RYT 200) teacher training program held in Rishikesh, the Yoga Capital of the World, blending traditional Hatha and Ashtanga Yoga with Yin Yoga, Ayurveda, pranayama, meditation, and yoga philosophy. The course includes a 10-day Ayurveda module, daily yoga sessions, anatomy, teaching methodology, and immersive ashram living. Graduates receive internationally recognized certification enabling them to teach yoga worldwide.",
+    "upcomingDates": [],
+    "accommodation": "Twin-sharing accommodation included (private room or dormitory subject to availability)",
+    "meals": "Healthy vegetarian meals included",
+    "rating": 4.5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:13:08.031Z"
+  },
+  {
+    "schoolName": "Ishavasyam Yoga School",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training In Rishikesh",
+    "url": "https://ishavasyamyogaschool.com/200-hours-traditional-kundalini-yoga-teacher-training-india.php",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 23-day immersive 200-hour Kundalini Yoga Teacher Training in Rishikesh blending Kundalini Tantra Yoga with Hatha, Ashtanga, Yin, Ayurveda, and healing sessions. Rooted in ancient yogic scriptures, the program guides students through Kundalini awakening via kriyas, pranayama, mantra, meditation, and tantric techniques in a supportive community environment. Upon completion, graduates are eligible to register with Yoga Alliance.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "3 vegetarian/yogic meals daily plus tea",
+    "rating": 4.5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:13:16.210Z"
+  },
+  {
+    "schoolName": "Ishavasyam Yoga School",
+    "courseName": "200 Hours Combo Aerial + Multi Style Yoga Teacher Training",
+    "url": "https://ishavasyamyogaschool.com/200-hours-combo-aerial-yoga-teacher-training-course-india.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 23,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 200-hour intensive teacher training in Rishikesh blending Aerial Yoga with multi-style yoga including Hatha, Ashtanga, Vinyasa, Yin, Ayurveda, and healing sessions. The program includes 10 days of aerial yoga practice using silk hammocks alongside traditional yogic teachings, anatomy, philosophy, and teaching methodology. Graduates receive a Yoga Alliance 200-hour RYT certificate, enabling them to teach yoga worldwide.",
+    "upcomingDates": [],
+    "accommodation": "Twin-sharing accommodation included (private room or dormitory available if twin-sharing is full)",
+    "meals": "3 yogic meals daily plus tea",
+    "rating": 4.5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:13:24.487Z"
+  },
+  {
+    "schoolName": "Ishavasyam Yoga School",
+    "courseName": "6 Days Aerial Yoga Teacher Training Course in Rishikesh",
+    "url": "https://ishavasyamyogaschool.com/6-days-aerial-yoga.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "50hr",
+    "durationDays": 6,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 6-day, 50-hour intensive Aerial Yoga Teacher Training in Rishikesh blending traditional yoga with anti-gravity hammock techniques. Students explore aerial asanas, inversions, flows, anatomy, alignment, and teaching methodology in a serene yogic environment. The program includes guided meditations, sound healing sessions, and Ayurveda lifestyle wisdom, culminating in a school-recognized certification.",
+    "upcomingDates": [],
+    "accommodation": "Twin-sharing or private room included",
+    "meals": "3 vegetarian (yogic) meals and tea daily",
+    "rating": 5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:13:31.760Z"
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "300 Hour Hatha Ashtanga Vinyasa Ayurveda and Yoga Therapy Teacher Training In Rishikesh India",
+    "url": "https://www.nirvanayogaschoolindia.com/300-hour-yoga-teacher-training-in-rishikesh-india",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 27,
+    "price": {
+      "amount": 849,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour Yoga Teacher Training course in Rishikesh covering Hatha, Ashtanga Vinyasa, Ayurveda, and Yoga Therapy over 27 days. The course dives deeper into advanced asanas, pranayama, meditation, anatomy, yoga philosophy, and teaching methodology for those who have completed a 200-hour YTT. Accredited by Yoga Alliance, USA, it prepares students to become skilled and globally certified yoga teachers.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:13:40.871Z"
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "500 Hour Hatha Ashtanga Vinyasa Ayurveda & Yoga Therapy Teacher Training in Rishikesh, India",
+    "url": "https://www.nirvanayogaschoolindia.com/500-hour-yoga-teacher-training-in-rishikesh-india",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 57,
+    "price": {
+      "amount": 1399,
+      "currency": "USD"
+    },
+    "description": "This 500-hour yoga teacher training in Rishikesh is an intensive 57-day program combining 200-hour and 300-hour trainings back-to-back, covering Hatha Yoga, Ashtanga Vinyasa, Ayurveda, and Yoga Therapy. The curriculum includes meditation, yoga nidra, anatomy, philosophy, pranayama, and cleansing techniques to build a strong holistic foundation. Upon completion, graduates receive an RYT 500 Yoga Alliance certification qualifying them to teach yoga worldwide.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:13:49.136Z"
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "200 Hour Kundalini Yoga Teacher Training Course",
+    "url": "https://www.nirvanayogaschoolindia.com/kundalini-yoga-teacher-training-in-rishikesh-india",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 599,
+      "currency": "USD"
+    },
+    "description": "A 25-day beginner to intermediate level Kundalini Yoga Teacher Training in Rishikesh, India. The training covers Mantras, Pranayama, Kundalini Asana, Kriyas, Mudras, and Meditation. Internationally certified by Yoga Alliance (RYT-200), it is the minimum training requirement to become a certified yoga teacher.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Sattvic foods included",
+    "rating": 5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:02.528Z"
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "300 Hour Kundalini Yoga Teacher Training Course",
+    "url": "https://www.nirvanayogaschoolindia.com/kundalini-yoga-teacher-training-in-rishikesh-india",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "300hr RYT",
+    "durationDays": 29,
+    "price": {
+      "amount": 1099,
+      "currency": "USD"
+    },
+    "description": "An advanced 29-day Kundalini Yoga Teacher Training in Rishikesh for intermediate to advanced students. The course places detailed emphasis on Meditation, Chakras, Kundalini awakening, Kundalini principles, and Mantras. Internationally certified by Yoga Alliance (RYT-300), it requires an existing RYT-200 certification to enroll.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Sattvic foods included",
+    "rating": 5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:02.528Z"
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "500 Hour Kundalini Yoga Teacher Training Course",
+    "url": "https://www.nirvanayogaschoolindia.com/kundalini-yoga-teacher-training-in-rishikesh-india",
+    "type": "Kundalini Yoga TTC",
+    "certificationLevel": "500hr RYT",
+    "durationDays": 59,
+    "price": {
+      "amount": 1699,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 59-day (2-month) Kundalini Yoga Teacher Training in Rishikesh combining the 200 and 300-hour courses. Suitable for beginner to advanced students, it follows Yoga Alliance guidelines and qualifies graduates to teach professionally or open their own yoga studio or school. Certified as RYT-500 by Yoga Alliance.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": "Sattvic foods included",
+    "rating": 5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:02.528Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/200-hour-yoga-teacher-training-in-rishikesh/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 26,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 26-day immersive 200-Hour Yoga Teacher Training program in Rishikesh, India, certified by Yoga Alliance USA. The curriculum covers Hatha Yoga, Ashtanga Vinyasa, Pranayama, Yogic Philosophy, Anatomy, Meditation, and Teaching Methodology suitable for beginner to intermediate practitioners. Upon completion, graduates are equipped with the knowledge and skills to teach yoga effectively at an internationally recognized level.",
+    "upcomingDates": [
+      "2025-01-01",
+      "2025-02-01",
+      "2025-03-01",
+      "2025-04-01",
+      "2025-05-01",
+      "2025-06-01"
+    ],
+    "accommodation": true,
+    "meals": "Vegetarian organic Sattvic meals included daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:12.085Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "200-Hour Ashtanga Vinyasa Flow Yoga Teacher Training in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/200-hour-ashtanga-yoga-teacher-training-in-rishikesh/",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 26,
+    "price": {
+      "amount": 650,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour Ashtanga Vinyasa Yoga Teacher Training in Rishikesh, registered with Yoga Alliance and accepted worldwide. The curriculum covers Asana, Pranayama, Teaching Methodology, Anatomy, Yoga Philosophy based on the Yoga Sutras, and yogic lifestyle. Graduates will be prepared to teach Hatha and Ashtanga Yoga classes and create their own unique teaching style.",
+    "upcomingDates": [
+      "2024-01-01",
+      "2025-01-01",
+      "2025-02-01",
+      "2025-03-01"
+    ],
+    "accommodation": "Private, shared, and dorm accommodation included",
+    "meals": "Yogic/organic food included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:21.109Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "200 Hour Vinyasa Yoga Teacher Training in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/vinyasa-yoga-teacher-training-in-rishikesh/",
+    "type": "Ashtanga Vinyasa TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 200-hour Yoga Alliance certified Vinyasa Yoga Teacher Training program in Rishikesh, India, blending Hatha, Ashtanga, and Vinyasa flow styles. The curriculum includes Shatkarma, Pranayama, Yogic Philosophy, Yogic Anatomy, and Ashtanga primary series taught by experienced yoga practitioners rooted in Indian tradition. Set in a peaceful and natural environment, the program aims to transform students both personally and professionally.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": "Yogic Food included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:29.406Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "3 Days Yoga Retreat in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/yoga-retreat-rishikesh/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 3,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A short but transformative yoga retreat offering Himalayan, detox, and holiday retreat options. Includes yoga asanas, meditation sessions, and Ayurveda sessions. Accommodation and satvic meals are included in the package.",
+    "upcomingDates": [],
+    "accommodation": "Private, shared, and dorm options included",
+    "meals": "Organic satvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:46.607Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "7 Days Yoga Retreat in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/yoga-retreat-rishikesh/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A one-week yoga retreat designed to help you escape from hectic daily life and rejuvenate your spirit through immersive yoga practice. Includes yoga classes, meditation, and Ayurveda sessions. Accommodation and satvic meals are included in the package.",
+    "upcomingDates": [],
+    "accommodation": "Private, shared, and dorm options included",
+    "meals": "Organic satvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:46.607Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "14 Days Yoga Retreat in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/yoga-retreat-rishikesh/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 14,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A two-week immersive yoga retreat for those seeking a deeper connection with yoga practice and meditation. Includes yoga classes, meditation, Ayurveda sessions, and excursions to local spiritual sites. Accommodation and satvic meals are included in the package.",
+    "upcomingDates": [],
+    "accommodation": "Private, shared, and dorm options included",
+    "meals": "Organic satvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:46.607Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "50 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/yoga-retreat-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "50hr",
+    "durationDays": 6,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 6-day foundational yoga teacher training course ideal for those with limited time or who want to learn at a slower pace. Students can complete the remaining hours within 2 years to earn the full 200-hour certification. Accommodation and satvic meals are included in the package.",
+    "upcomingDates": [],
+    "accommodation": "Private, shared, and dorm options included",
+    "meals": "Organic satvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:46.607Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "100 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/yoga-retreat-rishikesh/",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "100hr",
+    "durationDays": 12,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 12-day yoga teacher training course designed for those on a two-week vacation who want a deeper understanding of traditional yoga. Covers yoga asanas, meditation, and yogic philosophy. Accommodation and satvic meals are included in the package.",
+    "upcomingDates": [],
+    "accommodation": "Private, shared, and dorm options included",
+    "meals": "Organic satvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:46.607Z"
+  },
+  {
+    "schoolName": "Peace Yoga Retreat",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh",
+    "url": "https://www.peaceyogaretreat.com/yoga-retreat-rishikesh/",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 24-day Yoga Alliance certified teacher training program designed for aspiring yoga teachers. Covers asanas, meditation, pranayama, and yogic philosophy to prepare students for teaching. Accommodation and satvic meals are included in the package.",
+    "upcomingDates": [],
+    "accommodation": "Private, shared, and dorm options included",
+    "meals": "Organic satvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:46.607Z"
+  },
+  {
+    "schoolName": "Om Shanti Om Yoga Ashram",
+    "courseName": "200 Hour Yoga Teacher Training in Rishikesh, India",
+    "url": "https://www.omshantiomyoga.com/200-hour-yoga-teacher-training-india.html",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 200-hour yoga teacher training course held over four weeks at Om Shanti Om Yoga Ashram in Rishikesh, India. The curriculum covers yoga philosophy, meditation, pranayama, Hatha, Vinyasa, Ashtanga, Yin, and Restorative yoga, anatomy, and teaching methodology. The course is accredited by Yoga Alliance USA (RYT200), enabling graduates to teach yoga worldwide or establish their own yoga studio.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:14:55.516Z"
+  },
+  {
+    "schoolName": "Om Shanti Om Yoga Ashram",
+    "courseName": "300 Hour Yoga Teacher Training in Rishikesh, India",
+    "url": "https://www.omshantiomyoga.com/300-hour-yoga-teacher-training-india.html",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 35,
+    "price": {
+      "amount": 1000,
+      "currency": "USD"
+    },
+    "description": "An advanced 300-hour Yoga Teacher Training course in Rishikesh, India, accredited by Yoga Alliance USA (RYT300), designed for practitioners who have already completed a 200-hour certification. The curriculum covers advanced asanas, pranayama, meditation, yoga philosophy, anatomy, and teaching methodology. Set in the Himalayan foothills beside the sacred Ganges, the program offers a holistic learning environment with sattvic food and comfortable accommodation options.",
+    "upcomingDates": [
+      "2027-03-01"
+    ],
+    "accommodation": "Private room or shared room available (with food & shared room: $1250, with food & private room: $1400)",
+    "meals": "Vegetarian sattvic meals included in food packages",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:04.628Z"
+  },
+  {
+    "schoolName": "Om Shanti Om Yoga Ashram",
+    "courseName": "500 Hour Yoga Teacher Training in Rishikesh, India",
+    "url": "https://www.omshantiomyoga.com/500-hour-yoga-teacher-training-in-india.html",
+    "type": "500-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 500-hour advanced yoga teacher training course held at Om Shanti Om Yoga Ashram in Rishikesh, India, combining the 200-hour and 300-hour TTC programs into one immersive 60-day journey. The curriculum covers advanced asanas, pranayama, meditation, yoga philosophy, anatomy, Ayurveda, and practical teaching experience, fully accredited by Yoga Alliance USA. Designed for intermediate to advanced practitioners seeking to master the art and science of yoga and qualify for senior teaching positions.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:13.594Z"
+  },
+  {
+    "schoolName": "Adhiroha Yoga Ashram",
+    "courseName": "200 Hour Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.adhiroha.com/200-hour-yoga-teacher-training-course-rishikesh",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 24,
+    "price": {
+      "amount": 1275,
+      "currency": "EUR"
+    },
+    "description": "A 24-day immersive Root of Yoga Course designed for beginners and intermediate practitioners, blending Hatha, Ashtanga Vinyasa, and Yin yoga with Pranayama, Meditation, Yoga Philosophy, and Anatomy. Set in the Himalayan foothills of Rishikesh along the sacred Ganga Ji, the program meets Yoga Alliance international standards and prepares students to teach globally. Graduates receive dual certifications from Adhiroha (registered with Yoga Certification Board, Ministry of Ayush) and Yoga Alliance RYT-200.",
+    "upcomingDates": [
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01",
+      "2026-12-01",
+      "2027-01-01",
+      "2027-02-01",
+      "2027-03-01"
+    ],
+    "accommodation": "Triple or Double sharing room included",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:23.244Z"
+  },
+  {
+    "schoolName": "Adhiroha Yoga Ashram",
+    "courseName": "300 Hour Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.adhiroha.com/300-hour-yoga-teacher-training-course-rishikesh",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 30,
+    "price": {
+      "amount": 1500,
+      "currency": "EUR"
+    },
+    "description": "An advanced 30-day Yoga Teacher Training Course in Rishikesh designed for certified teachers and intermediate-to-advanced practitioners. The program covers advanced asanas, pranayama, meditation, yoga philosophy, anatomy, and teaching methodology. Graduates receive dual certification from Adhiroha (Yoga Certification Board, Ministry of Ayush) and Yoga Alliance RYT 300.",
+    "upcomingDates": [
+      "2026-04-01",
+      "2026-05-01",
+      "2026-06-01",
+      "2026-07-01",
+      "2026-08-01",
+      "2026-09-01",
+      "2026-10-01",
+      "2026-11-01",
+      "2026-12-01",
+      "2027-01-01",
+      "2027-02-01",
+      "2027-03-01"
+    ],
+    "accommodation": "true",
+    "meals": "true",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:31.561Z"
+  },
+  {
+    "schoolName": "Adhiroha Yoga Ashram",
+    "courseName": "500 Hour Yoga Teacher Training Course in India",
+    "url": "https://www.adhiroha.com/500-hour-yoga-teacher-training-course-in-india",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 60,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A comprehensive 500-hour multi-style yoga teacher training course in Rishikesh covering Hatha and Ashtanga Yoga, including Asanas, Pranayama, Meditation, and Philosophy. Set in the largest ashram in India with premium residences and a serene Himalayan environment. Graduates receive dual certification from Adhiroha and a Yoga Alliance registered partner school.",
+    "upcomingDates": [
+      "2025-09-01",
+      "2025-10-01",
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01",
+      "2026-04-01",
+      "2026-05-01"
+    ],
+    "accommodation": "Premium mountain-view residences with spacious rooms, ensuite washrooms, and 24/7 hot water included",
+    "meals": "Wholesome vegetarian (Satvik and Ayurvedic) meals served three times daily, paired with Adhiroha's Signature Herbal Tea",
+    "rating": 4.9,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:39.886Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "200-Hour Yoga Teacher Training Course in Rishikesh India (22-Day Program)",
+    "url": "https://rishikeshyogaashram.com/200-hour-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 22,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A globally recognized and Yoga Alliance (USA)-certified 200-hour yoga teacher training course held in Rishikesh, India. The curriculum covers Hatha Yoga, Ashtanga Vinyasa, Vinyasa Flow, philosophy, pranayama, meditation, and anatomy in a traditional Vedic framework. Complimentary sessions including Ayurveda, Sound Healing, and free airport pickup are included.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:51.327Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "200-Hour Yoga Teacher Training Course in Rishikesh India (18-Day Fast Track Program)",
+    "url": "https://rishikeshyogaashram.com/200-hour-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "200-Hour Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 18,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An intensive fast-track version of the 200-hour yoga teacher training course covering the full syllabus in a condensed 18-day format. Ideal for dedicated students with limited time who can commit to a rigorous daily routine. Includes the same Yoga Alliance-certified curriculum as the standard program with traditional Vedic practices.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:15:51.327Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "300 Hour Yoga Teacher Training Course in Rishikesh, India",
+    "url": "https://rishikeshyogaashram.com/300-hour-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "300hr",
+    "durationDays": 28,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An intensive 27-day advanced yoga teacher training program set in Rishikesh, India, beneath the Himalayan mountains. The curriculum is based on ancient yogic teachings and covers Hatha Yoga, Ashtanga, Vinyasa Flow, Pranayama, Mudras, and more under the guidance of Himalayan masters. Completion of this course upgrades qualification to the 500-hour yoga TTC and is recognized by Yoga Alliance (USA).",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:16:00.337Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "500-Hour Yoga Teacher Training Course in Rishikesh, India",
+    "url": "https://rishikeshyogaashram.com/500-hour-yoga-teacher-training-in-rishikesh-india.php",
+    "type": "500-Hour Yoga TTC",
+    "certificationLevel": "500hr",
+    "durationDays": 58,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "An all-inclusive 500-hour yoga teacher training course in Rishikesh, India that combines the 200-hour and 300-hour YTTC into a single comprehensive program. The curriculum covers Hatha Yoga, Ashtanga Vinyasa, Vinyasa Flow, pranayama, meditation, yoga philosophy, anatomy, Ayurveda, and more, rooted in ancient Vedic principles. Upon completion, graduates receive Yoga Alliance USA certification and eligibility to register as RYT 500.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:16:07.486Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "Aerial Yoga Teacher Training Course",
+    "url": "https://rishikeshyogaashram.com/Arial-yoga.php",
+    "type": "Aerial Yoga TTC",
+    "certificationLevel": "YACEP",
+    "durationDays": 7,
+    "price": {
+      "amount": 299,
+      "currency": "USD"
+    },
+    "description": "A 7-day Aerial Yoga Teacher Training program in Rishikesh, India, covering poses, hammock setup, aerial inversions, deep stretches, and relaxation techniques. The course is open to all levels, from complete beginners to experienced yoga teachers and wellness practitioners. Upon completion, students receive a YACEP-certified qualification recognized by Yoga Alliance (USA).",
+    "upcomingDates": [
+      "2026-01-24",
+      "2026-02-24",
+      "2026-03-24",
+      "2026-04-24",
+      "2026-05-24",
+      "2026-06-24",
+      "2026-07-24",
+      "2026-08-24",
+      "2026-09-24",
+      "2026-10-24"
+    ],
+    "accommodation": "Optional - Private room or shared room available at additional cost",
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:16:15.081Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "7-Day Yoga Retreat",
+    "url": "https://rishikeshyogaashram.com/7-days-yoga-retreat.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 399,
+      "currency": "USD"
+    },
+    "description": "A 7-day yoga retreat in Rishikesh near the holy Ganges and Himalayas, focused on relaxation, rejuvenation, and holistic wellness. The program includes daily asana, pranayama, meditation, mudra, bandha, shatkarma, Ayurveda consultations, therapies, and healing sessions. Suitable for all levels from beginners to advanced practitioners.",
+    "upcomingDates": [
+      "2025-10-02",
+      "2025-11-02",
+      "2025-12-02",
+      "2026-01-02",
+      "2026-02-02",
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02"
+    ],
+    "accommodation": "Private room or shared room included",
+    "meals": "3 Sattvik vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:16:22.701Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "14-Day Yoga Retreat",
+    "url": "https://rishikeshyogaashram.com/14-days-yoga-retreat.php",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 14,
+    "price": {
+      "amount": 599,
+      "currency": "USD"
+    },
+    "description": "A 14-day yoga and meditation retreat in Rishikesh, India focused on relaxation, rejuvenation, and holistic wellness. The program includes daily asana, pranayama, and meditation sessions, along with Ayurvedic consultations and therapies, cleansing practices (Shatkarma), and complimentary healing sessions. Sattvik meals, comfortable accommodation, and a local excursion are included, making it suitable for beginners through advanced practitioners.",
+    "upcomingDates": [
+      "2026-01-02",
+      "2025-02-02",
+      "2026-03-02",
+      "2026-04-02",
+      "2026-05-02",
+      "2026-06-02",
+      "2026-07-02",
+      "2026-08-02",
+      "2026-09-02",
+      "2026-10-02",
+      "2026-11-02",
+      "2026-12-02"
+    ],
+    "accommodation": "Private room or shared room included",
+    "meals": "Sattvik breakfast, lunch, afternoon tea, and dinner daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T11:16:31.158Z"
   }
 ]
