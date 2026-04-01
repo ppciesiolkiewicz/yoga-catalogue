@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react"
 import type { YogaCourse, Location } from "@/data/types"
+import { ThemeToggle } from "./theme-toggle"
 
 const LOCATIONS: { id: Location; label: string; subtitle: string }[] = [
   { id: "Rishikesh", label: "Rishikesh", subtitle: "Uttarakhand, India" },
@@ -251,13 +252,16 @@ function CourseCard({ course }: { course: YogaCourse }) {
               </div>
 
               {/* Details row */}
-              <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+              <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
                 {course.accommodation && (
                   <span>🏠 {formatDetail(course.accommodation)}</span>
                 )}
                 {course.meals && (
                   <span>🍽️ {formatDetail(course.meals)}</span>
                 )}
+                <span className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-emerald-600 transition-all hover:font-extrabold hover:gap-2 dark:text-emerald-400">
+                  Visit website <span aria-hidden>→</span>
+                </span>
               </div>
             </div>
           </div>
@@ -367,8 +371,8 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
           <div className="absolute top-8 left-1/2 h-40 w-40 rounded-full bg-teal-500 blur-3xl" />
         </div>
         <div className="relative mx-auto max-w-5xl px-4 py-10 sm:py-12">
-          {/* Location switcher */}
-          <div className="mb-4 flex gap-2">
+          {/* Location switcher + theme toggle */}
+          <div className="mb-4 flex items-center gap-2">
             {LOCATIONS.map((loc) => (
               <button
                 key={loc.id}
@@ -382,6 +386,9 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
                 {loc.label}
               </button>
             ))}
+            <div className="ml-auto">
+              <ThemeToggle />
+            </div>
           </div>
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-zinc-400">
             {locationInfo.subtitle}
