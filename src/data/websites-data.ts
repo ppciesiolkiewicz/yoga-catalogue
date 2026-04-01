@@ -128,4 +128,88 @@ export const websites: WebsiteEntry[] = [
     schoolName: "Samadhi Yoga Ashram",
     url: "https://samadhiyogaashram.com/yin-yoga-training-in-india.php",
   },
+
+  // Yin Yoga International — 3 courses
+  {
+    schoolName: "Yin Yoga International",
+    url: "https://yinyogainternational.com/50-hour-yin-yoga-teacher-training-in-rishikesh.php",
+  },
+  {
+    schoolName: "Yin Yoga International",
+    url: "https://yinyogainternational.com/10-days-yin-yoga-and-sound-healing-course-in-rishikesh.php",
+  },
+  {
+    schoolName: "Yin Yoga International",
+    url: "https://yinyogainternational.com/50-hour-yin-yoga-and-ayurveda-ttc-in-rishikesh.php",
+  },
+
+  // Nirvana Yoga School
+  {
+    schoolName: "Nirvana Yoga School",
+    url: "https://www.nirvanayogaschoolindia.com/yin-yoga-teacher-training-in-rishikesh-india",
+  },
+
+  // Adi Yogpeeth
+  {
+    schoolName: "Adi Yogpeeth",
+    url: "https://www.adiyogpeeth.com/yin-yoga-training-in-rishikesh-india.php",
+  },
+
+  // Adi Yoga Ashram
+  {
+    schoolName: "Adi Yoga Ashram",
+    url: "https://adiyogaashram.com/yin-yoga-teacher-training-rishikesh.php",
+  },
+
+  // Adhiroha Yoga Ashram
+  {
+    schoolName: "Adhiroha Yoga Ashram",
+    url: "https://www.adhiroha.com/hatha-teacher-training-course-rishikesh",
+  },
+
+  // Rishikesh Traditional Yoga School — 2 levels
+  {
+    schoolName: "Rishikesh Traditional Yoga School",
+    url: "https://rishikeshtraditionalyogaschool.com/50-hour-yin-yoga-teacher-training-in-rishikesh.php",
+  },
+  {
+    schoolName: "Rishikesh Traditional Yoga School",
+    url: "https://rishikeshtraditionalyogaschool.com/85-hour-yin-yoga-teacher-training-in-rishikesh.php",
+  },
+
+  // Hatha Yoga World
+  {
+    schoolName: "Hatha Yoga World",
+    url: "https://www.hathayogaworld.com/yin-yoga-course-in-rishikesh/",
+  },
+
+  // Rishikesh Yog Nirvana
+  {
+    schoolName: "Rishikesh Yog Nirvana",
+    url: "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/yin/",
+  },
+
+  // Rishikesh Vinyasa Yoga School
+  {
+    schoolName: "Rishikesh Vinyasa Yoga School",
+    url: "https://rishikeshvinyasayogaschool.com/yin-yoga-teacher-training-course-in-rishikesh.php",
+  },
+
+  // Ishavasyam Yoga School
+  {
+    schoolName: "Ishavasyam Yoga School",
+    url: "https://ishavasyamyogaschool.com/yin-yoga-teacher-training-india.php",
+  },
+
+  // Om Shanti Om Yoga Ashram
+  {
+    schoolName: "Om Shanti Om Yoga Ashram",
+    url: "https://www.omshantiomyoga.com/50-hour-yin-yoga-teacher-training-india.html",
+  },
+
+  // Rishikesh Yoga Ashram
+  {
+    schoolName: "Rishikesh Yoga Ashram",
+    url: "https://rishikeshyogaashram.com/yin-yoga.php",
+  },
 ]

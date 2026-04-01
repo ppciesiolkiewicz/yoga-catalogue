@@ -20,4 +20,5 @@ export interface YogaCourse {
   meals: boolean | string
   rating: number | null
   reviewCount: number | null
+  updatedAt: string
 }

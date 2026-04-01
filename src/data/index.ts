@@ -13,7 +13,7 @@ export const courses: YogaCourse[] = [
       "amount": 450,
       "currency": "USD"
     },
-    "description": "A Yoga Alliance (YACEP) certified 50-hour Yin Yoga Teacher Training held in Rishikesh, India. The program integrates Traditional Chinese Medicine, meridian theory, functional anatomy, fascia science, and mindfulness to provide both theoretical and practical training. It is suitable for yoga teachers seeking continuing education credits as well as practitioners looking to deepen their Yin Yoga knowledge.",
+    "description": "A Yoga Alliance (YACEP) certified 50-hour Yin Yoga Teacher Training in Rishikesh combining theory and practical experience. The program integrates Traditional Chinese Medicine, meridian theory, mindfulness, and modern functional anatomy. It is suitable for yoga teachers seeking CE credits as well as practitioners wanting to deepen their Yin Yoga knowledge.",
     "upcomingDates": [
       "2025-05-24",
       "2026-03-24",
@@ -26,41 +26,11 @@ export const courses: YogaCourse[] = [
       "2026-12-25",
       "2027-01-24"
     ],
-    "accommodation": "Twin share accommodation included (single room available at higher price)",
+    "accommodation": "Twin share or single room available",
     "meals": true,
     "rating": null,
-    "reviewCount": null
-  },
-  {
-    "schoolName": "Yin Yoga Foundation",
-    "courseName": "100 Hour Yin Yoga Teacher Training in Rishikesh",
-    "url": "https://www.yinyogafoundation.com/yin-yoga-certification.php",
-    "type": "Yin Yoga Teacher Training",
-    "certificationLevel": "100hr",
-    "durationDays": 12,
-    "price": {
-      "amount": 600,
-      "currency": "USD"
-    },
-    "description": "A Yoga Alliance (YACEP) certified 100-hour intensive Yin Yoga Teacher Training held in Rishikesh over 12 days. The program blends Yin Yoga philosophy, functional anatomy, Traditional Chinese Medicine, meridian theory, and mindfulness practices. It is suitable for yoga teachers seeking CE credits, practitioners wanting to deepen their Yin Yoga knowledge, and wellness professionals exploring holistic practices.",
-    "upcomingDates": [
-      "2025-10-02",
-      "2025-11-02",
-      "2025-12-02",
-      "2026-01-02",
-      "2026-02-02",
-      "2026-03-02",
-      "2026-04-02",
-      "2026-05-02",
-      "2026-06-02",
-      "2026-07-02",
-      "2026-08-02",
-      "2026-09-02"
-    ],
-    "accommodation": "Twin share or single room available (twin share included in base price of $600; single upgrade $700)",
-    "meals": true,
-    "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:40:33.160Z"
   },
   {
     "schoolName": "Yin Yoga Foundation",
@@ -73,12 +43,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A transformative 200-hour Yin Yoga Teacher Training held in Rishikesh, the world's Yoga Capital, set in the peaceful Himalayan foothills by the sacred Ganges River. The curriculum combines ancient yogic knowledge with modern anatomy, meridian theories, mindfulness, meditation, and professional teaching methodology. Upon completion, students receive Yoga Alliance RYT 200 certification, qualifying them to teach Yin Yoga globally.",
+    "description": "A transformative 200-hour Yin Yoga teacher training held in Rishikesh, India, at the foothills of the Himalayas near the sacred Ganges River. The curriculum combines ancient yogic philosophy, functional anatomy, meridian theories, meditation, pranayama, and teaching methodology. Graduates receive Yoga Alliance RYT 200 certification with global recognition.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:41:42.157Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -91,12 +62,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A comprehensive 50-hour Yin Yoga Teacher Training in Rishikesh grounded in Traditional Chinese Medicine and yoga philosophy. The course covers Yin Yoga asanas, Meridian Theory, pranayama, meditation, anatomy, and teaching methodology. Designed for both aspiring teachers and personal practitioners seeking to deepen flexibility, reduce stress, and achieve mind-body balance.",
+    "description": "A comprehensive 50-hour Yin Yoga Teacher Training in Rishikesh, India, grounded in Traditional Chinese Medicine and yoga philosophy. The course covers Yin Yoga asanas, Meridian Theory, anatomy, pranayama, meditation, and teaching methodology over 6 days. Suitable for beginners seeking relaxation and stress relief as well as athletes and fitness enthusiasts looking to enhance flexibility and prevent injuries.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:41:48.766Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -109,12 +81,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A 100-hour Yin Yoga Teacher Training held in Rishikesh, India, covering the history and philosophy of Yin Yoga, meridian theory, anatomy, pranayama, meditation, and teaching methodology. The course is suitable for complete beginners as well as experienced yoga teachers looking to incorporate Yin Yoga into their practice. Graduates receive certification recognized by Yoga Alliance USA and the International Yoga Organisation (IYO®), valid in 195 countries.",
+    "description": "A 100-hour Yin Yoga Teacher Training in Rishikesh, India, suitable for complete beginners and experienced yoga teachers alike. The course covers the history and philosophy of Yin Yoga, Meridian Theory, key asanas, pranayama, meditation, anatomy, and teaching methodology. Graduates receive internationally recognized certification through IYO, IYS, and Yoga Alliance USA.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:41:55.487Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -127,12 +100,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A 200-hour Yin Yoga Teacher Training Course in Rishikesh, India, designed to deepen your practice and enhance your teaching abilities. The program covers Yin Yoga history and philosophy, anatomy, meridian theory, pranayama, meditation, and teaching methodology. Certified by Yoga Alliance USA (RYT200) and the International Yoga Organisation (IYO®), recognized in 195 countries.",
+    "description": "A 200-hour Yin Yoga Teacher Training course based in Rishikesh, India, covering the history and philosophy of Yin Yoga, anatomy, meridian theory, pranayama, meditation, and teaching methodology. The program is Yoga Alliance USA certified, leading to an internationally recognized RYT200 credential. Set in the spiritual environment of the Himalayas near the Ganges river, it is designed for both yoga instructors and enthusiasts seeking to deepen their practice and teaching skills.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:02.974Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -145,12 +119,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A 300-hour Yin Yoga Teacher Training in Rishikesh designed for certified yoga teachers seeking to deepen their expertise in Yin Yoga. The course covers fascia and connective tissue, Traditional Chinese Medicine meridian theory, advanced sequencing, trauma-informed teaching, and therapeutic applications. Set in Rishikesh at the foothills of the Himalayas, the program aims to transform both personal practice and teaching abilities.",
+    "description": "A 300-hour advanced Yin Yoga Teacher Training in Rishikesh designed for teachers who have completed a 200-hour training and wish to specialise in Yin Yoga. The course covers fascia and connective tissue, meridian theory from Traditional Chinese Medicine, advanced sequencing, trauma-informed teaching, and the philosophy of Yin and Yang. Set in the foothills of the Himalayas, the program aims to deepen both personal practice and professional teaching skills.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:09.811Z"
   },
   {
     "schoolName": "Himalayan Yoga Association",
@@ -161,14 +136,15 @@ export const courses: YogaCourse[] = [
     "durationDays": 0,
     "price": {
       "amount": 0,
-      "currency": "INR"
+      "currency": "USD"
     },
-    "description": "A comprehensive 500-hour Yin Yoga Teacher Training in Rishikesh that combines the 200-hour foundation course and 300-hour advanced training into one complete program. Students learn meridian lines, Chinese medicine principles, energy circulation, and how to teach Yin Yoga safely to all types of students including those with injuries or trauma. The training takes place at an ashram in the Himalayan foothills alongside the Ganges River, with small group sizes ensuring personalized attention from senior teachers.",
+    "description": "A comprehensive 500-hour Yin Yoga Teacher Training in Rishikesh that combines the 200-hour foundation course and 300-hour advanced training into one complete program. Students learn about meridian lines, Chinese medicine, working with injuries and trauma, and how to teach safely and effectively. Set in the Himalayan foothills beside the Ganges River, the training emphasizes small groups for personalized attention and ashram-style immersive learning.",
     "upcomingDates": [],
-    "accommodation": true,
-    "meals": true,
+    "accommodation": false,
+    "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:16.146Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -181,12 +157,13 @@ export const courses: YogaCourse[] = [
       "amount": 450,
       "currency": "USD"
     },
-    "description": "A Yoga Alliance certified (YACEP) Yin Yoga Teacher Training program in Rishikesh, India, focusing on the meditative and passive style of Yin Yoga that targets deep connective tissues, fascia, and joints through long-held poses. The curriculum covers Taoist philosophy, Traditional Chinese Medicine, meridian theory, anatomy, pranayama, mudras, and practical teaching skills. Suitable for yoga practitioners wishing to deepen their personal practice or instructors looking to enhance their expertise.",
+    "description": "A Yoga Alliance certified (YACEP) Yin Yoga Teacher Training program in Rishikesh, India, focusing on the meditative and passive style of Yin Yoga that targets deep connective tissues, fascia, and joints through long-held poses. The course covers Taoist philosophy, Traditional Chinese Medicine, meridian theory, yin yoga anatomy, and practical teaching skills in a small group environment. Includes accommodation, daily vegetarian meals, herbal tea, weekend excursions, and course materials.",
     "upcomingDates": [],
-    "accommodation": "Single accommodation included",
-    "meals": "Daily nutritious vegetarian meals and herbal tea included",
+    "accommodation": true,
+    "meals": "Daily nutritious vegetarian meals and herbal tea",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:24.155Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -199,12 +176,13 @@ export const courses: YogaCourse[] = [
       "amount": 500,
       "currency": "USD"
     },
-    "description": "A Yoga Alliance certified 100-hour Yin Yoga Teacher Training held in Rishikesh, India, focusing on the meditative and passive style of Yin Yoga that targets deep connective tissues, fascia, and joints through long-held poses. The curriculum covers Taoist philosophy, Traditional Chinese Medicine meridian theory, anatomy, pranayama, and practical teaching skills. Students learn to balance active Yang practices with passive Yin qualities while developing mental calmness and self-awareness.",
+    "description": "A Yoga Alliance certified 100-hour Yin Yoga Teacher Training held in Rishikesh, India, focusing on the meditative and passive style of Yin Yoga. The program covers Taoist philosophy, Traditional Chinese Medicine, meridian theory, anatomy, pranayama, and hands-on teaching practice. Students learn to hold poses for extended periods to target deep connective tissues, fascia, and joints while developing mental clarity and emotional balance.",
     "upcomingDates": [],
-    "accommodation": "Single accommodation included",
+    "accommodation": "Single accommodation included (500–600 USD)",
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:31.675Z"
   },
   {
     "schoolName": "Arogya Yoga School",
@@ -217,12 +195,13 @@ export const courses: YogaCourse[] = [
       "amount": 999,
       "currency": "USD"
     },
-    "description": "Arogya Yoga School offers a Yoga Alliance certified 200-hour Yin and Yang Yoga Teacher Training in Rishikesh, India. The program covers Yin Yoga philosophy rooted in Taoist and Traditional Chinese Medicine principles, meridian theory, anatomy, and dynamic Yang practices including Hatha and Vinyasa. Students learn to teach Yin Yoga classes, develop pranayama, kriyas, mudras, and deepen their understanding of the mind-body connection through long-held poses.",
+    "description": "A Yoga Alliance certified 200-hour Yin and Yang Yoga Teacher Training held in Rishikesh, India, combining Yin Yoga philosophy rooted in Taoist principles and Traditional Chinese Medicine with dynamic Yang (Hatha/Vinyasa) practices. The program covers meridian theory, yin yoga anatomy, pranayama, mudras, meditation, and practical teaching skills. Students learn to hold poses for extended periods to target deep connective tissues, improve flexibility, and cultivate mental clarity and emotional balance.",
     "upcomingDates": [],
     "accommodation": "Single accommodation included",
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:39.253Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -235,7 +214,7 @@ export const courses: YogaCourse[] = [
       "amount": 299,
       "currency": "USD"
     },
-    "description": "A 50-hour Yin Yoga Teacher Training Course in Rishikesh covering philosophical and anatomical theory, multiple healing practices, meridian theory, and teaching methodology. The course is based on principles of Traditional Chinese Medicine and Taoist tradition, targeting deep connective tissues of the body. Students will gain hands-on teaching experience by delivering a Yin Yoga class to fellow students as part of evaluation.",
+    "description": "A 50-hour Yin Yoga Teacher Training Course in Rishikesh covering philosophical and anatomical theory, meridian theory, multiple healing practices, and teaching methodology. The course is based on Taoist principles and Traditional Chinese Medicine, focusing on deep connective tissues and long-held postures. Graduates receive a YACEP Yoga Alliance certification.",
     "upcomingDates": [
       "2026-04-24",
       "2026-05-24",
@@ -250,10 +229,11 @@ export const courses: YogaCourse[] = [
       "2027-02-24",
       "2027-03-24"
     ],
-    "accommodation": "Private room or shared room available; private room included in $399 package, shared room in $299 package",
+    "accommodation": "Private room ($399 USD) or shared room ($299 USD) available; accommodation optional at $249 USD without",
     "meals": "3 vegan, vegetarian and gluten-free meals daily included",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:49.124Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
@@ -266,7 +246,7 @@ export const courses: YogaCourse[] = [
       "amount": 599,
       "currency": "USD"
     },
-    "description": "A 100-hour Yin Yoga Teacher Training Course in Rishikesh covering the history and philosophy of Yin Yoga, anatomy and physiology, over 50 Yin Yoga poses, meridian theory, pranayama, meditation, and teaching methodology. The course incorporates Traditional Chinese Medicine, fascia training, and emotional body work to provide a holistic approach to Yin Yoga. Students gain YACEP certification through Yoga Alliance upon completion.",
+    "description": "A 100-hour Yin Yoga Teacher Training in Rishikesh focusing on both the experience and theory of Yin Yoga, including anatomy, philosophy, Traditional Chinese Medicine, and Meridian Theory. The course covers over 50 Yin Yoga poses, fascia training, pranayama, meditation, and teaching methodology. Certification is provided through Yoga Alliance (YACEP) upon completion.",
     "upcomingDates": [
       "2026-05-01",
       "2026-06-01",
@@ -281,14 +261,15 @@ export const courses: YogaCourse[] = [
       "2027-03-01",
       "2027-04-01"
     ],
-    "accommodation": "Private room ($749 USD) or shared room ($599 USD) options available, or without accommodation ($499 USD)",
+    "accommodation": "Private room ($749 USD) or shared room ($599 USD) options available; accommodation-free option also available at $499 USD",
     "meals": "Food is included",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:42:58.771Z"
   },
   {
     "schoolName": "Vinyasa Yoga Ashram",
-    "courseName": "200 Hour Yin Yoga & 200 Hour Yoga Teacher Training Combo Course",
+    "courseName": "200 Hour Yin Yoga & 200 Hour Yoga Teacher Training Course (Combo)",
     "url": "https://www.vinyasayogaashram.com/200-hour-yin-yoga-teacher-training-india",
     "type": "Yin & Yang TTC",
     "certificationLevel": "200hr RYT",
@@ -297,7 +278,7 @@ export const courses: YogaCourse[] = [
       "amount": 1099,
       "currency": "USD"
     },
-    "description": "A 30-day combo course combining a 200-hour Multistyle Yoga Teacher Training (Ashtanga, Vinyasa & Hatha) with a 7-day Yin Yoga Teacher Training in Rishikesh, India. The program covers Yin philosophy, Meridian Theory, anatomy, and teaching methodology. Graduates receive both RYT 200 (Yoga Alliance) and YACEP certifications.",
+    "description": "A 30-day combo course combining a 24-day 200-hour Multistyle Yoga Teacher Training (Ashtanga, Vinyasa & Hatha) with a 7-day Yin Yoga Teacher Training in Rishikesh, India. The Yin portion covers anatomy, Meridian Theory, Yin philosophy, pranayama, meditation, and teaching methodology. Upon completion, students receive both RYT 200 (Yoga Alliance) and YACEP certifications.",
     "upcomingDates": [
       "2026-04-24",
       "2026-05-01",
@@ -312,28 +293,62 @@ export const courses: YogaCourse[] = [
       "2026-09-24",
       "2026-10-01"
     ],
-    "accommodation": "Shared or private room available (shared room included in base price)",
+    "accommodation": "Private room or shared room available; food included in all options",
     "meals": "3 meals daily included",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:13.777Z"
+  },
+  {
+    "schoolName": "Vinyasa Yoga Ashram",
+    "courseName": "Yin Yoga Teacher Training Course",
+    "url": "https://www.vinyasayogaashram.com/200-hour-yin-yoga-teacher-training-india",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 1099,
+      "currency": "USD"
+    },
+    "description": "A 7-day Yin Yoga Teacher Training in Rishikesh covering the history and philosophy of Yin Yoga, anatomy and physiology, Meridian Theory, pranayama, meditation, and teaching methodology. The course targets deep connective tissues and aims to develop both skilled practitioners and confident teachers. Certification is YACEP-accredited through Yoga Alliance.",
+    "upcomingDates": [
+      "2026-04-24",
+      "2026-05-01",
+      "2026-05-24",
+      "2026-06-01",
+      "2026-06-24",
+      "2026-07-01",
+      "2026-07-24",
+      "2026-08-01",
+      "2026-08-24",
+      "2026-09-01",
+      "2026-09-24",
+      "2026-10-01"
+    ],
+    "accommodation": "7 days accommodation with meals included",
+    "meals": "Meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:13.777Z"
   },
   {
     "schoolName": "World Peace Yoga School",
     "courseName": "Yin Yoga Teacher Training Course In Rishikesh",
     "url": "https://worldpeaceyogaschool.com/yin-yoga-ttc-in-rishikesh.php",
     "type": "Yin Yoga Teacher Training",
-    "certificationLevel": "",
+    "certificationLevel": "50hr",
     "durationDays": 5,
     "price": {
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A comprehensive Yin Yoga Teacher Training Course offered in Rishikesh, India, designed to provide an in-depth understanding of Yin Yoga principles, anatomy, and teaching methodology. The program is Yoga Alliance registered and led by experienced teachers under Guru Vishnu, covering topics such as Yin and Yang theory, functional anatomy, sequencing, and connective tissue benefits. Graduates receive a certification eligible for Yoga Alliance registration and are prepared to teach Yin Yoga globally.",
+    "description": "A comprehensive Yin Yoga Teacher Training Course held in Rishikesh, India, designed to provide an in-depth understanding of Yin Yoga principles, anatomy, teaching methodology, and sequencing. The program is Yoga Alliance registered and led by experienced teachers under the guidance of Guru Vishnu, with over 35 years of experience. Graduates receive a certified yoga teacher credential eligible for Yoga Alliance registration.",
     "upcomingDates": [],
     "accommodation": true,
     "meals": true,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:21.274Z"
   },
   {
     "schoolName": "Vinyasa Yoga Academy",
@@ -346,12 +361,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "An intensive and carefully structured Yin Yoga Teacher Training course held in Rishikesh, India, designed to provide a thorough understanding of practicing and teaching Yin Yoga. The course covers Yin philosophy, history, anatomy, sequencing, and the functional approach based on skeletal variations. Students will gain the tools and knowledge needed to deepen their practice and begin teaching Yin Yoga to others.",
+    "description": "An intensive and carefully structured Yin Yoga Teacher Training course held in Rishikesh, India, covering the philosophy, anatomy, and teaching methodology of Yin Yoga. The course takes a functional approach based on skeletal variations and the uniqueness of each practitioner, providing tools to deepen personal practice and begin teaching others. Students will study posture sequencing, mindfulness, connective tissue anatomy, and the relationship between emotions and the body.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": 5,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:28.056Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -364,12 +380,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "USD"
     },
-    "description": "A 100 Hour Yin Yoga Teacher Training program based in Rishikesh, India, combining Yin Yoga principles, functional anatomy, fascia and connective tissue study, breath awareness, and Yoga Nidra practices. Designed for intermediate to advanced practitioners who have completed a 200 Hour YTT, the course is taught in English and welcomes international students. The program aims to develop teaching skills while promoting personal transformation, emotional balance, and inner awareness.",
+    "description": "A 100-hour Yin Yoga Teacher Training program held in Rishikesh, India, combining traditional Yin Yoga principles, functional anatomy, fascia science, breath awareness, and Yoga Nidra practices in a Himalayan environment. Designed for intermediate to advanced practitioners who have completed a 200-hour YTT and wish to expand their teaching skills with a therapeutic and restorative yoga style. The course includes 20 hours of Yoga Nidra, trauma releasing meditation, and is taught in English to international students.",
     "upcomingDates": [],
     "accommodation": "11 nights accommodation included",
     "meals": "Three fresh organic nutritious vegetarian meals each day, all-day filtered water and herbal teas",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:37.075Z"
   },
   {
     "schoolName": "Mind Flow Harmony",
@@ -382,14 +399,15 @@ export const courses: YogaCourse[] = [
       "amount": 699,
       "currency": "USD"
     },
-    "description": "A 12-day transformative Yin yoga and meditation retreat set in the spiritual heart of Rishikesh, combining deep Yin asana practice with guided meditation, Yoga Nidra, mantra chanting, sound healing, and personalized Ayurvedic treatments. The retreat focuses on releasing deep-seated tensions in fascia and connective tissues, emotional healing, and reconnecting with one's authentic self. Suitable for beginners to intermediate practitioners, the program blends traditional yoga philosophy with Ayurvedic wellness for a holistic healing experience.",
+    "description": "A 12-day transformative Yin yoga and meditation retreat held in Rishikesh, India, combining deep Yin asana practice with guided meditation, Yoga Nidra, mantra chanting, sound healing, and personalized Ayurvedic treatments. The retreat focuses on releasing deep-seated tensions through prolonged postures targeting fascia and connective tissues, while integrating Ayurvedic wisdom for holistic healing. Suitable for beginners to intermediate practitioners seeking inner stillness, stress relief, and reconnection with their authentic self.",
     "upcomingDates": [
       "2026-04-02"
     ],
-    "accommodation": "Twin shared room or private room included",
-    "meals": "Plant-based breakfast, Ayurvedic dosha-balanced lunch, and light Ayurvedic dinner daily",
+    "accommodation": "Twin Shared Room ($699) or Private Room ($799) included",
+    "meals": "3 plant-based and Ayurvedic dosha-balanced meals daily included",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:47.672Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -399,10 +417,10 @@ export const courses: YogaCourse[] = [
     "certificationLevel": "50hr",
     "durationDays": 12,
     "price": {
-      "amount": 699,
+      "amount": 799,
       "currency": "USD"
     },
-    "description": "An immersive Yin Yoga Teacher Training program located in Laxman Jhula, Rishikesh, offering Yoga Alliance certified certification. The curriculum covers Yin poses, meridian theory, pranayama, meditation, philosophy, and class sequencing for both beginners and experienced practitioners. The program includes accommodation and three daily Indian vegetarian meals.",
+    "description": "An immersive Yin Yoga Teacher Training program located in the serene Laxman Jhula area of Rishikesh, offering Yoga Alliance certified certification. The curriculum covers Yin poses, meridian theory, pranayama, meditation, philosophy, and class sequencing. The program is suitable for both beginners and experienced practitioners seeking personal growth and international certification.",
     "upcomingDates": [
       "2026-04-02",
       "2026-05-02",
@@ -414,10 +432,11 @@ export const courses: YogaCourse[] = [
       "2026-11-02",
       "2026-12-02"
     ],
-    "accommodation": "Private or twin shared room with attached bathroom, running hot water, and power backup included",
-    "meals": "3 Indian vegetarian meals daily plus two times tea included",
+    "accommodation": "Private or twin shared room with attached bathroom, running hot water, and power backup included in the fee",
+    "meals": "3 Indian vegetarian meals daily included in the fee",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:43:56.318Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -430,12 +449,13 @@ export const courses: YogaCourse[] = [
       "amount": 100,
       "currency": "USD"
     },
-    "description": "A 6-day online Yin Yoga retreat held via Zoom, covering history, principles, and practice of Yin Yoga across beginner, intermediate, and advanced levels. The course includes 2 hours of theory and 4 hours of practice over 6 sessions (Monday to Saturday). Participants receive a Yoga Alliance USA certificate upon completion.",
+    "description": "A 6-day online Yin Yoga retreat held via Zoom, covering beginner to advanced levels with 1 hour of sessions daily (2 hours theory, 4 hours practice total). Participants learn the history, principles, and benefits of Yin Yoga, meridians, and prop usage. Upon completion, a Yoga Alliance USA certificate is awarded.",
     "upcomingDates": [],
     "accommodation": false,
     "meals": false,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:09.996Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -448,12 +468,13 @@ export const courses: YogaCourse[] = [
       "amount": 300,
       "currency": "USD"
     },
-    "description": "A 6-day in-person Yin Yoga retreat at Sri Yoga Ashram in Rishikesh, India, including 5 classes per day covering Yin Yoga, Ayurveda, Hatha Yoga, pranayama, and meditation. Twin shared accommodation with attached bathroom, hot water, and three Sattvic vegetarian meals per day are included. Participants receive a Yoga Alliance USA certificate upon completion.",
+    "description": "A 6-day in-person Yin Yoga retreat at Sri Yoga Ashram in Rishikesh, India, including 5 classes per day covering Yin Yoga, Ayurveda, Hatha Yoga, pranayama, and meditation. Shared accommodation with attached bathroom, hot water, and three Sattvic vegetarian meals daily are included. A Yoga Alliance USA certificate is awarded upon completion.",
     "upcomingDates": [],
-    "accommodation": "Twin shared room with attached bathroom included",
-    "meals": "Three Sattvic vegetarian meals per day plus two teas included",
+    "accommodation": "Twin shared room with attached bathroom",
+    "meals": "3 Sattvic vegetarian meals daily plus two teas",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:09.996Z"
   },
   {
     "schoolName": "Sri Yoga Ashram",
@@ -466,12 +487,13 @@ export const courses: YogaCourse[] = [
       "amount": 350,
       "currency": "USD"
     },
-    "description": "A 6-day in-person Yin Yoga retreat at Sri Yoga Ashram in Rishikesh, India, including 5 classes per day covering Yin Yoga, Ayurveda, Hatha Yoga, pranayama, and meditation. Private accommodation with attached bathroom, hot water, and three Sattvic vegetarian meals per day are included. Participants receive a Yoga Alliance USA certificate upon completion.",
+    "description": "A 6-day in-person Yin Yoga retreat at Sri Yoga Ashram in Rishikesh, India, including 5 classes per day covering Yin Yoga, Ayurveda, Hatha Yoga, pranayama, and meditation. Private accommodation with attached bathroom, hot water, and three Sattvic vegetarian meals daily are included. A Yoga Alliance USA certificate is awarded upon completion.",
     "upcomingDates": [],
-    "accommodation": "Private room with attached bathroom included",
-    "meals": "Three Sattvic vegetarian meals per day plus two teas included",
+    "accommodation": "Private room with attached bathroom",
+    "meals": "3 Sattvic vegetarian meals daily plus two teas",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:09.996Z"
   },
   {
     "schoolName": "Vinyasa Yogashala",
@@ -484,16 +506,17 @@ export const courses: YogaCourse[] = [
       "amount": 784,
       "currency": "USD"
     },
-    "description": "A 100-hour Yin Yoga Teacher Training Course at Vinyasa Yogashala in Rishikesh, India, designed to deepen the connection between body, mind, and soul through the slow-paced practice of Yin Yoga. The curriculum covers meridian theory, long holds, Taoist philosophy, pranayama, meditation, and introspection. Suitable for beginner, intermediate, and advanced yoga practitioners seeking to become certified Yin Yoga teachers.",
+    "description": "A 100-hour Yin Yoga Teacher Training Course in Rishikesh, India, designed to deepen understanding of Yin Yoga through meridian theory, long holds, pranayama, and meditation rooted in Taoist philosophy. The course targets connective tissues, fosters a meditative approach, and builds a soulful connection between body, mind, and soul. Suitable for beginners through advanced practitioners, it prepares students to become certified Yin Yoga teachers.",
     "upcomingDates": [
       "2026-03-01",
       "2026-04-01",
       "2026-05-01"
     ],
-    "accommodation": "Private room, 2-sharing, 3-sharing, and 4-sharing room options available",
-    "meals": true,
+    "accommodation": "true",
+    "meals": "true",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:17.744Z"
   },
   {
     "schoolName": "Rishikesh Yoga Association",
@@ -506,7 +529,7 @@ export const courses: YogaCourse[] = [
       "amount": 300,
       "currency": "USD"
     },
-    "description": "A 50-hour Yin Yoga Teacher Training Course in Rishikesh, India, affiliated with Yoga Alliance USA. The program provides an in-depth grasp of Yin Yoga covering pranayama, asana, anatomy, philosophy, meditation, and teaching methodology. Participants are trained by professional instructors to become licensed Yin Yoga teachers.",
+    "description": "A 50-hour Yin Yoga Teacher Training Course in Rishikesh, India, affiliated with Yoga Alliance USA. The program provides an in-depth grasp of Yin Yoga including pranayama, asana, anatomy, philosophy, meditation, and teaching methodology. Upon completion, participants become licensed Yin Yoga instructors.",
     "upcomingDates": [
       "2026-03-24",
       "2026-04-24",
@@ -517,10 +540,11 @@ export const courses: YogaCourse[] = [
       "2026-09-24",
       "2026-10-24"
     ],
-    "accommodation": "6 nights twin shared accommodation with hot water, attached bath and toilet included",
-    "meals": "3 times daily nutritious vegetarian meals and teas included",
+    "accommodation": "6 nights twin shared accommodation with hot water, attached bath and toilet",
+    "meals": "3 times daily nutritious vegetarian meals and teas",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:26.421Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -533,12 +557,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "INR"
     },
-    "description": "A 3-day Yin Yoga Retreat available in Rishikesh and Goa, India, designed to restore the mind, soul, and body. Participants receive 2 Yin Yoga lessons per day along with meditation and pranayama. The retreat focuses on increasing flexibility and range of motion by targeting connective tissues and improving blood circulation.",
+    "description": "A 3-day Yin Yoga retreat offered in Rishikesh and Goa, India, designed to restore the mind, soul, and body. Participants receive 2 Yin Yoga lessons per day along with meditation and pranayama. The retreat includes yogic food, yoga classes, and excursions.",
     "upcomingDates": [],
     "accommodation": true,
     "meals": "Yogic food included",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:35.035Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -551,12 +576,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "INR"
     },
-    "description": "A 7-day Yin Yoga Retreat offered in Rishikesh and Goa, designed to restore the mind, soul, and body. Participants receive 2 yin yoga lessons daily along with meditation and pranayama sessions. The retreat focuses on increasing flexibility and range of motion by targeting connective tissues and improving blood circulation.",
+    "description": "A 7-day Yin Yoga retreat available in Rishikesh and Goa, designed to restore mind, body, and soul. Participants receive 2 yin yoga lessons daily along with meditation and pranayama sessions. The retreat focuses on increasing flexibility and range of motion by targeting connective tissues and improving blood circulation.",
     "upcomingDates": [],
     "accommodation": true,
     "meals": "Yogic food included",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:41.335Z"
   },
   {
     "schoolName": "Peace Yoga Retreat",
@@ -569,12 +595,13 @@ export const courses: YogaCourse[] = [
       "amount": 0,
       "currency": "INR"
     },
-    "description": "A 14-day Yin Yoga Retreat offered in Rishikesh and Goa, India, featuring 2 yin yoga lessons daily along with meditation and pranayama. The retreat aims to restore mind, body, and soul while improving flexibility, range of motion, and blood circulation through focus on connective tissues. Yogic food, yoga classes, and excursions are included as part of the retreat services.",
+    "description": "A 14-day Yin Yoga Retreat offered in both Rishikesh and Goa, India, designed to restore the mind, soul, and body. Participants receive 2 Yin Yoga lessons daily along with meditation and pranayama sessions. The retreat focuses on increasing flexibility and range of motion by targeting connective tissues and improving blood circulation.",
     "upcomingDates": [],
     "accommodation": true,
-    "meals": "Yogic food included",
+    "meals": true,
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:47.618Z"
   },
   {
     "schoolName": "Samadhi Yoga Ashram",
@@ -587,7 +614,7 @@ export const courses: YogaCourse[] = [
       "amount": 599,
       "currency": "USD"
     },
-    "description": "A comprehensive Yin Yoga Teacher Training program at Samadhi Yoga Ashram in Rishikesh, India, covering asana, pranayama, meditation, body meridians, yin philosophy, yoga nidra, and teaching methodology. Students gain an in-depth understanding of Yin Yoga with expert guidance from renowned trainers, learning to direct Chi flow, work with fascia and meridians, and teach this practice effectively. The program is Yoga Alliance certified (RYS 200/300/500) and includes accommodation, 3 meals daily, books, and various complementary activities.",
+    "description": "A comprehensive Yin Yoga Teacher Training program at Samadhi Yoga Ashram in Rishikesh, India, offering in-depth understanding of Yin Yoga including posture teaching, meridians, Chi flow, fascia, mudras, Yin philosophy, and teaching methodology. The program is Yoga Alliance certified (RYS 200/300/500) and includes 3 meals, accommodation, and various complementary activities such as Ayurveda consultancy, sound healing, and Himalayan tours. Students will gain skills to teach Yin Yoga to different age groups while exploring the deeper connection between body, energy, and meditation.",
     "upcomingDates": [
       "2026-04-23",
       "2026-05-23",
@@ -598,9 +625,407 @@ export const courses: YogaCourse[] = [
       "2026-10-23",
       "2026-11-23"
     ],
-    "accommodation": "Shared or private room options available (4 sharing, 2 sharing, private room)",
-    "meals": "3 meals daily included",
+    "accommodation": "true - options include 6 shared, 4 shared, 2 shared, and private room",
+    "meals": "3 vegetarian meals daily",
     "rating": null,
-    "reviewCount": null
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:44:57.070Z"
+  },
+  {
+    "schoolName": "Yin Yoga International",
+    "courseName": "50-Hour Yin Yoga Teacher Training Course in Rishikesh",
+    "url": "https://yinyogainternational.com/50-hour-yin-yoga-teacher-training-in-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 5,
+    "price": {
+      "amount": 599,
+      "currency": "USD"
+    },
+    "description": "A 5-day, 50-hour Yin Yoga Teacher Training in Rishikesh, India, covering foundations of Yin Yoga, Taoist philosophy, meridian theory, functional anatomy, and teaching methodology. The course is open to all levels from pre-beginner to beginner and includes daily practice, pranayama, meditation, and teaching practicum. Certified by Yin Yoga International and recognized by Yoga Alliance (RYS 200/300/500).",
+    "upcomingDates": [
+      "2026-01-23",
+      "2026-02-23",
+      "2026-03-23",
+      "2026-04-23",
+      "2026-05-23",
+      "2026-06-23",
+      "2026-07-23",
+      "2026-08-23",
+      "2026-09-23",
+      "2026-10-23",
+      "2026-11-23",
+      "2026-12-23"
+    ],
+    "accommodation": "Shared room or private room available (shared room included at discounted rate)",
+    "meals": "Vegetarian Sattvic meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:05.392Z"
+  },
+  {
+    "schoolName": "Yin Yoga International",
+    "courseName": "10 Days Yin Yoga & Sound Healing Course in Rishikesh",
+    "url": "https://yinyogainternational.com/10-days-yin-yoga-and-sound-healing-course-in-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 10,
+    "price": {
+      "amount": 1099,
+      "currency": "USD"
+    },
+    "description": "A 10-day restorative and meditative course blending Yin Yoga, breathwork, and sound healing using singing bowls, mantras, and other instruments in the sacred setting of Rishikesh, India. The curriculum covers Yin Yoga postures, meridian and energy theory, chakra systems, pranayama, meditation, and teaching methodology. Graduates receive a Yoga Alliance-recognised 50-hour certificate allowing them to teach Yin Yoga and Sound Healing worldwide.",
+    "upcomingDates": [
+      "2026-01-23",
+      "2026-02-23",
+      "2026-03-23",
+      "2026-04-23",
+      "2026-05-23",
+      "2026-06-23",
+      "2026-07-23",
+      "2026-08-23",
+      "2026-09-23",
+      "2026-10-23",
+      "2026-11-23",
+      "2026-12-23"
+    ],
+    "accommodation": "Shared room or private room available (shared room included in base price)",
+    "meals": "Sattvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:13.661Z"
+  },
+  {
+    "schoolName": "Yin Yoga International",
+    "courseName": "10 Day Yin Yoga & Ayurveda Teacher Training in Rishikesh",
+    "url": "https://yinyogainternational.com/50-hour-yin-yoga-and-ayurveda-ttc-in-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 10,
+    "price": {
+      "amount": 999,
+      "currency": "USD"
+    },
+    "description": "A 10-day, 50-hour Yin Yoga & Ayurveda Teacher Training Course in Rishikesh, India, combining gentle yin-based yoga with traditional Ayurvedic wisdom. The program covers Yin Yoga postures, meridian theory, Ayurvedic dosha principles, pranayama, meditation, and teaching methodology. Students receive a Yoga Alliance accredited 50-hour certification upon completion.",
+    "upcomingDates": [
+      "2026-01-23",
+      "2026-02-23",
+      "2026-03-23",
+      "2026-04-23",
+      "2026-05-23",
+      "2026-06-23",
+      "2026-07-23",
+      "2026-08-23",
+      "2026-09-23",
+      "2026-10-23",
+      "2026-11-23",
+      "2026-12-23"
+    ],
+    "accommodation": "Shared room or private room included",
+    "meals": "Sattvic vegetarian meals included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:21.405Z"
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "Yin Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.nirvanayogaschoolindia.com/yin-yoga-teacher-training-in-rishikesh-india",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 299,
+      "currency": "USD"
+    },
+    "description": "A 6-day Yin Yoga Teacher Training in Rishikesh combining traditional Taoist wisdom and modern anatomy to provide a safe and effective approach to teaching Yin Yoga. The curriculum covers Yin Yoga asanas, sequences, philosophy, meridian theory, pranayama, and meditation. The course is Yoga Alliance certified and open to beginners and experienced teachers alike.",
+    "upcomingDates": [],
+    "accommodation": "Private room, 2-shared, 3-shared, or 4-shared room options available, all with balcony and attached bathroom with hot water",
+    "meals": "3 vegetarian meals daily based on yogic and Ayurvedic principles",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:29.636Z"
+  },
+  {
+    "schoolName": "Adi Yogpeeth",
+    "courseName": "85-Hours Yin Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.adiyogpeeth.com/yin-yoga-training-in-rishikesh-india.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "85hr",
+    "durationDays": 8,
+    "price": {
+      "amount": 599,
+      "currency": "USD"
+    },
+    "description": "A comprehensive Yin Yoga Teacher Training in Rishikesh, India, designed for beginners and aspiring teachers to explore the physical, mental, and spiritual aspects of Yin Yoga. The course covers Yin asanas, pranayama, anatomy, philosophy, meditation, and teaching methodology guided by experienced instructors. Students graduate fully prepared to teach Yin Yoga with confidence and clarity.",
+    "upcomingDates": [],
+    "accommodation": "Private or Shared room with attached bathroom, Wi-Fi, AC available on request",
+    "meals": "Daily nutritious vegetarian meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:39.154Z"
+  },
+  {
+    "schoolName": "Adi Yoga Ashram",
+    "courseName": "85 Hours Yin Yoga Teacher Training in Rishikesh",
+    "url": "https://adiyogaashram.com/yin-yoga-teacher-training-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "85hr",
+    "durationDays": 9,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 9-day immersive Yin Yoga Teacher Training held at Adi Yoga Ashram in Rishikesh, India, covering Yin Yoga principles, meridian theory, mindfulness meditation, breathwork, and sequencing. The program is YACEP-certified by Yoga Alliance and integrates traditional yogic philosophy with therapeutic applications of Yin Yoga. Offered in a residential format with small batches to promote personalized student-teacher interaction.",
+    "upcomingDates": [],
+    "accommodation": "8 nights accommodation (private or shared) included",
+    "meals": "Daily nutritious vegetarian meals and tea included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:50.204Z"
+  },
+  {
+    "schoolName": "Adhiroha Yoga Ashram",
+    "courseName": "Hatha & Yin Yoga Teacher Training Course in Rishikesh",
+    "url": "https://www.adhiroha.com/hatha-teacher-training-course-rishikesh",
+    "type": "Yin & Yang TTC",
+    "certificationLevel": "",
+    "durationDays": 12,
+    "price": {
+      "amount": 790,
+      "currency": "EUR"
+    },
+    "description": "A 12-day intensive Hatha & Yin Yoga Teacher Training in Rishikesh designed for beginners to advanced practitioners. The course covers strength-building Hatha asanas, deep restorative Yin Yoga practices, yoga philosophy, anatomy, and teaching methodology. Students gain the skills to design and sequence classes, lead workshops, and teach globally upon certification.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:45:58.317Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "50 Hour Yin Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshtraditionalyogaschool.com/50-hour-yin-yoga-teacher-training-in-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 6,
+    "price": {
+      "amount": 399,
+      "currency": "USD"
+    },
+    "description": "A 50-hour Yin Yoga Teacher Training course held in Rishikesh, designed for beginner to intermediate practitioners. The curriculum covers Yin Yoga sequences, body meridians, Daoist philosophy, pranayama, yoga nidra, sound healing, and teaching methodology. Founded by Mr. Rajeev Nautiyal, who was the first teacher to bring Yin Yoga teacher training to Rishikesh in 2016.",
+    "upcomingDates": [
+      "2026-02-25",
+      "2026-03-25",
+      "2026-04-25",
+      "2026-05-25",
+      "2026-06-25",
+      "2026-07-25",
+      "2026-08-25",
+      "2026-09-25",
+      "2026-10-25",
+      "2026-11-25",
+      "2026-12-25",
+      "2027-01-25",
+      "2027-02-25",
+      "2027-03-25"
+    ],
+    "accommodation": "Shared room included (private room available for 449 USD)",
+    "meals": "3 meals daily (breakfast, lunch, dinner)",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:46:12.000Z"
+  },
+  {
+    "schoolName": "Rishikesh Traditional Yoga School",
+    "courseName": "85 Hour Yin Yoga Teacher Training In Rishikesh",
+    "url": "https://rishikeshtraditionalyogaschool.com/85-hour-yin-yoga-teacher-training-in-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "85hr",
+    "durationDays": 8,
+    "price": {
+      "amount": 599,
+      "currency": "USD"
+    },
+    "description": "An 85-hour Yin Yoga Teacher Training course in Rishikesh covering 12 Major Meridians, Daoist philosophy, Yin yoga sequences, teaching methodology, and sound healing. The course blends Traditional Hatha Yoga with Chinese medicine body meridian theory, working on deep connective tissue and fascia through long-held postures. Suitable for beginners to intermediate practitioners, it prepares students to teach Yin Yoga with proper alignment and adjustment techniques.",
+    "upcomingDates": [
+      "2026-02-25",
+      "2026-03-25",
+      "2026-04-25",
+      "2026-05-25",
+      "2026-06-25",
+      "2026-07-25",
+      "2026-08-25",
+      "2026-09-25",
+      "2026-10-25",
+      "2026-11-25",
+      "2027-01-25",
+      "2027-02-25"
+    ],
+    "accommodation": "Shared room included (private room available for 649 USD)",
+    "meals": "3 meals daily (breakfast, lunch, dinner)",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:46:24.039Z"
+  },
+  {
+    "schoolName": "Hatha Yoga World",
+    "courseName": "Yin Yoga Teacher Training in Rishikesh",
+    "url": "https://www.hathayogaworld.com/yin-yoga-course-in-rishikesh/",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "",
+    "durationDays": 8,
+    "price": {
+      "amount": 299,
+      "currency": "USD"
+    },
+    "description": "A meditative and therapeutic yin yoga teacher training held in Rishikesh, India. The course focuses on holding passive poses for extended periods to target deep connective tissues, improve flexibility, and cultivate mental calm. Accommodation and food are available as an optional add-on for $150 USD.",
+    "upcomingDates": [
+      "2026-01-05",
+      "2026-02-05",
+      "2026-03-05",
+      "2026-04-05",
+      "2026-05-08",
+      "2026-06-05",
+      "2026-07-05",
+      "2026-08-05",
+      "2026-09-05",
+      "2026-10-05",
+      "2026-11-05",
+      "2026-12-05"
+    ],
+    "accommodation": "Available for additional $150 USD (includes food)",
+    "meals": "Available for additional $150 USD (includes accommodation)",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:46:32.993Z"
+  },
+  {
+    "schoolName": "Rishikesh Yog Nirvana",
+    "courseName": "100 Hour Yin Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyognirvana.com/yoga-teacher-training-rishikesh/yin/",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "100hr",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 100-hour Yin Yoga Teacher Training set in the peaceful foothills of the Himalayas, blending ancient Yin philosophy, modern yoga anatomy, and breathing techniques. Guided by certified yoga teachers and international yoga asana champions, participants explore the meditative depth of Yin Yoga and learn how to teach it with confidence. The program is registered with Yoga Alliance USA, offering a globally recognized certification.",
+    "upcomingDates": [],
+    "accommodation": "Clean, spacious, and comfortable rooms in an ashram-style setting with scenic Himalayan views",
+    "meals": "Nutritious vegetarian meals, herbal teas, and detox drinks provided daily",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:46:40.112Z"
+  },
+  {
+    "schoolName": "Rishikesh Vinyasa Yoga School",
+    "courseName": "7 Days Yin Yoga Teacher Training Course in Rishikesh",
+    "url": "https://rishikeshvinyasayogaschool.com/yin-yoga-teacher-training-course-in-rishikesh.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "description": "A 7-day, 50-hour Yin Yoga Teacher Training Course held in Tapovan, Rishikesh, covering Yin Yoga theory and practice, functional anatomy, Traditional Chinese Medicine meridian theory, and teaching methodology. The program is accredited by Yoga Alliance USA as YACEP continuing education hours. Accommodation and three daily sattvic vegetarian meals are included in the course fee.",
+    "upcomingDates": [
+      "2026-04-25",
+      "2026-05-25",
+      "2026-06-25",
+      "2026-07-25",
+      "2026-08-25",
+      "2026-09-25",
+      "2026-10-25",
+      "2026-11-25",
+      "2026-12-25",
+      "2027-01-25",
+      "2027-02-25",
+      "2027-03-25"
+    ],
+    "accommodation": "Private or shared room with attached bathroom, hot water, Wi-Fi, and filtered drinking water included",
+    "meals": "3 vegetarian sattvic meals daily included",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:46:57.772Z"
+  },
+  {
+    "schoolName": "Ishavasyam Yoga School",
+    "courseName": "7 Days Yin Yoga Teacher Training",
+    "url": "https://ishavasyamyogaschool.com/yin-yoga-teacher-training-india.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 7-day, 50-hour Yin Yoga Teacher Training held in Rishikesh, India, blending Traditional Chinese Medicine, mindfulness, and classical yogic teachings. Students master Yin Yoga fundamentals, anatomy, meridians, sequencing, and meditation in an ashram-style immersive environment. Upon completion, participants receive a certificate from Ishavasyam Yoga School (YACEP eligible for existing RYT holders).",
+    "upcomingDates": [],
+    "accommodation": "Twin-sharing or private room included",
+    "meals": "3 yogic meals and tea daily",
+    "rating": 4.5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:47:09.038Z"
+  },
+  {
+    "schoolName": "Ishavasyam Yoga School",
+    "courseName": "7 Days Yin Yang Yoga Teacher Training in Rishikesh (With Healing Session)",
+    "url": "https://ishavasyamyogaschool.com/yin-yoga-teacher-training-india.php",
+    "type": "Yin & Yang TTC",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 7-day Yin & Yang Yoga Teacher Training in Rishikesh combining the stillness of Yin Yoga with dynamic Yang practices such as Hatha and Vinyasa Yoga, plus Aerial Yin Yoga and healing sessions. The course covers yoga philosophy, meditation, pranayama, shatkarma, sound bath, and energy awareness rooted in Taoist and yogic traditions. Held in the Himalayan foothills beside the sacred Ganges, it is suitable for beginners and intermediate practitioners.",
+    "upcomingDates": [],
+    "accommodation": "Twin-sharing or private room included",
+    "meals": "3 yogic meals and tea daily",
+    "rating": 4.5,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:47:09.038Z"
+  },
+  {
+    "schoolName": "Om Shanti Om Yoga Ashram",
+    "courseName": "50 Hour Yin Yoga Teacher Training in Rishikesh, India",
+    "url": "https://www.omshantiomyoga.com/50-hour-yin-yoga-teacher-training-india.html",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A Yoga Alliance USA–affiliated 50-Hour Yin Yoga Teacher Training program at Om Shanti Om Yoga Ashram in Rishikesh, India. The course is designed for yoga practitioners and teachers who wish to deepen their understanding of Yin Yoga, covering its physical, energetic, and meditative dimensions. Upon completion, students receive internationally recognized certification to teach Yin Yoga professionally.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:47:17.128Z"
+  },
+  {
+    "schoolName": "Rishikesh Yoga Ashram",
+    "courseName": "Yin Yoga Teacher Training in Rishikesh",
+    "url": "https://rishikeshyogaashram.com/yin-yoga.php",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "50hr",
+    "durationDays": 7,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 7-day, 50-hour Yin Yoga Teacher Training held in Rishikesh, India, covering Yin and Yang yoga practices, philosophy, anatomy, meridians, and intelligent sequencing. The program is YACEP certified, making graduates eligible to teach internationally. Students learn 26 Yin Yoga poses with variations, prop usage, and how to design Yin sequences based on the Meridian system.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-04-01T10:47:25.627Z"
   }
 ]
