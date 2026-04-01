@@ -56,11 +56,8 @@ function getTypes(type: string): string[] {
   return types
 }
 
-function sortByTypeAndDate(courses: YogaCourse[]) {
+function sortByDate(courses: YogaCourse[]) {
   return [...courses].sort((a, b) => {
-    const typeA = getTypes(a.type)[0]
-    const typeB = getTypes(b.type)[0]
-    if (typeA !== typeB) return typeA.localeCompare(typeB)
     const dateA = a.upcomingDates[0] ?? "9999"
     const dateB = b.upcomingDates[0] ?? "9999"
     return dateA.localeCompare(dateB)
@@ -101,7 +98,7 @@ function CourseCard({ course }: { course: YogaCourse }) {
           <Tag>{course.durationDays} days</Tag>
         )}
         {course.type && (
-          <Tag>{course.type}</Tag>
+          <TypeTag type={course.type} />
         )}
       </div>
 
@@ -129,11 +126,40 @@ function CourseCard({ course }: { course: YogaCourse }) {
   )
 }
 
+const TYPE_COLORS: Record<string, string> = {
+  Yin: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300",
+  Hatha: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
+  Ashtanga: "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300",
+  Vinyasa: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300",
+  Kundalini: "bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300",
+  Aerial: "bg-pink-100 text-pink-700 dark:bg-pink-900 dark:text-pink-300",
+  Retreat: "bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-300",
+  Meditation: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300",
+  "Sound Healing": "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300",
+  "Multi-Style TTC": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-300",
+}
+
 function Tag({ children }: { children: React.ReactNode }) {
   return (
     <span className="rounded bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
       {children}
     </span>
+  )
+}
+
+function TypeTag({ type }: { type: string }) {
+  const types = getTypes(type)
+  return (
+    <>
+      {types.map((t) => (
+        <span
+          key={t}
+          className={`rounded px-2 py-0.5 text-xs font-medium ${TYPE_COLORS[t] ?? "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"}`}
+        >
+          {t}
+        </span>
+      ))}
+    </>
   )
 }
 
@@ -205,14 +231,14 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
     // Sort courses within each month by type then date
     for (const [, list] of byMonth) {
-      list.splice(0, list.length, ...sortByTypeAndDate(list))
+      list.splice(0, list.length, ...sortByDate(list))
     }
 
     const keys = [...byMonth.keys()].sort()
     return {
       monthKeys: keys,
       coursesByMonth: byMonth,
-      undatedCourses: sortByTypeAndDate(undated),
+      undatedCourses: sortByDate(undated),
     }
   }, [filtered])
 
