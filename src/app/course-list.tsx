@@ -138,10 +138,17 @@ function Tag({ children }: { children: React.ReactNode }) {
 }
 
 export function CourseList({ courses }: { courses: YogaCourse[] }) {
-  // Extract all unique types (a course can belong to multiple)
+  // Extract all unique types, ordered by popularity (most courses first)
   const allTypes = useMemo(() => {
-    const types = new Set(courses.flatMap((c) => getTypes(c.type)))
-    return [...types].sort()
+    const counts = new Map<string, number>()
+    for (const course of courses) {
+      for (const t of getTypes(course.type)) {
+        counts.set(t, (counts.get(t) ?? 0) + 1)
+      }
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(([type]) => type)
   }, [courses])
 
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(
