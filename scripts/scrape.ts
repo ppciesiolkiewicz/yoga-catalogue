@@ -1,7 +1,10 @@
 import * as cheerio from "cheerio"
 import Anthropic from "@anthropic-ai/sdk"
 import { writeFileSync } from "fs"
-import { join } from "path"
+import { join, dirname } from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 import { websites } from "../src/data/websites-data"
 import type { WebsiteEntry, YogaCourse } from "../src/data/types"
 
@@ -44,7 +47,7 @@ async function extractCourses(
   console.log(`  Extracting courses with Claude API...`)
 
   const response = await anthropic.messages.create({
-    model: "claude-opus-4-6",
+    model: "claude-sonnet-4-6",
     max_tokens: 4096,
     system: `You extract structured data about yin yoga courses from website text.
 Return ONLY a JSON array of course objects. If no yin yoga courses are found, return an empty array [].
@@ -73,8 +76,11 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
     ],
   })
 
-  const text =
+  let text =
     response.content[0].type === "text" ? response.content[0].text : ""
+
+  // Strip markdown code fences if present
+  text = text.replace(/^```(?:json)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim()
 
   try {
     const courses: YogaCourse[] = JSON.parse(text)
@@ -82,6 +88,7 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
     return courses
   } catch {
     console.warn(`  ⚠ Failed to parse Claude response as JSON`)
+    console.warn(`  Response preview: ${text.slice(0, 200)}`)
     return []
   }
 }
@@ -93,7 +100,7 @@ import type { YogaCourse } from "./types"
 export const courses: YogaCourse[] = ${JSON.stringify(courses, null, 2)}
 `
 
-  const outPath = join(import.meta.dirname, "../src/data/index.ts")
+  const outPath = join(__dirname, "../src/data/index.ts")
   writeFileSync(outPath, output, "utf-8")
   console.log(`\nWrote ${courses.length} courses to src/data/index.ts`)
 }
@@ -112,8 +119,12 @@ async function main() {
     const text = await fetchPageText(entry)
     if (!text) continue
 
-    const courses = await extractCourses(text, entry)
-    allCourses.push(...courses)
+    try {
+      const courses = await extractCourses(text, entry)
+      allCourses.push(...courses)
+    } catch (error) {
+      console.warn(`  ⚠ Claude API error for ${entry.url}: ${error}`)
+    }
   }
 
   writeOutput(allCourses)
