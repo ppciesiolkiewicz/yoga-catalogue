@@ -1,5 +1,7 @@
 export type Location = "Rishikesh" | "Dharamshala"
 
+export type PageType = "training" | "drop-in"
+
 export type TagCategory = "style" | "certification" | "duration"
 
 export interface Tag {
@@ -11,6 +13,7 @@ export interface WebsiteEntry {
   schoolName: string
   url: string
   location: Location
+  pageType: PageType
 }
 
 export interface YogaCourse {
@@ -32,5 +35,22 @@ export interface YogaCourse {
   reviewCount: number | null
   tags: Tag[]
   location: Location
+  updatedAt: string
+}
+
+export interface DropInClass {
+  schoolName: string
+  className: string
+  url: string
+  style: string
+  schedule: {
+    dayOfWeek: number
+    startTime: string
+    endTime?: string
+  }[]
+  price?: { amount: number; currency: string }
+  description: string
+  location: Location
+  tags: Tag[]
   updatedAt: string
 }

@@ -6,11 +6,12 @@ import { fileURLToPath } from "url"
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 import { websites } from "../src/data/websites-data"
-import type { WebsiteEntry, YogaCourse } from "../src/data/types"
-import { generateTags } from "../src/data/tags"
+import type { WebsiteEntry, YogaCourse, DropInClass } from "../src/data/types"
+import { generateTags, generateDropInTags } from "../src/data/tags"
 
 const anthropic = new Anthropic()
-const outPath = join(__dirname, "../src/data/index.ts")
+const trainingOutPath = join(__dirname, "../src/data/training.ts")
+const dropInOutPath = join(__dirname, "../src/data/drop-in.ts")
 
 function parseMaxAgeDays(): number | null {
   const idx = process.argv.indexOf("--update-older-than-days")
@@ -26,9 +27,9 @@ function parseMaxAgeDays(): number | null {
 const maxAgeDays = parseMaxAgeDays()
 
 function loadExistingCourses(): YogaCourse[] {
-  if (!existsSync(outPath)) return []
+  if (!existsSync(trainingOutPath)) return []
   try {
-    const content = readFileSync(outPath, "utf-8")
+    const content = readFileSync(trainingOutPath, "utf-8")
     const match = content.match(/export const courses: YogaCourse\[] = (\[[\s\S]*\])/)
     if (!match) return []
     return JSON.parse(match[1])
@@ -37,15 +38,27 @@ function loadExistingCourses(): YogaCourse[] {
   }
 }
 
-function isStale(course: YogaCourse): boolean {
+function loadExistingDropIns(): DropInClass[] {
+  if (!existsSync(dropInOutPath)) return []
+  try {
+    const content = readFileSync(dropInOutPath, "utf-8")
+    const match = content.match(/export const dropInClasses: DropInClass\[] = (\[[\s\S]*\])/)
+    if (!match) return []
+    return JSON.parse(match[1])
+  } catch {
+    return []
+  }
+}
+
+function isStale(item: { updatedAt: string }): boolean {
   if (maxAgeDays === null) return false
-  if (!course.updatedAt) return true
-  const age = Date.now() - new Date(course.updatedAt).getTime()
+  if (!item.updatedAt) return true
+  const age = Date.now() - new Date(item.updatedAt).getTime()
   return age > maxAgeDays * 24 * 60 * 60 * 1000
 }
 
-function getUrlsToSkip(courses: YogaCourse[]): Set<string> {
-  return new Set(courses.filter((c) => !isStale(c)).map((c) => c.url))
+function getUrlsToSkip(items: { url: string; updatedAt: string }[]): Set<string> {
+  return new Set(items.filter((c) => !isStale(c)).map((c) => c.url))
 }
 
 async function fetchPageText(entry: WebsiteEntry): Promise<string | null> {
@@ -63,14 +76,8 @@ async function fetchPageText(entry: WebsiteEntry): Promise<string | null> {
     }
     const html = await response.text()
     const $ = cheerio.load(html)
-
-    // Remove non-content elements
     $("script, style, nav, footer, header, iframe, noscript").remove()
-
-    // Extract text from body
     const text = $("body").text().replace(/\s+/g, " ").trim()
-
-    // Limit to ~8000 chars to stay within reasonable token limits
     return text.slice(0, 8000)
   } catch (error) {
     console.warn(`  ⚠ Failed to fetch ${entry.url}: ${error}`)
@@ -116,8 +123,6 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
 
   let text =
     response.content[0].type === "text" ? response.content[0].text : ""
-
-  // Strip markdown code fences if present
   text = text.replace(/^```(?:json)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim()
 
   try {
@@ -133,15 +138,85 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
   }
 }
 
-function writeOutput(courses: YogaCourse[]) {
+async function extractDropInClasses(
+  pageText: string,
+  entry: WebsiteEntry
+): Promise<DropInClass[]> {
+  console.log(`  Extracting drop-in classes with Claude API...`)
+
+  const response = await anthropic.messages.create({
+    model: "claude-sonnet-4-6",
+    max_tokens: 4096,
+    system: `You extract structured data about drop-in yoga classes from website text.
+Drop-in classes are regular weekly classes that students can attend without enrolling in a full course.
+Return ONLY a JSON array of class objects. If no drop-in classes are found, return an empty array [].
+Each class object must match this schema exactly:
+{
+  "schoolName": "string - name of the yoga school",
+  "className": "string - name of the class, e.g. 'Morning Hatha Yoga'",
+  "url": "string - will be provided, use as-is",
+  "style": "string - yoga style, e.g. Hatha, Vinyasa, Ashtanga, Yin, Kundalini, Meditation, Pranayama",
+  "schedule": [
+    {
+      "dayOfWeek": "number - 0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday",
+      "startTime": "string - 24h format HH:MM, e.g. '07:00'",
+      "endTime": "string or null - 24h format HH:MM if available, e.g. '08:30'"
+    }
+  ],
+  "price": { "amount": "number", "currency": "string" } or null if not available,
+  "description": "string - brief description (1-2 sentences)"
+}
+If a class runs every day, include all 7 days in the schedule array.
+If a class runs on specific days, only include those days.
+Return raw JSON only. No markdown, no code fences, no explanation.`,
+    messages: [
+      {
+        role: "user",
+        content: `Extract drop-in yoga class information from this website text. The school is "${entry.schoolName}" and the URL is "${entry.url}".\n\nWebsite text:\n${pageText}`,
+      },
+    ],
+  })
+
+  let text =
+    response.content[0].type === "text" ? response.content[0].text : ""
+  text = text.replace(/^```(?:json)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim()
+
+  try {
+    const classes = JSON.parse(text) as Omit<DropInClass, "updatedAt" | "tags" | "location">[]
+    const now = new Date().toISOString()
+    const withMeta: DropInClass[] = classes.map((c) => ({
+      ...c,
+      tags: generateDropInTags(c),
+      location: entry.location,
+      updatedAt: now,
+    }))
+    console.log(`  Found ${withMeta.length} drop-in class(es)`)
+    return withMeta
+  } catch {
+    console.warn(`  ⚠ Failed to parse Claude response as JSON`)
+    console.warn(`  Response preview: ${text.slice(0, 200)}`)
+    return []
+  }
+}
+
+function writeTrainingOutput(courses: YogaCourse[]) {
   const output = `// This file is auto-generated by scripts/scrape.ts — do not edit manually
 import type { YogaCourse } from "./types"
 
 export const courses: YogaCourse[] = ${JSON.stringify(courses, null, 2)}
 `
+  writeFileSync(trainingOutPath, output, "utf-8")
+  console.log(`\nWrote ${courses.length} courses to src/data/training.ts`)
+}
 
-  writeFileSync(outPath, output, "utf-8")
-  console.log(`\nWrote ${courses.length} courses to src/data/index.ts`)
+function writeDropInOutput(classes: DropInClass[]) {
+  const output = `// This file is auto-generated by scripts/scrape.ts — do not edit manually
+import type { DropInClass } from "./types"
+
+export const dropInClasses: DropInClass[] = ${JSON.stringify(classes, null, 2)}
+`
+  writeFileSync(dropInOutPath, output, "utf-8")
+  console.log(`Wrote ${classes.length} drop-in classes to src/data/drop-in.ts`)
 }
 
 async function main() {
@@ -150,36 +225,63 @@ async function main() {
     process.exit(1)
   }
 
-  const existing = loadExistingCourses()
-  const freshUrls = getUrlsToSkip(existing)
+  const existingCourses = loadExistingCourses()
+  const existingDropIns = loadExistingDropIns()
+  const freshTrainingUrls = getUrlsToSkip(existingCourses)
+  const freshDropInUrls = getUrlsToSkip(existingDropIns)
 
-  const toScrape = websites.filter((w) => !freshUrls.has(w.url))
+  const trainingWebsites = websites.filter((w) => w.pageType === "training")
+  const dropInWebsites = websites.filter((w) => w.pageType === "drop-in")
 
-  if (toScrape.length === 0) {
+  const toScrapeTraining = trainingWebsites.filter((w) => !freshTrainingUrls.has(w.url))
+  const toScrapeDropIn = dropInWebsites.filter((w) => !freshDropInUrls.has(w.url))
+
+  if (toScrapeTraining.length === 0 && toScrapeDropIn.length === 0) {
     console.log("All websites are up to date. Use --update-older-than-days 0 to re-scrape all.")
     return
   }
 
-  console.log(`Scraping ${toScrape.length} websites (${existing.length - toScrape.length} up to date)...\n`)
-
-  const newCourses: YogaCourse[] = []
-
-  for (const entry of toScrape) {
-    const text = await fetchPageText(entry)
-    if (!text) continue
-
-    try {
-      const courses = await extractCourses(text, entry)
-      newCourses.push(...courses)
-    } catch (error) {
-      console.warn(`  ⚠ Claude API error for ${entry.url}: ${error}`)
+  // Scrape trainings
+  if (toScrapeTraining.length > 0) {
+    console.log(`\nScraping ${toScrapeTraining.length} training websites...\n`)
+    const newCourses: YogaCourse[] = []
+    for (const entry of toScrapeTraining) {
+      const text = await fetchPageText(entry)
+      if (!text) continue
+      try {
+        const courses = await extractCourses(text, entry)
+        newCourses.push(...courses)
+      } catch (error) {
+        console.warn(`  ⚠ Claude API error for ${entry.url}: ${error}`)
+      }
     }
+    const scrapedUrls = new Set(toScrapeTraining.map((w) => w.url))
+    const kept = existingCourses.filter((c) => !scrapedUrls.has(c.url))
+    writeTrainingOutput([...kept, ...newCourses])
+  } else {
+    console.log("All training websites are up to date.")
   }
 
-  // Keep fresh existing courses, replace stale ones with new scrapes
-  const scrapedUrls = new Set(toScrape.map((w) => w.url))
-  const kept = existing.filter((c) => !scrapedUrls.has(c.url))
-  writeOutput([...kept, ...newCourses])
+  // Scrape drop-ins
+  if (toScrapeDropIn.length > 0) {
+    console.log(`\nScraping ${toScrapeDropIn.length} drop-in websites...\n`)
+    const newDropIns: DropInClass[] = []
+    for (const entry of toScrapeDropIn) {
+      const text = await fetchPageText(entry)
+      if (!text) continue
+      try {
+        const classes = await extractDropInClasses(text, entry)
+        newDropIns.push(...classes)
+      } catch (error) {
+        console.warn(`  ⚠ Claude API error for ${entry.url}: ${error}`)
+      }
+    }
+    const scrapedUrls = new Set(toScrapeDropIn.map((w) => w.url))
+    const kept = existingDropIns.filter((c) => !scrapedUrls.has(c.url))
+    writeDropInOutput([...kept, ...newDropIns])
+  } else {
+    console.log("All drop-in websites are up to date.")
+  }
 }
 
 main()
