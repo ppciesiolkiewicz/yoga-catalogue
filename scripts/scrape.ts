@@ -7,6 +7,7 @@ import { fileURLToPath } from "url"
 const __dirname = dirname(fileURLToPath(import.meta.url))
 import { websites } from "../src/data/websites-data"
 import type { WebsiteEntry, YogaCourse } from "../src/data/types"
+import { generateTags } from "../src/data/tags"
 
 const anthropic = new Anthropic()
 const outPath = join(__dirname, "../src/data/index.ts")
@@ -122,7 +123,7 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
   try {
     const courses = JSON.parse(text) as Omit<YogaCourse, "updatedAt">[]
     const now = new Date().toISOString()
-    const withTimestamp: YogaCourse[] = courses.map((c) => ({ ...c, location: entry.location, updatedAt: now }))
+    const withTimestamp: YogaCourse[] = courses.map((c) => ({ ...c, tags: generateTags(c), location: entry.location, updatedAt: now }))
     console.log(`  Found ${withTimestamp.length} course(s)`)
     return withTimestamp
   } catch {

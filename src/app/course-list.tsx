@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useMemo, useEffect } from "react"
-import type { YogaCourse, Location } from "@/data/types"
+import type { YogaCourse, Location, Tag } from "@/data/types"
 import { ThemeToggle } from "./theme-toggle"
 
 const LOCATIONS: { id: Location; label: string; subtitle: string }[] = [
@@ -69,23 +69,22 @@ function formatDetail(val: boolean | string) {
   return String(val).replace(/^string - /i, "")
 }
 
-function getTypes(type: string): string[] {
-  const t = type.toLowerCase()
-  const types: string[] = []
-  if (t.includes("aerial")) types.push("Aerial")
-  if (t.includes("kundalini")) types.push("Kundalini")
-  if (t.includes("yin")) types.push("Yin")
-  if (t.includes("ashtanga")) types.push("Ashtanga")
-  if (t.includes("vinyasa")) types.push("Vinyasa")
-  if (t.includes("hatha")) types.push("Hatha")
-  if (t.includes("retreat")) types.push("Retreat")
-  if (t.includes("sound healing")) types.push("Sound Healing")
-  if (t.includes("meditation")) types.push("Meditation")
-  if (types.length === 0) {
-    if (t.includes("yoga") || t.includes("ytt") || t.includes("teacher training") || t.includes("200") || t.includes("300") || t.includes("500")) types.push("Multi-Style TTC")
-    else types.push("Other")
+function getDurationPill(label: string): string {
+  if (label.endsWith("h")) {
+    // Certification hours — blue shades
+    return "bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300"
   }
-  return types
+  // Duration days — warm shades by length
+  const days = parseInt(label, 10)
+  if (days <= 7) return "bg-lime-100 text-lime-800 dark:bg-lime-900/50 dark:text-lime-300"
+  if (days <= 14) return "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300"
+  if (days <= 30) return "bg-violet-100 text-violet-800 dark:bg-violet-900/50 dark:text-violet-300"
+  return "bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900/50 dark:text-fuchsia-300"
+}
+
+function getStyleTag(tags: Tag[]): string {
+  const style = tags.find((t) => t.category === "style")
+  return style?.label ?? "Other"
 }
 
 const STYLE_CONFIG: Record<string, { pill: string; border: string; bg: string; check: string; emoji: string }> = {
@@ -159,6 +158,13 @@ const STYLE_CONFIG: Record<string, { pill: string; border: string; bg: string; c
     check: "accent-sky-500",
     emoji: "🕉️",
   },
+  Yoga: {
+    pill: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
+    border: "border-l-zinc-400",
+    bg: "",
+    check: "accent-zinc-500",
+    emoji: "🧘",
+  },
 }
 
 const DEFAULT_STYLE = {
@@ -182,7 +188,7 @@ function sortByDate(courses: YogaCourse[]) {
 }
 
 function CourseCard({ course }: { course: YogaCourse }) {
-  const primaryType = getTypes(course.type)[0]
+  const primaryType = getStyleTag(course.tags)
   const style = getStyle(primaryType)
 
   return (
@@ -231,24 +237,17 @@ function CourseCard({ course }: { course: YogaCourse }) {
 
               {/* Tags row */}
               <div className="mt-3 flex flex-wrap gap-1.5">
-                {getTypes(course.type).map((t) => (
-                  <span
-                    key={t}
-                    className={`rounded-full px-2.5 py-0.5 text-sm font-medium ${getStyle(t).pill}`}
-                  >
-                    {t}
-                  </span>
-                ))}
-                {course.certificationLevel && (
-                  <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-sm font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
-                    {course.certificationLevel}
-                  </span>
-                )}
-                {course.durationDays > 0 && (
-                  <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
-                    {course.durationDays} days
-                  </span>
-                )}
+                {course.tags.map((tag) => {
+                  const styleConfig = tag.category === "style" ? getStyle(tag.label).pill : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+                  return (
+                    <span
+                      key={`${tag.category}-${tag.label}`}
+                      className={`rounded-full px-2.5 py-0.5 text-sm font-medium ${styleConfig}`}
+                    >
+                      {tag.label}
+                    </span>
+                  )
+                })}
               </div>
 
               {/* Details row */}
@@ -279,48 +278,9 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     [courses, location]
   )
 
-  const allTypes = useMemo(() => {
-    const counts = new Map<string, number>()
-    for (const course of locationCourses) {
-      for (const t of getTypes(course.type)) {
-        counts.set(t, (counts.get(t) ?? 0) + 1)
-      }
-    }
-    return [...counts.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .map(([type]) => type)
-  }, [locationCourses])
-
-  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(
-    () => new Set(allTypes)
-  )
-
-  function toggleType(type: string) {
-    setSelectedTypes((prev) => {
-      const next = new Set(prev)
-      if (next.has(type)) next.delete(type)
-      else next.add(type)
-      return next
-    })
-  }
-
-  function toggleAll() {
-    if (selectedTypes.size === allTypes.length) setSelectedTypes(new Set())
-    else setSelectedTypes(new Set(allTypes))
-  }
-
-  // Reset filters when location changes
-  useEffect(() => {
-    setSelectedTypes(new Set(allTypes))
-  }, [location]) // eslint-disable-line react-hooks/exhaustive-deps
-
   const locationInfo = LOCATIONS.find((l) => l.id === location)!
 
-  const filtered = useMemo(
-    () => locationCourses.filter((c) => getTypes(c.type).some((t) => selectedTypes.has(t))),
-    [locationCourses, selectedTypes]
-  )
-
+  // Build month buckets from all location courses (before tag filtering)
   const { monthKeys, coursesByMonth, undatedCourses } = useMemo(() => {
     const now = new Date()
     const cutoff = new Date(now.getFullYear(), now.getMonth() - 1, 1)
@@ -329,7 +289,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     const byMonth = new Map<string, YogaCourse[]>()
     const undated: YogaCourse[] = []
 
-    for (const course of filtered) {
+    for (const course of locationCourses) {
       if (course.upcomingDates.length === 0) {
         undated.push(course)
         continue
@@ -348,7 +308,7 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
 
     const keys = [...byMonth.keys()].sort()
     return { monthKeys: keys, coursesByMonth: byMonth, undatedCourses: sortByDate(undated) }
-  }, [filtered])
+  }, [locationCourses])
 
   const allTabs = [...monthKeys, ...(undatedCourses.length > 0 ? ["undated"] : [])]
   const now = new Date()
@@ -356,10 +316,87 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
   const defaultTab = monthKeys.includes(currentMonthKey) ? currentMonthKey : allTabs[0] ?? "undated"
   const [activeTab, setActiveTab] = useState(defaultTab)
 
-  const displayedCourses =
-    activeTab === "undated"
-      ? undatedCourses
-      : coursesByMonth.get(activeTab) ?? []
+  // Courses in the active month (before tag filtering) — used for available tags
+  const monthCourses = useMemo(
+    () => activeTab === "undated" ? undatedCourses : coursesByMonth.get(activeTab) ?? [],
+    [activeTab, undatedCourses, coursesByMonth]
+  )
+
+  // Collect tags available in the active month
+  const tagsByCategory = useMemo(() => {
+    const map = new Map<string, Map<string, number>>()
+    for (const course of monthCourses) {
+      for (const tag of course.tags) {
+        if (!map.has(tag.category)) map.set(tag.category, new Map())
+        const catMap = map.get(tag.category)!
+        catMap.set(tag.label, (catMap.get(tag.label) ?? 0) + 1)
+      }
+    }
+    const result: { category: string; labels: string[] }[] = []
+    for (const [category, counts] of map) {
+      const labels = [...counts.entries()]
+        .map(([label]) => label)
+      // Sort numerically for certification/duration, by count for style
+      if (category === "style") {
+        const countMap = counts
+        labels.sort((a, b) => (countMap.get(b) ?? 0) - (countMap.get(a) ?? 0))
+      } else {
+        labels.sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
+      }
+      result.push({ category, labels })
+    }
+    const order = ["style", "certification", "duration"]
+    result.sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
+    return result
+  }, [monthCourses])
+
+  const allTagLabels = useMemo(
+    () => tagsByCategory.flatMap((g) => g.labels),
+    [tagsByCategory]
+  )
+
+  const [selectedTags, setSelectedTags] = useState<Set<string>>(
+    () => new Set(allTagLabels)
+  )
+
+  function toggleTag(label: string) {
+    setSelectedTags((prev) => {
+      const next = new Set(prev)
+      if (next.has(label)) next.delete(label)
+      else next.add(label)
+      return next
+    })
+  }
+
+  function toggleAllTags() {
+    if (selectedTags.size === allTagLabels.length) setSelectedTags(new Set())
+    else setSelectedTags(new Set(allTagLabels))
+  }
+
+  function toggleCategoryAll(labels: string[]) {
+    setSelectedTags((prev) => {
+      const allSelected = labels.every((l) => prev.has(l))
+      const next = new Set(prev)
+      for (const l of labels) {
+        if (allSelected) next.delete(l)
+        else next.add(l)
+      }
+      return next
+    })
+  }
+
+  // Reset tag selection when location or month changes
+  useEffect(() => {
+    setSelectedTags(new Set(allTagLabels))
+  }, [location, activeTab]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Filter the month's courses by selected tags
+  const displayedCourses = useMemo(
+    () => monthCourses.filter((c) =>
+      c.tags.some((tag) => selectedTags.has(tag.label))
+    ),
+    [monthCourses, selectedTags]
+  )
 
   return (
     <div>
@@ -405,41 +442,6 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
       </header>
 
       <div className="mx-auto max-w-5xl px-4 py-6">
-      {/* Type filter */}
-      <div className="relative z-10 mb-5 rounded-xl border border-zinc-200 bg-white/80 p-4 shadow-lg backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/80 sm:p-5">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-zinc-400">Filter by style</p>
-        <div className="flex flex-wrap items-center gap-2">
-          <button
-            onClick={toggleAll}
-            className={`cursor-pointer rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
-              selectedTypes.size === allTypes.length
-                ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
-                : "border-zinc-300 text-zinc-500 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-500"
-            }`}
-          >
-            All
-          </button>
-          {allTypes.map((type) => {
-            const style = getStyle(type)
-            const selected = selectedTypes.has(type)
-            return (
-              <button
-                key={type}
-                onClick={() => toggleType(type)}
-                className={`cursor-pointer flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all hover:brightness-125 ${
-                  selected
-                    ? `${style.pill} border-transparent shadow-sm`
-                    : "border-zinc-200 text-zinc-400 hover:border-zinc-400 dark:border-zinc-700"
-                }`}
-              >
-                <span>{style.emoji}</span>
-                {type}
-              </button>
-            )
-          })}
-        </div>
-      </div>
-
       {/* Month tabs */}
       <div className="flex gap-1.5 overflow-x-auto pb-3" style={{ scrollbarWidth: "none" }}>
         {monthKeys.map((key) => (
@@ -473,6 +475,70 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
             </span>
           </button>
         )}
+      </div>
+
+      {/* Tag filters */}
+      <div className="relative z-10 my-4 rounded-xl border border-zinc-200 bg-white/80 p-4 shadow-lg backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/80 sm:p-5">
+        <div className="mb-3 flex items-center gap-3">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Filters</p>
+          <button
+            onClick={toggleAllTags}
+            className={`cursor-pointer rounded-full border px-3 py-1 text-xs font-medium transition-all ${
+              selectedTags.size === allTagLabels.length
+                ? "border-white bg-white text-zinc-900 shadow-sm dark:border-white dark:bg-white dark:text-zinc-900"
+                : "border-zinc-300 text-zinc-500 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-500"
+            }`}
+          >
+            All
+          </button>
+        </div>
+        {tagsByCategory.map((group) => (
+          <div key={group.category} className="mb-2 last:mb-0">
+            <p className="mb-1.5 text-xs font-medium capitalize text-zinc-400">{group.category}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              {(() => {
+                const allSelected = group.labels.every((l) => selectedTags.has(l))
+                return (
+                  <button
+                    onClick={() => toggleCategoryAll(group.labels)}
+                    className={`cursor-pointer rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all ${
+                      allSelected
+                        ? "border-white bg-white text-zinc-900 shadow-sm dark:border-white dark:bg-white dark:text-zinc-900"
+                        : "border-zinc-200 text-zinc-400 hover:border-zinc-400 dark:border-zinc-700"
+                    }`}
+                  >
+                    All
+                  </button>
+                )
+              })()}
+              {group.labels.map((label) => {
+                const selected = selectedTags.has(label)
+                const styleConfig = group.category === "style" ? getStyle(label) : null
+                const durationPill = !styleConfig && selected
+                  ? getDurationPill(label)
+                  : null
+                return (
+                  <button
+                    key={label}
+                    onClick={() => toggleTag(label)}
+                    className={`cursor-pointer flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all hover:brightness-125 ${
+                      selected
+                        ? styleConfig
+                          ? `${styleConfig.pill} border-transparent shadow-sm`
+                          : durationPill
+                            ? `${durationPill} border-transparent shadow-sm`
+                            : "border-zinc-500 bg-zinc-500 text-white shadow-sm dark:border-zinc-400 dark:bg-zinc-400 dark:text-zinc-900"
+                        : "border-zinc-200 text-zinc-400 hover:border-zinc-400 dark:border-zinc-700"
+                    }`}
+                  >
+                    {styleConfig && <span>{styleConfig.emoji}</span>}
+                    {label}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Course cards grouped by date */}

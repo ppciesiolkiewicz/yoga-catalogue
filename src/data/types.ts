@@ -1,5 +1,12 @@
 export type Location = "Rishikesh" | "Dharamshala"
 
+export type TagCategory = "style" | "certification" | "duration"
+
+export interface Tag {
+  label: string
+  category: TagCategory
+}
+
 export interface WebsiteEntry {
   schoolName: string
   url: string
@@ -23,6 +30,7 @@ export interface YogaCourse {
   meals: boolean | string
   rating: number | null
   reviewCount: number | null
+  tags: Tag[]
   location: Location
   updatedAt: string
 }
