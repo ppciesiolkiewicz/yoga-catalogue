@@ -1,4 +1,4 @@
-import { courses } from "@/data/index"
+import { courses } from "@/data"
 import { CourseList } from "./course-list"
 
 export default function Home() {

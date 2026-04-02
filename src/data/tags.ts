@@ -1,4 +1,4 @@
-import type { YogaCourse, Tag } from "./types"
+import type { YogaCourse, Tag, DropInClass } from "./types"
 
 /** Derive style tags from the course type string */
 function getStyleTags(type: string): string[] {
@@ -37,5 +37,14 @@ export function generateTags(course: Pick<YogaCourse, "type" | "certificationLev
     tags.push({ label: `${course.durationDays} days`, category: "duration" })
   }
 
+  return tags
+}
+
+/** Generate tags for a drop-in class (style only) */
+export function generateDropInTags(dropIn: Pick<DropInClass, "style">): Tag[] {
+  const tags: Tag[] = []
+  for (const label of getStyleTags(dropIn.style)) {
+    tags.push({ label, category: "style" })
+  }
   return tags
 }
