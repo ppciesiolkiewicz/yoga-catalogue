@@ -322,42 +322,71 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     [activeTab, undatedCourses, coursesByMonth]
   )
 
-  // Collect tags available in the active month
-  const tagsByCategory = useMemo(() => {
-    const map = new Map<string, Map<string, number>>()
-    for (const course of monthCourses) {
-      for (const tag of course.tags) {
-        if (!map.has(tag.category)) map.set(tag.category, new Map())
-        const catMap = map.get(tag.category)!
-        catMap.set(tag.label, (catMap.get(tag.label) ?? 0) + 1)
-      }
-    }
+  const CATEGORY_ORDER = ["style", "certification", "duration"]
+
+  // All tags in the active month (stable, not affected by selection)
+  const allTagsByCategory = useMemo((): { category: string; labels: string[] }[] => {
     const result: { category: string; labels: string[] }[] = []
-    for (const [category, counts] of map) {
-      const labels = [...counts.entries()]
-        .map(([label]) => label)
-      // Sort numerically for certification/duration, by count for style
+    for (const category of CATEGORY_ORDER) {
+      const counts = new Map<string, number>()
+      for (const course of monthCourses) {
+        for (const tag of course.tags) {
+          if (tag.category === category) {
+            counts.set(tag.label, (counts.get(tag.label) ?? 0) + 1)
+          }
+        }
+      }
+      if (counts.size === 0) continue
+      const labels = [...counts.keys()]
       if (category === "style") {
-        const countMap = counts
-        labels.sort((a, b) => (countMap.get(b) ?? 0) - (countMap.get(a) ?? 0))
+        labels.sort((a, b) => (counts.get(b) ?? 0) - (counts.get(a) ?? 0))
       } else {
         labels.sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
       }
       result.push({ category, labels })
     }
-    const order = ["style", "certification", "duration"]
-    result.sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category))
     return result
-  }, [monthCourses])
+  }, [monthCourses]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const allTagLabels = useMemo(
-    () => tagsByCategory.flatMap((g) => g.labels),
-    [tagsByCategory]
+    () => allTagsByCategory.flatMap((g: { labels: string[] }) => g.labels),
+    [allTagsByCategory]
   )
 
   const [selectedTags, setSelectedTags] = useState<Set<string>>(
     () => new Set(allTagLabels)
   )
+
+  // Visible tags per category: cascade selection top-down
+  const tagsByCategory = useMemo((): { category: string; labels: string[] }[] => {
+    const result: { category: string; labels: string[] }[] = []
+    let coursesPool = monthCourses
+
+    for (const group of allTagsByCategory) {
+      // Collect labels available in the narrowed pool
+      const available = new Set<string>()
+      for (const course of coursesPool) {
+        for (const tag of course.tags) {
+          if (tag.category === group.category) available.add(tag.label)
+        }
+      }
+      // Keep original sort order, filter to available
+      const labels = group.labels.filter((l) => available.has(l))
+      if (labels.length === 0) continue
+      result.push({ category: group.category, labels })
+
+      // Narrow pool for next category
+      const selectedInCategory = labels.filter((l) => selectedTags.has(l))
+      if (selectedInCategory.length > 0) {
+        const selected = new Set(selectedInCategory)
+        coursesPool = coursesPool.filter((c) =>
+          c.tags.some((tag) => tag.category === group.category && selected.has(tag.label))
+        )
+      }
+    }
+
+    return result
+  }, [monthCourses, allTagsByCategory, selectedTags])
 
   function toggleTag(label: string) {
     setSelectedTags((prev) => {
@@ -390,13 +419,22 @@ export function CourseList({ courses }: { courses: YogaCourse[] }) {
     setSelectedTags(new Set(allTagLabels))
   }, [location, activeTab]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Filter the month's courses by selected tags
-  const displayedCourses = useMemo(
-    () => monthCourses.filter((c) =>
-      c.tags.some((tag) => selectedTags.has(tag.label))
-    ),
-    [monthCourses, selectedTags]
-  )
+  // Filter: AND across categories, OR within each category
+  const displayedCourses = useMemo(() => {
+    // Group selected tags by category
+    const selectedByCategory = new Map<string, Set<string>>()
+    for (const group of tagsByCategory) {
+      const selected = group.labels.filter((l) => selectedTags.has(l))
+      selectedByCategory.set(group.category, new Set(selected))
+    }
+
+    return monthCourses.filter((c) =>
+      [...selectedByCategory.entries()].every(([category, labels]) => {
+        if (labels.size === 0) return false
+        return c.tags.some((tag) => tag.category === category && labels.has(tag.label))
+      })
+    )
+  }, [monthCourses, selectedTags, tagsByCategory])
 
   return (
     <div>
