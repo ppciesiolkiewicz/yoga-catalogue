@@ -45,6 +45,10 @@ const STYLE_CONFIG: Record<string, { pill: string; emoji: string }> = {
     pill: "bg-violet-100 text-violet-800 dark:bg-violet-900/50 dark:text-violet-300",
     emoji: "💤",
   },
+  Acroyoga: {
+    pill: "bg-lime-100 text-lime-800 dark:bg-lime-900/50 dark:text-lime-300",
+    emoji: "🤸",
+  },
   "Multi-Style TTC": {
     pill: "bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300",
     emoji: "🕉️",
@@ -77,6 +81,7 @@ export const CARD_STYLE_CONFIG: Record<string, { pill: string; border: string; b
   "Sound Healing": { ...STYLE_CONFIG["Sound Healing"], border: "border-l-rose-500", bg: "from-rose-50 dark:from-rose-950/20", check: "accent-rose-500" },
   Breathwork: { ...STYLE_CONFIG.Breathwork, border: "border-l-cyan-500", bg: "from-cyan-50 dark:from-cyan-950/20", check: "accent-cyan-500" },
   Nidra: { ...STYLE_CONFIG.Nidra, border: "border-l-violet-500", bg: "from-violet-50 dark:from-violet-950/20", check: "accent-violet-500" },
+  Acroyoga: { ...STYLE_CONFIG.Acroyoga, border: "border-l-lime-500", bg: "from-lime-50 dark:from-lime-950/20", check: "accent-lime-500" },
   "Multi-Style TTC": { ...STYLE_CONFIG["Multi-Style TTC"], border: "border-l-sky-500", bg: "from-sky-50 dark:from-sky-950/20", check: "accent-sky-500" },
   Yoga: { ...STYLE_CONFIG.Yoga, border: "border-l-emerald-500", bg: "from-emerald-50 dark:from-emerald-950/20", check: "accent-emerald-500" },
 }
