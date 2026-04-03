@@ -1122,4 +1122,68 @@ export const websites: WebsiteEntry[] = [
     pageType: "training",
     url: "https://www.artdivine.org/yoga-teacher-training-in-dharamshala.php",
   },
+
+  // ── Drop-in classes ──────────────────────────────────────
+
+  // Arogya Yoga School — drop-in
+  {
+    schoolName: "Arogya Yoga School",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://www.arogyayogaschool.com/drop-in-yoga-class-in-rishikesh.php",
+  },
+
+  // World Peace Yoga School — drop-in
+  {
+    schoolName: "World Peace Yoga School",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://worldpeaceyogaschool.com/drop-in-class.php",
+  },
+  {
+    schoolName: "World Peace Yoga School",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://worldpeaceyogaschool.com/wellness/daily-drop-in-yoga-classes.php",
+  },
+
+  // Om Shanti Om Yoga Ashram — drop-in
+  {
+    schoolName: "Om Shanti Om Yoga Ashram",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://www.omshantiomyoga.com/drop-in-yoga-class-in-rishikesh.html",
+  },
+
+  // Vinyasa Yoga Academy — drop-in (schedule on homepage)
+  {
+    schoolName: "Vinyasa Yoga Academy",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://vinyasayogaacademy.com/",
+  },
+
+  // Aranya Yoga — drop-in (Dharamshala)
+  {
+    schoolName: "Aranya Yoga",
+    location: "Dharamshala",
+    pageType: "drop-in",
+    url: "https://www.aranyayogaashram.com/drop-in-yoga-class/",
+  },
+
+  // Mantra Yoga & Meditation — drop-in (Dharamshala)
+  {
+    schoolName: "Mantra Yoga & Meditation",
+    location: "Dharamshala",
+    pageType: "drop-in",
+    url: "https://mantrayogameditation.org/drop-in-yoga-classes-dharamsala/",
+  },
+
+  // Shiva Darshan Yoga — drop-in (Dharamshala)
+  {
+    schoolName: "Shiva Darshan Yoga",
+    location: "Dharamshala",
+    pageType: "drop-in",
+    url: "https://shivadarshanyoga.com/yoga-programs-retreats-dharamsala/classes/",
+  },
 ]

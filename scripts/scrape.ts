@@ -186,6 +186,12 @@ Return raw JSON only. No markdown, no code fences, no explanation.`,
     const now = new Date().toISOString()
     const withMeta: DropInClass[] = classes.map((c) => ({
       ...c,
+      price: c.price ?? undefined,
+      schedule: c.schedule.map((s) => ({
+        dayOfWeek: s.dayOfWeek,
+        startTime: s.startTime,
+        ...(s.endTime ? { endTime: s.endTime } : {}),
+      })),
       tags: generateDropInTags(c),
       location: entry.location,
       updatedAt: now,

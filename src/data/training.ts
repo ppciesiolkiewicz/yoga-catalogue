@@ -7165,5 +7165,39 @@ export const courses: YogaCourse[] = [
         "category": "duration"
       }
     ]
+  },
+  {
+    "schoolName": "Nirvana Yoga School",
+    "courseName": "200 Hour Hatha Ashtanga Vinyasa Yoga Teacher Training in Rishikesh India",
+    "url": "https://www.nirvanayogaschoolindia.com/200-hour-yoga-teacher-training-in-rishikesh-india",
+    "type": "Hatha Yoga TTC",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 25,
+    "price": {
+      "amount": 649,
+      "currency": "USD"
+    },
+    "description": "A 200-hour Yoga Alliance recognized teacher training course held in Rishikesh, India, covering Hatha and Ashtanga Vinyasa traditions. The curriculum includes asana practice, pranayama, meditation, yoga philosophy, anatomy, teaching methodology, and ethics. Upon completion, graduates are eligible to register as RYT-200 with Yoga Alliance USA.",
+    "upcomingDates": [],
+    "accommodation": true,
+    "meals": true,
+    "rating": null,
+    "reviewCount": null,
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      },
+      {
+        "label": "200h",
+        "category": "certification"
+      },
+      {
+        "label": "25 days",
+        "category": "duration"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:23:38.986Z"
   }
 ]
