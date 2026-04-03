@@ -42,7 +42,7 @@ const STYLE_CONFIG: Record<string, { pill: string; emoji: string }> = {
     emoji: "🕉️",
   },
   Yoga: {
-    pill: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
+    pill: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300",
     emoji: "🧘",
   },
 }
@@ -68,7 +68,7 @@ export const CARD_STYLE_CONFIG: Record<string, { pill: string; border: string; b
   Meditation: { ...STYLE_CONFIG.Meditation, border: "border-l-indigo-500", bg: "from-indigo-50 dark:from-indigo-950/20", check: "accent-indigo-500" },
   "Sound Healing": { ...STYLE_CONFIG["Sound Healing"], border: "border-l-rose-500", bg: "from-rose-50 dark:from-rose-950/20", check: "accent-rose-500" },
   "Multi-Style TTC": { ...STYLE_CONFIG["Multi-Style TTC"], border: "border-l-sky-500", bg: "from-sky-50 dark:from-sky-950/20", check: "accent-sky-500" },
-  Yoga: { ...STYLE_CONFIG.Yoga, border: "border-l-zinc-400", bg: "", check: "accent-zinc-500" },
+  Yoga: { ...STYLE_CONFIG.Yoga, border: "border-l-emerald-500", bg: "from-emerald-50 dark:from-emerald-950/20", check: "accent-emerald-500" },
 }
 
 const DEFAULT_CARD_STYLE = {
