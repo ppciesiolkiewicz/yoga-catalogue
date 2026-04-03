@@ -197,7 +197,9 @@ export function TrainingList({ courses }: { courses: YogaCourse[] }) {
     return monthCourses.filter((c) =>
       [...selectedByCategory.entries()].every(([category, labels]) => {
         if (labels.size === 0) return false
-        return c.tags.some((tag) => tag.category === category && labels.has(tag.label))
+        const courseCategoryTags = c.tags.filter((tag) => tag.category === category)
+        if (courseCategoryTags.length === 0) return true
+        return courseCategoryTags.some((tag) => labels.has(tag.label))
       })
     )
   }, [monthCourses, selectedTags, tagsByCategory])
