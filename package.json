@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "scrape": "tsx scripts/scrape.ts",
+    "scrape": "tsx scripts/scrape-trainings.ts && tsx scripts/scrape-drop-in.ts",
+    "scrape:trainings": "tsx scripts/scrape-trainings.ts",
+    "scrape:drop-in": "tsx scripts/scrape-drop-in.ts",
     "generate-assets": "tsx scripts/generate-assets.ts"
   },
   "dependencies": {

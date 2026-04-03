@@ -13,6 +13,9 @@ function getStyleTags(type: string): string[] {
   if (t.includes("retreat")) tags.push("Retreat")
   if (t.includes("sound healing")) tags.push("Sound Healing")
   if (t.includes("meditation")) tags.push("Meditation")
+  if (t.includes("breathwork") || t.includes("pranayama") || t.includes("breath")) tags.push("Breathwork")
+  if (t.includes("nidra")) tags.push("Nidra")
+  if (t.includes("acro")) tags.push("Acroyoga")
   if (tags.length === 0) {
     if (t.includes("yoga") || t.includes("ytt") || t.includes("teacher training") || t.includes("200") || t.includes("300") || t.includes("500")) tags.push("Multi-Style TTC")
     else tags.push("Yoga")
@@ -40,10 +43,11 @@ export function generateTags(course: Pick<YogaCourse, "type" | "certificationLev
   return tags
 }
 
-/** Generate tags for a drop-in class (style only) */
+/** Generate tags for a drop-in class (style only, no Multi-Style TTC) */
 export function generateDropInTags(dropIn: Pick<DropInClass, "style">): Tag[] {
   const tags: Tag[] = []
   for (const label of getStyleTags(dropIn.style)) {
+    if (label === "Multi-Style TTC") continue
     tags.push({ label, category: "style" })
   }
   return tags

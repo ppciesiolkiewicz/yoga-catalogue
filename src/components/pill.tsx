@@ -37,6 +37,14 @@ const STYLE_CONFIG: Record<string, { pill: string; emoji: string }> = {
     pill: "bg-rose-100 text-rose-800 dark:bg-rose-900/50 dark:text-rose-300",
     emoji: "🔔",
   },
+  Breathwork: {
+    pill: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300",
+    emoji: "🌬️",
+  },
+  Nidra: {
+    pill: "bg-violet-100 text-violet-800 dark:bg-violet-900/50 dark:text-violet-300",
+    emoji: "💤",
+  },
   "Multi-Style TTC": {
     pill: "bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-300",
     emoji: "🕉️",
@@ -67,6 +75,8 @@ export const CARD_STYLE_CONFIG: Record<string, { pill: string; border: string; b
   Retreat: { ...STYLE_CONFIG.Retreat, border: "border-l-teal-500", bg: "from-teal-50 dark:from-teal-950/20", check: "accent-teal-500" },
   Meditation: { ...STYLE_CONFIG.Meditation, border: "border-l-indigo-500", bg: "from-indigo-50 dark:from-indigo-950/20", check: "accent-indigo-500" },
   "Sound Healing": { ...STYLE_CONFIG["Sound Healing"], border: "border-l-rose-500", bg: "from-rose-50 dark:from-rose-950/20", check: "accent-rose-500" },
+  Breathwork: { ...STYLE_CONFIG.Breathwork, border: "border-l-cyan-500", bg: "from-cyan-50 dark:from-cyan-950/20", check: "accent-cyan-500" },
+  Nidra: { ...STYLE_CONFIG.Nidra, border: "border-l-violet-500", bg: "from-violet-50 dark:from-violet-950/20", check: "accent-violet-500" },
   "Multi-Style TTC": { ...STYLE_CONFIG["Multi-Style TTC"], border: "border-l-sky-500", bg: "from-sky-50 dark:from-sky-950/20", check: "accent-sky-500" },
   Yoga: { ...STYLE_CONFIG.Yoga, border: "border-l-emerald-500", bg: "from-emerald-50 dark:from-emerald-950/20", check: "accent-emerald-500" },
 }
