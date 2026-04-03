@@ -1593,5 +1593,295 @@ export const dropInClasses: DropInClass[] = [
     ],
     "location": "Dharamshala",
     "updatedAt": "2026-04-03T08:25:28.809Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Hatha Yoga with Aman",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "08:00",
+        "endTime": "09:15"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "08:00",
+        "endTime": "09:15"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "08:00",
+        "endTime": "09:15"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "08:00",
+        "endTime": "09:15"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "08:00",
+        "endTime": "09:15"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Hatha Yoga class led by Aman. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Backbend with Onam",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "09:30",
+        "endTime": "10:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Backbend-focused yoga class led by Onam. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Handstand & Strength with Karan",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Vinyasa",
+    "schedule": [
+      {
+        "dayOfWeek": 2,
+        "startTime": "09:30",
+        "endTime": "10:45"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "09:30",
+        "endTime": "10:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Handstand and strength-focused yoga class led by Karan. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Vinyasa",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Splits with Onam",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 3,
+        "startTime": "09:30",
+        "endTime": "10:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Splits-focused yoga class led by Onam. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Inversions with Onam",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 5,
+        "startTime": "09:30",
+        "endTime": "10:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Inversions-focused yoga class led by Onam. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Free Community Mobility & Flexibility Class with Karan",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 3,
+        "startTime": "10:45",
+        "endTime": "11:45"
+      }
+    ],
+    "price": {
+      "amount": 0,
+      "currency": "INR"
+    },
+    "description": "A free community mobility and flexibility class led by Karan. Open to all, no booking fee required.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Spinal Satisfaction & Backbend Flow with Deepak Sir",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "16:30",
+        "endTime": "17:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Spinal Satisfaction & Backbend Flow class led by Deepak Sir. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Restorative Yoga with Aayushi",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Yin",
+    "schedule": [
+      {
+        "dayOfWeek": 2,
+        "startTime": "16:30",
+        "endTime": "17:45"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "16:30",
+        "endTime": "17:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Restorative Yoga class led by Aayushi. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Yin",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Butter Hips Flow with Deepak Sir",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Vinyasa",
+    "schedule": [
+      {
+        "dayOfWeek": 3,
+        "startTime": "16:30",
+        "endTime": "17:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Butter Hips Flow class led by Deepak Sir, focusing on hip-opening movements. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Vinyasa",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
+  },
+  {
+    "schoolName": "Kaizen Studio",
+    "className": "Full Body Flow with Deepak Sir",
+    "url": "https://kaizenstudio.fit/recovery",
+    "style": "Vinyasa",
+    "schedule": [
+      {
+        "dayOfWeek": 5,
+        "startTime": "16:30",
+        "endTime": "17:45"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Full Body Flow class led by Deepak Sir. Drop-in sessions available as part of the Kaizen timetable.",
+    "tags": [
+      {
+        "label": "Vinyasa",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-03T08:42:18.801Z"
   }
 ]

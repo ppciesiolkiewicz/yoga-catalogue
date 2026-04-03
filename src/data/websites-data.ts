@@ -1163,6 +1163,14 @@ export const websites: WebsiteEntry[] = [
     url: "https://vinyasayogaacademy.com/",
   },
 
+  // Kaizen Studio — drop-in
+  {
+    schoolName: "Kaizen Studio",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://kaizenstudio.fit/recovery",
+  },
+
   // Aranya Yoga — drop-in (Dharamshala)
   {
     schoolName: "Aranya Yoga",
