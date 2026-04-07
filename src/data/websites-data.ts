@@ -995,6 +995,130 @@ export const websites: WebsiteEntry[] = [
     url: "https://rishikeshyogaashram.com/14-days-yoga-retreat.php",
   },
 
+  // Arohan Yoga School — yin yoga tracks + retreat
+  {
+    schoolName: "Arohan Yoga School",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://arohanyoga.com/200-hour-yoga-teacher-training-india/",
+  },
+  {
+    schoolName: "Arohan Yoga School",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://arohanyoga.com/200-hour-yoga-ttc-multi-style-hatha-ashtanga-yin-and-aerial/",
+  },
+  {
+    schoolName: "Arohan Yoga School",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://arohanyoga.com/7-days-yoga-retreat/",
+  },
+
+  // Adi Yoga Shala — 50h yin yoga TTC
+  {
+    schoolName: "Adi Yoga Shala",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://adiyogashala.com/yin-yoga-teacher-training/",
+  },
+
+  // Kailash Yoga Ashram — 3, 5 & 7 day retreats
+  {
+    schoolName: "Kailash Yoga Ashram",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://kailashyogaashram.com/3-day-yoga-retreat-in-rishikesh-india/",
+  },
+
+  // Agni Yoga India — 3-day retreat with sound healing
+  {
+    schoolName: "Agni Yoga India",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://agniyogaindia.com/short-yoga-retreat-in-rishikesh",
+  },
+
+  // Yoga Vidya Mandiram — 3-day meditation retreat
+  {
+    schoolName: "Yoga Vidya Mandiram",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://yogavidyamandiram.com/3-days-himalayan-meditation-yoga-retreat-in-rishikesh-india/",
+  },
+
+  // Rishikesh Yoga Valley — 3-day retreat
+  {
+    schoolName: "Rishikesh Yoga Valley",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://rishikeshyogavalley.com/3-days-yoga-retreat-in-rishikesh-india/",
+  },
+
+  // Abhayaranya Yoga Ashram — 3-day intro retreat
+  {
+    schoolName: "Abhayaranya Yoga Ashram",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://abhayaranya.com/health-wellness/3-days-introductory-yoga-retreat",
+  },
+
+  // The Yoga Rishi — 3-day retreat
+  {
+    schoolName: "The Yoga Rishi",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://theyogarishi.com/3-days-yoga-retreat/",
+  },
+
+  // Rishikesh Nath Yogshala — 3, 5 & 7 day retreats
+  {
+    schoolName: "Rishikesh Nath Yogshala",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://www.rishikeshnathyogshala.com/yoga-retreat-in-rishikesh-india.php",
+  },
+
+  // Himalayan Academy of Sound — 5-day sound healing
+  {
+    schoolName: "Himalayan Academy of Sound",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://himalayanacademyofsound.com/workshops",
+  },
+
+  // Haritha Yogshala — sound healing course
+  {
+    schoolName: "Haritha Yogshala",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://harithayogshala.com/sound-healing-therapy-india",
+  },
+
+  // YogShri Healing — sound healing certification
+  {
+    schoolName: "YogShri Healing",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://yogshrihealing.com/",
+  },
+
+  // Lily Yoga — meditation retreats
+  {
+    schoolName: "Lily Yoga",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://www.lilyyogarishikesh.com/",
+  },
+
+  // OJ Healings — sound healing courses
+  {
+    schoolName: "OJ Healings",
+    location: "Rishikesh",
+    pageType: "training",
+    url: "https://ojhealings.com/",
+  },
+
   // === DHARAMSHALA ===
 
   // Mahi Yoga — 100, 200, 300, 500hr
