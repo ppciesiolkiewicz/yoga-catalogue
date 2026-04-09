@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 import { websites } from "../src/data/websites-data"
 import type { WebsiteEntry, YogaCourse } from "../src/data/types"
 import { generateTags } from "../src/data/tags"
-import { anthropic, parseMaxAgeDays, loadExistingData, getUrlsToSkip, fetchPageText, requireApiKey } from "./scrape-utils"
+import { anthropic, parseMaxAgeDays, loadExistingData, getUrlsToSkip, getPageText, requireApiKey } from "./scrape-utils"
 
 const outPath = join(__dirname, "../src/data/training.ts")
 const maxAgeDays = parseMaxAgeDays()
@@ -94,7 +94,7 @@ async function main() {
   const newCourses: YogaCourse[] = []
 
   for (const entry of toScrape) {
-    const text = await fetchPageText(entry)
+    const text = await getPageText(entry)
     if (!text) continue
     try {
       const courses = await extractCourses(text, entry)

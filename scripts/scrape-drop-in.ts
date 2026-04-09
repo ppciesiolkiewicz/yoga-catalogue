@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 import { websites } from "../src/data/websites-data"
 import type { WebsiteEntry, DropInClass } from "../src/data/types"
 import { generateDropInTags } from "../src/data/tags"
-import { anthropic, parseMaxAgeDays, loadExistingData, getUrlsToSkip, fetchPageText, requireApiKey } from "./scrape-utils"
+import { anthropic, parseMaxAgeDays, loadExistingData, getUrlsToSkip, getPageText, requireApiKey } from "./scrape-utils"
 
 const outPath = join(__dirname, "../src/data/drop-in.ts")
 const maxAgeDays = parseMaxAgeDays()
@@ -108,7 +108,7 @@ async function main() {
   const newDropIns: DropInClass[] = []
 
   for (const entry of toScrape) {
-    const text = await fetchPageText(entry)
+    const text = await getPageText(entry)
     if (!text) continue
     try {
       const classes = await extractDropInClasses(text, entry)
