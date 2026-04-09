@@ -7381,6 +7381,156 @@ export const courses: YogaCourse[] = [
     ]
   },
   {
+    "schoolName": "Himalayan Iyengar Yoga Centre",
+    "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://hiyogacentre.com/yoga-teacher-training-course-dharamshala-india/",
+    "type": "Iyengar Yoga Teacher Training",
+    "certificationLevel": "200hr RYT",
+    "durationDays": 42,
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "description": "A 6-week, 200-hour Yoga Alliance accredited teacher training at the Himalayan Iyengar Yoga Centre in Dharamkot, Dharamshala. Divided into two 3-week parts: Part 1 covers asana, relaxation, meditation, pranayama, and karma yoga (160 hours). Part 2 covers self-practice, mudra, pranayama, yoga philosophy, anatomy, mantra chanting, and teaching methodology. Founded in 1985 by Yoga Master Sharat Arora, a long-term student of BKS Iyengar.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": "3 vegetarian meals and unlimited water & tea",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Iyengar",
+        "category": "style"
+      },
+      {
+        "label": "200h",
+        "category": "certification"
+      },
+      {
+        "label": "42 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Himalayan Iyengar Yoga Centre",
+    "courseName": "9-Day Immersion Yoga Course in Dharamshala",
+    "url": "https://hiyogacentre.com/immersion-yoga-courses-dharamshala/",
+    "type": "Yoga Immersion",
+    "certificationLevel": "",
+    "durationDays": 9,
+    "price": {
+      "amount": 24500,
+      "currency": "INR"
+    },
+    "description": "A 9-day immersion yoga course at the Himalayan Iyengar Yoga Centre in Dharamkot, Dharamshala. An evolution of Classical Iyengar Yoga with emphasis on alignment foundations, footwork, and handwork. Taught personally by Yoga Master Sharat Arora. Lunch included, accommodation not included.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": "Lunch included",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Iyengar",
+        "category": "style"
+      },
+      {
+        "label": "9 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Himalayan Iyengar Yoga Centre",
+    "courseName": "9-Day Intensive Yoga Course in Dharamshala",
+    "url": "https://hiyogacentre.com/intensive-yoga-courses-dharamshala-india/",
+    "type": "Yoga Intensive",
+    "certificationLevel": "",
+    "durationDays": 9,
+    "price": {
+      "amount": 18370,
+      "currency": "INR"
+    },
+    "description": "A 9-day intensive yoga course at the Himalayan Iyengar Yoga Centre in Dharamkot, Dharamshala. Recommended for students who wish to learn the Iyengar yoga method properly. Covers asana, pranayama, meditation, and yoga philosophy. Lunch included, accommodation not included.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": "Lunch included",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Iyengar",
+        "category": "style"
+      },
+      {
+        "label": "9 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Himalayan Iyengar Yoga Centre",
+    "courseName": "5-Day Yoga Course in Dharamshala",
+    "url": "https://hiyogacentre.com/yoga-weekend-classes-5-day-yoga-courses-dharamshala-goa/",
+    "type": "Yoga Short Course",
+    "certificationLevel": "",
+    "durationDays": 5,
+    "price": {
+      "amount": 0,
+      "currency": "INR"
+    },
+    "description": "A 5-day introductory yoga course at the Himalayan Iyengar Yoga Centre in Dharamkot, Dharamshala. An accessible entry point to Classical Iyengar Yoga with focus on alignment and foundational postures.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Iyengar",
+        "category": "style"
+      },
+      {
+        "label": "5 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Himalayan Iyengar Yoga Centre",
+    "courseName": "Yoga Therapy Course in Dharamshala",
+    "url": "https://hiyogacentre.com/yoga-therapy-courses-dharamshala-goa/",
+    "type": "Yoga Therapy",
+    "certificationLevel": "",
+    "durationDays": 0,
+    "price": {
+      "amount": 0,
+      "currency": "INR"
+    },
+    "description": "A yoga therapy course at the Himalayan Iyengar Yoga Centre in Dharamkot, Dharamshala. Applies therapeutic Iyengar yoga techniques for specific health conditions and recovery, guided by experienced teachers.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Iyengar",
+        "category": "style"
+      }
+    ]
+  },
+  {
     "schoolName": "D'vine Yoga",
     "courseName": "200 Hour Yoga Teacher Training in Dharamshala",
     "url": "https://www.artdivine.org/yoga-teacher-training-in-dharamshala.php",

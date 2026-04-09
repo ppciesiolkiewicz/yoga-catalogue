@@ -1283,6 +1283,38 @@ export const websites: WebsiteEntry[] = [
     url: "https://swarajyogaandretreats.com/yoga-vacations/",
   },
 
+  // Himalayan Iyengar Yoga Centre — TTC + immersion + intensive + 5-day + therapy
+  {
+    schoolName: "Himalayan Iyengar Yoga Centre",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://hiyogacentre.com/yoga-teacher-training-course-dharamshala-india/",
+  },
+  {
+    schoolName: "Himalayan Iyengar Yoga Centre",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://hiyogacentre.com/immersion-yoga-courses-dharamshala/",
+  },
+  {
+    schoolName: "Himalayan Iyengar Yoga Centre",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://hiyogacentre.com/intensive-yoga-courses-dharamshala-india/",
+  },
+  {
+    schoolName: "Himalayan Iyengar Yoga Centre",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://hiyogacentre.com/yoga-weekend-classes-5-day-yoga-courses-dharamshala-goa/",
+  },
+  {
+    schoolName: "Himalayan Iyengar Yoga Centre",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://hiyogacentre.com/yoga-therapy-courses-dharamshala-goa/",
+  },
+
   // D'vine Yoga — 200hr
   {
     schoolName: "D'vine Yoga",
