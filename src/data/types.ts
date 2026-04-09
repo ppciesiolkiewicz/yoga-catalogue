@@ -2,6 +2,8 @@ export type Location = "Rishikesh" | "Dharamshala"
 
 export type PageType = "training" | "drop-in"
 
+export type ScrapeMode = "fetch" | "browser"
+
 export type TagCategory = "style" | "certification" | "duration"
 
 export interface Tag {
@@ -14,6 +16,8 @@ export interface WebsiteEntry {
   url: string
   location: Location
   pageType: PageType
+  scrapeMode?: ScrapeMode
+  detectedTech?: string
 }
 
 export interface YogaCourse {
