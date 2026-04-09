@@ -44,7 +44,13 @@ export function LocationHeader({ location, locationName }: { location: string; l
               {loc.label}
             </Link>
           ))}
-          <div className="ml-auto">
+          <div className="ml-auto flex items-center gap-1">
+            <Link
+              href="/contact"
+              className="rounded-full px-3 py-1.5 text-sm text-zinc-400 transition-colors hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-200"
+            >
+              Add Your Studio
+            </Link>
             <ThemeToggle />
           </div>
         </div>

@@ -55,6 +55,10 @@ export default async function LocationLayout({
         <p className="text-center text-sm text-zinc-400 dark:text-zinc-500">
           &copy; {new Date().getFullYear()} rishikeshyoga.info
         </p>
+        <p className="mt-2 text-center text-sm text-zinc-400 dark:text-zinc-500">
+          Want to list your studio?{" "}
+          <a href="/contact" className="underline hover:text-zinc-600 dark:hover:text-zinc-300">Contact us</a>
+        </p>
       </footer>
     </div>
   )
