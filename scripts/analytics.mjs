@@ -4,11 +4,12 @@
  * CLI tool for pulling PostHog analytics data.
  *
  * Usage:
- *   node scripts/analytics.mjs usage    [--days 7]   — pageviews, visitors, key events
- *   node scripts/analytics.mjs contacts  [--days 30]  — contact form submissions
+ *   node scripts/analytics.mjs projects                     — list org projects
+ *   node scripts/analytics.mjs usage [--days 7] [--project name]
+ *   node scripts/analytics.mjs contacts [--days 30] [--project name]
  *
- * Requires POSTHOG_PERSONAL_API_KEY and NEXT_PUBLIC_POSTHOG_KEY in .env
- * Get a personal API key from PostHog → Settings → Personal API Keys
+ * Requires POSTHOG_PERSONAL_API_KEY in .env
+ * Get one from PostHog → Settings → Personal API Keys
  */
 
 import { config } from "dotenv";
@@ -19,8 +20,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 config({ path: path.join(__dirname, "..", ".env") });
 
 const API_KEY = process.env.POSTHOG_PERSONAL_API_KEY;
-const PROJECT_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
-const API_HOST = "https://eu.posthog.com";
+const API_HOST = "https://eu.posthog.com"; // API host (not ingestion host)
 
 if (!API_KEY) {
   console.error(
@@ -47,15 +47,35 @@ async function fetchPostHog(endpoint, params = {}) {
   return res.json();
 }
 
-async function getProjectId() {
+async function getProjects() {
   const data = await fetchPostHog("/api/projects/");
   if (!data.results?.length) throw new Error("No PostHog projects found");
-  if (PROJECT_KEY) {
-    const match = data.results.find((p) => p.api_token === PROJECT_KEY);
-    if (match) return match.id;
-    console.warn(`Warning: no project matched NEXT_PUBLIC_POSTHOG_KEY, using first project`);
+  return data.results;
+}
+
+async function getProjectId(projectName) {
+  const projects = await getProjects();
+  if (projectName) {
+    const match = projects.find(
+      (p) => p.name.toLowerCase() === projectName.toLowerCase()
+    );
+    if (!match) {
+      console.error(
+        `Project "${projectName}" not found. Available projects:\n` +
+          projects.map((p) => `  - ${p.name}`).join("\n")
+      );
+      process.exit(1);
+    }
+    return match.id;
   }
-  return data.results[0].id;
+  if (projects.length > 1) {
+    console.error(
+      "Multiple projects found — use --project <name> to select one:\n" +
+        projects.map((p) => `  - ${p.name}`).join("\n")
+    );
+    process.exit(1);
+  }
+  return projects[0].id;
 }
 
 async function fetchAllEvents(projectId, eventName, after) {
@@ -81,8 +101,17 @@ function isLocalhost(event) {
 
 // --- Commands ---
 
-async function cmdUsage(days) {
-  const projectId = await getProjectId();
+async function cmdProjects() {
+  const projects = await getProjects();
+  console.log(`\nOrg projects (${projects.length})\n${"─".repeat(40)}`);
+  for (const p of projects) {
+    console.log(`  ${p.name} (id: ${p.id})`);
+  }
+  console.log("");
+}
+
+async function cmdUsage(days, projectName) {
+  const projectId = await getProjectId(projectName);
   const after = daysAgo(days);
 
   console.log(`\nUsage stats — last ${days} days\n${"─".repeat(40)}`);
@@ -117,8 +146,8 @@ async function cmdUsage(days) {
   console.log("");
 }
 
-async function cmdContacts(days) {
-  const projectId = await getProjectId();
+async function cmdContacts(days, projectName) {
+  const projectId = await getProjectId(projectName);
   const after = daysAgo(days);
 
   console.log(`\nContact submissions — last ${days} days\n${"─".repeat(40)}\n`);
@@ -155,13 +184,14 @@ function daysAgo(n) {
   return d.toISOString();
 }
 
-const KNOWN_FLAGS = new Set(["--days"]);
+const KNOWN_FLAGS = new Set(["--days", "--project"]);
 
 function showHelp(exitCode = 0) {
   console.log(
     "Usage:\n" +
-      "  node scripts/analytics.mjs usage    [--days 7]   — pageviews, visitors, key events\n" +
-      "  node scripts/analytics.mjs contacts  [--days 30]  — contact form submissions"
+      "  node scripts/analytics.mjs projects                              — list org projects\n" +
+      "  node scripts/analytics.mjs usage    [--days 7] [--project name]  — pageviews, visitors, key events\n" +
+      "  node scripts/analytics.mjs contacts [--days 30] [--project name] — contact form submissions"
   );
   process.exit(exitCode);
 }
@@ -182,19 +212,27 @@ function parseArgs() {
   if (daysIdx !== -1 && args[daysIdx + 1]) {
     days = parseInt(args[daysIdx + 1], 10);
   }
-  return { command, days };
+  let project;
+  const projIdx = args.indexOf("--project");
+  if (projIdx !== -1 && args[projIdx + 1]) {
+    project = args[projIdx + 1];
+  }
+  return { command, days, project };
 }
 
 // --- Main ---
 
-const { command, days } = parseArgs();
+const { command, days, project } = parseArgs();
 
 switch (command) {
+  case "projects":
+    await cmdProjects();
+    break;
   case "usage":
-    await cmdUsage(days);
+    await cmdUsage(days, project);
     break;
   case "contacts":
-    await cmdContacts(days);
+    await cmdContacts(days, project);
     break;
   default:
     showHelp(command ? 1 : 0);
