@@ -1295,6 +1295,62 @@ export const websites: WebsiteEntry[] = [
     url: "https://kaizenstudio.fit/recovery",
   },
 
+  // Yoga Vini — drop-in (Hatha Yoga & Meditation)
+  {
+    schoolName: "Yoga Vini",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://www.yogavinirishikesh.com/drop-in-yoga-classes-rishikesh/",
+  },
+
+  // Hariom Yogashala — drop-in (Hatha, Ashtanga, Meditation)
+  {
+    schoolName: "Hariom Yogashala",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://hariomyogashala.com/daily-drop-in-yoga-classes-rishikesh.php",
+  },
+
+  // Vishnu Yoga Shala — drop-in
+  {
+    schoolName: "Vishnu Yoga Shala",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://www.vishnuyogashala.com/drop-in-classes/",
+  },
+
+  // Hatha Yoga Rishikesh — drop-in (Hatha, Vinyasa, Ashtanga)
+  {
+    schoolName: "Hatha Yoga Rishikesh",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+  },
+
+  // Real Happiness — drop-in meditation
+  {
+    schoolName: "Real Happiness",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://realhappiness.org/drop-in-meditation-classes.php",
+  },
+
+  // Parmarth Niketan — drop-in (yoga, meditation, Ganga Aarti)
+  {
+    schoolName: "Parmarth Niketan",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://courses.parmarth.org/yoga/",
+  },
+
+  // Anand Prakash Yoga Ashram — drop-in (Akhanda Yoga, meditation, kirtan)
+  {
+    schoolName: "Anand Prakash Yoga Ashram",
+    location: "Rishikesh",
+    pageType: "drop-in",
+    url: "https://primaryretreat.akhandayoga.com/",
+  },
+
   // Aranya Yoga — drop-in (Dharamshala)
   {
     schoolName: "Aranya Yoga",

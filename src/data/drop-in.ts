@@ -1932,5 +1932,1031 @@ export const dropInClasses: DropInClass[] = [
     ],
     "location": "Dharamshala",
     "updatedAt": "2026-04-03T08:53:33.996Z"
+  },
+  {
+    "schoolName": "Yoga Vini",
+    "className": "Morning Hatha Yoga Drop-In",
+    "url": "https://www.yogavinirishikesh.com/drop-in-yoga-classes-rishikesh/",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "08:30"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "08:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "08:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "08:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "08:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "08:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "08:30"
+      }
+    ],
+    "description": "Daily morning Hatha yoga drop-in class held at the rooftop studio in Laxmanjhula, Rishikesh. Classes include mantra chanting, sun salutations, alignment-focused asanas, and deep relaxation, welcoming all levels.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:13.966Z"
+  },
+  {
+    "schoolName": "Yoga Vini",
+    "className": "Evening Hatha Yoga Drop-In",
+    "url": "https://www.yogavinirishikesh.com/drop-in-yoga-classes-rishikesh/",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "16:30"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "16:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "16:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "16:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "16:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "16:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "16:30"
+      }
+    ],
+    "description": "Daily evening Hatha yoga drop-in class held at the rooftop studio in Laxmanjhula, Rishikesh. Classes include mantra chanting, sun salutations, alignment-focused asanas, and deep relaxation, welcoming all levels.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:13.966Z"
+  },
+  {
+    "schoolName": "Hariom Yogashala",
+    "className": "Hatha Yoga Asana Practice",
+    "url": "https://hariomyogashala.com/daily-drop-in-yoga-classes-rishikesh.php",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "08:30",
+        "endTime": "10:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "08:30",
+        "endTime": "10:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "08:30",
+        "endTime": "10:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "08:30",
+        "endTime": "10:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "08:30",
+        "endTime": "10:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "08:30",
+        "endTime": "10:00"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Morning Hatha Yoga Asana Practice drop-in class held Monday through Saturday. Includes correct adjustment and alignment of body postures and asanas.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:25.415Z"
+  },
+  {
+    "schoolName": "Hariom Yogashala",
+    "className": "Ashtanga Yoga Asana Practice",
+    "url": "https://hariomyogashala.com/daily-drop-in-yoga-classes-rishikesh.php",
+    "style": "Ashtanga",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Afternoon Ashtanga Yoga Asana Practice drop-in class held Monday through Saturday. Taught by professional and skilled yoga teachers.",
+    "tags": [
+      {
+        "label": "Ashtanga",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:25.415Z"
+  },
+  {
+    "schoolName": "Hariom Yogashala",
+    "className": "Meditation",
+    "url": "https://hariomyogashala.com/daily-drop-in-yoga-classes-rishikesh.php",
+    "style": "Meditation",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Evening Meditation drop-in class held Monday through Saturday. Includes spiritual chanting of sacred mantras and breathing exercises.",
+    "tags": [
+      {
+        "label": "Meditation",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:25.415Z"
+  },
+  {
+    "schoolName": "Vishnu Yoga Shala",
+    "className": "Morning Drop-In Class",
+    "url": "https://www.vishnuyogashala.com/drop-in-classes/",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "06:00"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "06:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "06:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "06:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "06:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "06:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "06:00"
+      }
+    ],
+    "price": {
+      "amount": 200,
+      "currency": "INR"
+    },
+    "description": "A one-hour morning drop-in class focusing on asanas, meditation, and pranayama, suitable for beginners and experienced yogis alike. No prebooking required; arrive 10 minutes early to pay and find your spot.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:36.178Z"
+  },
+  {
+    "schoolName": "Vishnu Yoga Shala",
+    "className": "Evening Drop-In Class",
+    "url": "https://www.vishnuyogashala.com/drop-in-classes/",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "18:00"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "18:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "18:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "18:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "18:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "18:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "18:00"
+      }
+    ],
+    "price": {
+      "amount": 200,
+      "currency": "INR"
+    },
+    "description": "A one-hour evening drop-in class focusing on asanas, meditation, and pranayama, suitable for beginners and experienced yogis alike. No prebooking required; arrive 10 minutes early to pay and find your spot.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:36:36.178Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Classical Hatha Yoga (Summer)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Classical Hatha Yoga drop-in class available daily during summer season (2nd March to 30th October). Includes traditional asanas, pranayama, meditation, and deep relaxation.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Beginner Yoga Class (Summer)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "10:00",
+        "endTime": "11:00"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Beginner-friendly yoga drop-in class available daily during summer season (2nd March to 30th October). Ideal for those new to yoga looking to learn the basics.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Hatha Flow Vinyasa (Summer)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Vinyasa",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Hatha Flow Vinyasa drop-in class available daily during summer season (2nd March to 30th October). A dynamic blend of Hatha and Vinyasa flow styles.",
+    "tags": [
+      {
+        "label": "Vinyasa",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Ashtanga Vinyasa Yoga (Summer)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Ashtanga",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Ashtanga Vinyasa Yoga drop-in class available daily during summer season (2nd March to 30th October). A structured and dynamic Ashtanga practice for all levels.",
+    "tags": [
+      {
+        "label": "Ashtanga",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Classical Hatha Yoga (Winter)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "09:00",
+        "endTime": "10:30"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Classical Hatha Yoga drop-in class available daily during winter season (1st November to 28th February). Includes traditional asanas, pranayama, meditation, and deep relaxation.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Beginner Yoga Class (Winter)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "11:00",
+        "endTime": "12:00"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Beginner-friendly yoga drop-in class available daily during winter season (1st November to 28th February). Ideal for those new to yoga looking to learn the basics.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Hatha Flow Vinyasa (Winter)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Vinyasa",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Hatha Flow Vinyasa drop-in class available daily during winter season (1st November to 28th February). A dynamic blend of Hatha and Vinyasa flow styles.",
+    "tags": [
+      {
+        "label": "Vinyasa",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Hatha Yoga Rishikesh",
+    "className": "Ashtanga Vinyasa Yoga (Winter)",
+    "url": "https://hathayogarishikesh.com/drop-in-yoga-class-in-rishikesh.php",
+    "style": "Ashtanga",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 0,
+        "startTime": "17:30",
+        "endTime": "19:00"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Ashtanga Vinyasa Yoga drop-in class available daily during winter season (1st November to 28th February). A structured and dynamic Ashtanga practice for all levels.",
+    "tags": [
+      {
+        "label": "Ashtanga",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:00.295Z"
+  },
+  {
+    "schoolName": "Real Happiness",
+    "className": "In-Person Drop-In Meditation Class (1.5 Hours)",
+    "url": "https://realhappiness.org/drop-in-meditation-classes.php",
+    "style": "Meditation",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "price": {
+      "amount": 800,
+      "currency": "INR"
+    },
+    "description": "A 1.5-hour in-person drop-in meditation class in Rishikesh, India, open to all levels with guided and silent practices, personal instructor guidance, journaling, and complimentary herbal tea. No prior experience or commitment required.",
+    "tags": [
+      {
+        "label": "Meditation",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:16.696Z"
+  },
+  {
+    "schoolName": "Real Happiness",
+    "className": "In-Person Drop-In Meditation Class (1 Hour)",
+    "url": "https://realhappiness.org/drop-in-meditation-classes.php",
+    "style": "Meditation",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "price": {
+      "amount": 700,
+      "currency": "INR"
+    },
+    "description": "A 1-hour in-person drop-in meditation class in Rishikesh, India, suitable for beginners to advanced practitioners, featuring guided and silent meditation with personal instructor support. No commitment needed.",
+    "tags": [
+      {
+        "label": "Meditation",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:16.696Z"
+  },
+  {
+    "schoolName": "Real Happiness",
+    "className": "Online Drop-In Meditation Class (1.5 Hours)",
+    "url": "https://realhappiness.org/drop-in-meditation-classes.php",
+    "style": "Meditation",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "price": {
+      "amount": 800,
+      "currency": "INR"
+    },
+    "description": "A 1.5-hour online drop-in meditation class via Zoom, open to all levels, featuring guided and silent practices, digital handouts, and a 10-minute live Q&A. No commitment required.",
+    "tags": [
+      {
+        "label": "Meditation",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:16.696Z"
+  },
+  {
+    "schoolName": "Real Happiness",
+    "className": "Online Drop-In Meditation Class (1 Hour)",
+    "url": "https://realhappiness.org/drop-in-meditation-classes.php",
+    "style": "Meditation",
+    "schedule": [
+      {
+        "dayOfWeek": 0,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "price": {
+      "amount": 700,
+      "currency": "INR"
+    },
+    "description": "A 1-hour online drop-in meditation class via Zoom for all levels, featuring guided and silent practices, PDF handouts, and a live Q&A session. No prior experience or commitment needed.",
+    "tags": [
+      {
+        "label": "Meditation",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:16.696Z"
+  },
+  {
+    "schoolName": "Parmarth Niketan",
+    "className": "General Yoga Class",
+    "url": "https://courses.parmarth.org/yoga/",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "06:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "06:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "06:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "06:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "06:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "06:30"
+      }
+    ],
+    "description": "General yoga classes offered on a drop-in basis from Monday to Saturday, early mornings and mid afternoon. Classes follow a holistic, spiritually oriented traditional yogic discipline as taught by the rishis and sages.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Rishikesh",
+    "updatedAt": "2026-04-09T08:37:24.502Z"
   }
 ]
