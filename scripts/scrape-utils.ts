@@ -63,6 +63,33 @@ export async function fetchPageText(entry: WebsiteEntry): Promise<string | null>
   }
 }
 
+export async function fetchPageTextBrowser(entry: WebsiteEntry): Promise<string | null> {
+  try {
+    console.log(`Fetching (browser): ${entry.url}`)
+    const { chromium } = await import("playwright")
+    const browser = await chromium.launch({ headless: true })
+    try {
+      const page = await browser.newPage()
+      await page.goto(entry.url, { waitUntil: "networkidle", timeout: 30000 })
+      const text = await page.evaluate(() => document.body.innerText)
+      const cleaned = text.replace(/\s+/g, " ").trim()
+      return cleaned.slice(0, 8000) || null
+    } finally {
+      await browser.close()
+    }
+  } catch (error) {
+    console.warn(`  ⚠ Failed to fetch (browser) ${entry.url}: ${error}`)
+    return null
+  }
+}
+
+export async function getPageText(entry: WebsiteEntry): Promise<string | null> {
+  if (entry.scrapeMode === "browser") {
+    return fetchPageTextBrowser(entry)
+  }
+  return fetchPageText(entry)
+}
+
 export function requireApiKey() {
   if (!process.env.ANTHROPIC_API_KEY) {
     console.error("Error: ANTHROPIC_API_KEY environment variable is required")
