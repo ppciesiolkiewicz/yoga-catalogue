@@ -7,8 +7,8 @@
  *   node scripts/analytics.mjs usage    [--days 7]   — pageviews, visitors, key events
  *   node scripts/analytics.mjs contacts  [--days 30]  — contact form submissions
  *
- * Requires POSTHOG_PERSONAL_API_KEY in .env.local
- * Get one from PostHog → Settings → Personal API Keys
+ * Requires POSTHOG_PERSONAL_API_KEY and NEXT_PUBLIC_POSTHOG_KEY in .env
+ * Get a personal API key from PostHog → Settings → Personal API Keys
  */
 
 import { config } from "dotenv";
@@ -16,14 +16,15 @@ import { fileURLToPath } from "url";
 import path from "path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-config({ path: path.join(__dirname, "..", ".env.local") });
+config({ path: path.join(__dirname, "..", ".env") });
 
 const API_KEY = process.env.POSTHOG_PERSONAL_API_KEY;
+const PROJECT_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
 const API_HOST = "https://eu.posthog.com";
 
 if (!API_KEY) {
   console.error(
-    "Missing POSTHOG_PERSONAL_API_KEY in .env.local\n" +
+    "Missing POSTHOG_PERSONAL_API_KEY in .env\n" +
       "Get one from PostHog → Settings → Personal API Keys"
   );
   process.exit(1);
@@ -49,6 +50,11 @@ async function fetchPostHog(endpoint, params = {}) {
 async function getProjectId() {
   const data = await fetchPostHog("/api/projects/");
   if (!data.results?.length) throw new Error("No PostHog projects found");
+  if (PROJECT_KEY) {
+    const match = data.results.find((p) => p.api_token === PROJECT_KEY);
+    if (match) return match.id;
+    console.warn(`Warning: no project matched NEXT_PUBLIC_POSTHOG_KEY, using first project`);
+  }
   return data.results[0].id;
 }
 

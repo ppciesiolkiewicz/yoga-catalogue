@@ -56,7 +56,7 @@ export default async function LocationLayout({
           Information may not be fully accurate or up to date. Click on a course or class to verify details on the studio&apos;s website.
         </p>
         <p className="mt-4 text-center text-sm text-zinc-400 dark:text-zinc-500">
-          &copy; {new Date().getFullYear()} rishikeshyoga.info
+          &copy; {new Date().getFullYear()} yogacatalogue.space
         </p>
         <p className="mt-2 text-center text-sm text-zinc-400 dark:text-zinc-500">
           Want to list your studio?{" "}

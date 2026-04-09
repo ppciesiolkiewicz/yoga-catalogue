@@ -41,7 +41,7 @@ export default function ContactPage() {
             <h1 className="text-2xl font-bold text-zinc-900 dark:text-white">Add Your Studio</h1>
           </div>
           <p className="text-zinc-500 dark:text-zinc-400">
-            Want your yoga school or studio listed on rishikeshyoga.info? Share your details and we&apos;ll get you added.
+            Want your yoga school or studio listed on yogacatalogue.space? Share your details and we&apos;ll get you added.
           </p>
         </div>
 
