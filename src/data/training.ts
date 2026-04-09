@@ -7000,12 +7000,12 @@ export const courses: YogaCourse[] = [
     "url": "https://www.aranyayogaashram.com/sound-healing/",
     "type": "Sound Healing Teacher Training",
     "certificationLevel": "",
-    "durationDays": 0,
+    "durationDays": 2,
     "price": {
-      "amount": 0,
-      "currency": "USD"
+      "amount": 25000,
+      "currency": "INR"
     },
-    "description": "A sound healing training course at Aranya Yoga in Dharamshala covering singing bowl techniques, sound therapy principles, and healing practices. Located in the peaceful setting of Bhagsu Nag near McLeod Ganj.",
+    "description": "A 12-hour sound healing training course at Aranya Yoga in Lower Bhagsu, Dharamshala. Learn the benefits of sound for transformation, manifestation and healing through singing bowl techniques, sound therapy principles, and healing practices.",
     "upcomingDates": [],
     "accommodation": "Included",
     "meals": true,
@@ -7129,6 +7129,254 @@ export const courses: YogaCourse[] = [
       {
         "label": "200h",
         "category": "certification"
+      }
+    ]
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "courseName": "100 Hour Yin Yoga Teacher Training in Dharamshala",
+    "url": "https://mahiyoga.com/yin-yoga-teacher-training/",
+    "type": "Yin Yoga Teacher Training",
+    "certificationLevel": "100hr YACEP",
+    "durationDays": 11,
+    "price": {
+      "amount": 800,
+      "currency": "USD"
+    },
+    "description": "A 100-hour Yin and Therapeutic Yoga teacher training in Upper Bhagsu, Dharamshala. Blends ancient Eastern sciences from India and China with modern teaching techniques. Covers Yin Yoga practice, Yoga Nidra, sequencing, and therapeutic approaches to relieve trauma from physical and mental bodies.",
+    "upcomingDates": [],
+    "accommodation": "Private room included",
+    "meals": "3 vegetarian meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Yin Yoga",
+        "category": "style"
+      },
+      {
+        "label": "100h",
+        "category": "certification"
+      },
+      {
+        "label": "11 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "300 Hour Yoga Teacher Training in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/300hr-yoga-teacher-training-india/",
+    "type": "Multi-Style Yoga Teacher Training",
+    "certificationLevel": "300hr",
+    "durationDays": 25,
+    "price": {
+      "amount": 185000,
+      "currency": "INR"
+    },
+    "description": "An advanced 300-hour Yoga Alliance registered teacher training at Aranya Yoga in Lower Bhagsu, Dharamshala. Integrates traditional Hatha and Ashtanga yoga in a multi-style program covering mudras, mantras, philosophy, anatomy, meditation, and yoga therapy. Includes private room, three daily meals, and airport pickup.",
+    "upcomingDates": [],
+    "accommodation": "Private room included",
+    "meals": "3 meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Multi-Style TTC",
+        "category": "style"
+      },
+      {
+        "label": "300h",
+        "category": "certification"
+      },
+      {
+        "label": "25 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "Reiki Level I & II Training in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/reiki-training-india/",
+    "type": "Reiki Training",
+    "certificationLevel": "",
+    "durationDays": 2,
+    "price": {
+      "amount": 21000,
+      "currency": "INR"
+    },
+    "description": "A combined Reiki Level I and Level II training at Aranya Yoga in Lower Bhagsu, Dharamshala. Two-day intensive covering Reiki energy healing foundations and practitioner-level techniques.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Reiki",
+        "category": "style"
+      },
+      {
+        "label": "2 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "Reiki Master Attunement in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/reiki-training-india/",
+    "type": "Reiki Training",
+    "certificationLevel": "",
+    "durationDays": 2,
+    "price": {
+      "amount": 35000,
+      "currency": "INR"
+    },
+    "description": "A Reiki Master attunement course at Aranya Yoga in Lower Bhagsu, Dharamshala. Two-day intensive for those who have completed Reiki Level I and II, advancing to the master practitioner level.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Reiki",
+        "category": "style"
+      },
+      {
+        "label": "2 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Aranya Yoga",
+    "courseName": "5-Day Intensive Yoga Course in Dharamshala",
+    "url": "https://www.aranyayogaashram.com/5-day-yoga-course/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 5,
+    "price": {
+      "amount": 25000,
+      "currency": "INR"
+    },
+    "description": "A 5-day intensive yoga course at Aranya Yoga in Lower Bhagsu, Dharamshala. Includes 5 nights accommodation and all meals. A short immersive experience for those looking to deepen their practice without committing to a full teacher training.",
+    "upcomingDates": [],
+    "accommodation": "5 nights included",
+    "meals": "All meals included",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Retreat",
+        "category": "style"
+      },
+      {
+        "label": "5 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "courseName": "Sound Healing & Yoga Foundation Course in Dharamshala",
+    "url": "https://swarajyogaandretreats.com/sound-healing-yoga-foundation-course/",
+    "type": "Sound Healing Yoga Course",
+    "certificationLevel": "IYA",
+    "durationDays": 7,
+    "price": {
+      "amount": 39000,
+      "currency": "INR"
+    },
+    "description": "A 7-day Sound Healing and Yoga Foundation course at Swaraj Yoga in Dharamkot, Dharamshala. Combines two daily Iyengar-inspired Hatha yoga sessions with 10 hours of sound healing training. Includes accommodation, two vegetarian Sattvic meals daily, unlimited detox tea, a naturopathy consultation, and IYA certification.",
+    "upcomingDates": [],
+    "accommodation": "Private or shared room included",
+    "meals": "2 vegetarian Sattvic meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Sound Healing",
+        "category": "style"
+      },
+      {
+        "label": "7 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "courseName": "One Week Foundation Beginner's Yoga Course in Dharamshala",
+    "url": "https://swarajyogaandretreats.com/one-week-fix-your-foundation/",
+    "type": "Yoga Short Course",
+    "certificationLevel": "",
+    "durationDays": 6,
+    "price": {
+      "amount": 3000,
+      "currency": "INR"
+    },
+    "description": "An economical 6-day foundation yoga course at Swaraj Yoga in Dharamkot, Dharamshala. Teaches customised yoga practices tailored to individual body constitution and health concerns. Covers Hatha, Vinyasa, and Kurunta (rope yoga) styles with personalised health assessment and daily guidance.",
+    "upcomingDates": [],
+    "accommodation": false,
+    "meals": false,
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      },
+      {
+        "label": "6 days",
+        "category": "duration"
+      }
+    ]
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "courseName": "Yoga Retreat in Dharamshala",
+    "url": "https://swarajyogaandretreats.com/yoga-vacations/",
+    "type": "Yoga Retreat",
+    "certificationLevel": "",
+    "durationDays": 7,
+    "price": {
+      "amount": 21000,
+      "currency": "INR"
+    },
+    "description": "A fully catered restorative yoga retreat at Swaraj Yoga in Dharamkot, Dharamshala. Available in 4, 7, 10, 14, or 21-day options. Includes daily yoga classes, meditation sessions, three vegetarian Sattvic meals, comfortable accommodation with hot water, Wi-Fi, and detox teas. Set in a Himalayan village surrounded by nature.",
+    "upcomingDates": [],
+    "accommodation": "Private or shared room included",
+    "meals": "3 vegetarian Sattvic meals daily",
+    "rating": null,
+    "reviewCount": null,
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z",
+    "tags": [
+      {
+        "label": "Retreat",
+        "category": "style"
+      },
+      {
+        "label": "7 days",
+        "category": "duration"
       }
     ]
   },

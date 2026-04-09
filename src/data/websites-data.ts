@@ -1147,6 +1147,14 @@ export const websites: WebsiteEntry[] = [
     url: "https://mahiyoga.com/500-hour-yoga-teacher-training-india/",
   },
 
+  // Mahi Yoga — yin yoga TTC
+  {
+    schoolName: "Mahi Yoga",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://mahiyoga.com/yin-yoga-teacher-training/",
+  },
+
   // Shiva Darshan Yoga — 200hr
   {
     schoolName: "Shiva Darshan Yoga",
@@ -1191,7 +1199,7 @@ export const websites: WebsiteEntry[] = [
     url: "https://www.omashram.in/200-hour-yoga-teacher-training",
   },
 
-  // Aranya Yoga — 100hr + 200hr + sound healing
+  // Aranya Yoga — 100hr + 200hr + 300hr + sound healing + reiki + 5-day intensive
   {
     schoolName: "Aranya Yoga",
     location: "Dharamshala",
@@ -1208,7 +1216,25 @@ export const websites: WebsiteEntry[] = [
     schoolName: "Aranya Yoga",
     location: "Dharamshala",
     pageType: "training",
+    url: "https://www.aranyayogaashram.com/300hr-yoga-teacher-training-india/",
+  },
+  {
+    schoolName: "Aranya Yoga",
+    location: "Dharamshala",
+    pageType: "training",
     url: "https://www.aranyayogaashram.com/sound-healing/",
+  },
+  {
+    schoolName: "Aranya Yoga",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://www.aranyayogaashram.com/reiki-training-india/",
+  },
+  {
+    schoolName: "Aranya Yoga",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://www.aranyayogaashram.com/5-day-yoga-course/",
   },
 
   // Kailash Tribal Yoga School — YTT + meditation + ayurveda
@@ -1231,12 +1257,30 @@ export const websites: WebsiteEntry[] = [
     url: "https://www.yogatribe.org/ayurvedic-yoga-courses-dharamsala-india.html",
   },
 
-  // Swaraj Yoga and Retreats — 200hr + 500hr
+  // Swaraj Yoga and Retreats — 200hr + sound healing + foundation + retreat
   {
     schoolName: "Swaraj Yoga and Retreats",
     location: "Dharamshala",
     pageType: "training",
     url: "https://swarajyogaandretreats.com/",
+  },
+  {
+    schoolName: "Swaraj Yoga and Retreats",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://swarajyogaandretreats.com/sound-healing-yoga-foundation-course/",
+  },
+  {
+    schoolName: "Swaraj Yoga and Retreats",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://swarajyogaandretreats.com/one-week-fix-your-foundation/",
+  },
+  {
+    schoolName: "Swaraj Yoga and Retreats",
+    location: "Dharamshala",
+    pageType: "training",
+    url: "https://swarajyogaandretreats.com/yoga-vacations/",
   },
 
   // D'vine Yoga — 200hr
@@ -1373,5 +1417,21 @@ export const websites: WebsiteEntry[] = [
     location: "Dharamshala",
     pageType: "drop-in",
     url: "https://shivadarshanyoga.com/yoga-programs-retreats-dharamsala/classes/",
+  },
+
+  // Mahi Yoga — drop-in (Dharamshala)
+  {
+    schoolName: "Mahi Yoga",
+    location: "Dharamshala",
+    pageType: "drop-in",
+    url: "https://mahiyoga.com/",
+  },
+
+  // Swaraj Yoga and Retreats — drop-in (Dharamshala)
+  {
+    schoolName: "Swaraj Yoga and Retreats",
+    location: "Dharamshala",
+    pageType: "drop-in",
+    url: "https://swarajyogaandretreats.com/open-drop-in-class/",
   },
 ]

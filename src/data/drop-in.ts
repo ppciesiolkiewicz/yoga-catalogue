@@ -1934,6 +1934,277 @@ export const dropInClasses: DropInClass[] = [
     "updatedAt": "2026-04-03T08:53:33.996Z"
   },
   {
+    "schoolName": "Mahi Yoga",
+    "className": "Drop-in Vinyasa Yoga",
+    "url": "https://mahiyoga.com/",
+    "style": "Vinyasa",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "description": "Drop-in Vinyasa yoga class at Mahi Yoga in Upper Bhagsu, Dharamshala. Part of their daily practice programme; contact the school for exact timings. Open to all levels.",
+    "tags": [
+      {
+        "label": "Vinyasa",
+        "category": "style"
+      }
+    ],
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "className": "Drop-in Ashtanga Yoga Primary Series",
+    "url": "https://mahiyoga.com/",
+    "style": "Ashtanga",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "description": "Drop-in Ashtanga yoga primary series class at Mahi Yoga in Upper Bhagsu, Dharamshala. Part of their daily practice programme; contact the school for exact timings. Open to all levels.",
+    "tags": [
+      {
+        "label": "Ashtanga",
+        "category": "style"
+      }
+    ],
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Mahi Yoga",
+    "className": "Drop-in Hatha Yoga Essentials",
+    "url": "https://mahiyoga.com/",
+    "style": "Hatha",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "00:00"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "00:00"
+      }
+    ],
+    "description": "Drop-in Hatha yoga essentials class at Mahi Yoga in Upper Bhagsu, Dharamshala. Covers foundational postures and breathing techniques. Part of their daily practice programme; contact the school for exact timings.",
+    "tags": [
+      {
+        "label": "Hatha",
+        "category": "style"
+      }
+    ],
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "className": "Morning Multi-Style Yoga Drop-In",
+    "url": "https://swarajyogaandretreats.com/open-drop-in-class/",
+    "style": "Multi-Style",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "08:00",
+        "endTime": "09:30"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Morning multi-style yoga fusion drop-in class at Swaraj Yoga in Dharamkot, Dharamshala. Blends Hatha yoga, Vinyasa, Iyengar-inspired aerial work with ropes, biofeedback healing, mantra chanting, and heart purification practices. Monday to Saturday.",
+    "tags": [
+      {
+        "label": "Multi-Style",
+        "category": "style"
+      }
+    ],
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "className": "Afternoon Multi-Style Yoga Drop-In",
+    "url": "https://swarajyogaandretreats.com/open-drop-in-class/",
+    "style": "Multi-Style",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      },
+      {
+        "dayOfWeek": 6,
+        "startTime": "16:00",
+        "endTime": "17:30"
+      }
+    ],
+    "price": {
+      "amount": 500,
+      "currency": "INR"
+    },
+    "description": "Afternoon multi-style yoga fusion drop-in class at Swaraj Yoga in Dharamkot, Dharamshala. Combines asana, pranayama, and relaxation techniques under experienced instruction. Monday to Saturday.",
+    "tags": [
+      {
+        "label": "Multi-Style",
+        "category": "style"
+      }
+    ],
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z"
+  },
+  {
+    "schoolName": "Swaraj Yoga and Retreats",
+    "className": "Yoga for Mental Peace Drop-In",
+    "url": "https://swarajyogaandretreats.com/open-drop-in-class/",
+    "style": "Meditation",
+    "schedule": [
+      {
+        "dayOfWeek": 1,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 2,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 3,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 4,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      },
+      {
+        "dayOfWeek": 5,
+        "startTime": "18:00",
+        "endTime": "19:00"
+      }
+    ],
+    "price": {
+      "amount": 400,
+      "currency": "INR"
+    },
+    "description": "Evening drop-in class focused on mental peace at Swaraj Yoga in Dharamkot, Dharamshala. Light stretching, relaxation practices, pranayama, and meditation techniques including Trataka (gazing) and Agnihotra (sacred fire ceremony). Monday to Friday.",
+    "tags": [
+      {
+        "label": "Meditation",
+        "category": "style"
+      }
+    ],
+    "location": "Dharamshala",
+    "updatedAt": "2026-04-09T12:00:00.000Z"
+  },
+  {
     "schoolName": "Yoga Vini",
     "className": "Morning Hatha Yoga Drop-In",
     "url": "https://www.yogavinirishikesh.com/drop-in-yoga-classes-rishikesh/",
