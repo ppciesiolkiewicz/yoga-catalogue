@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { trackContactSubmitted } from "@/lib/posthog/events"
+import { useState } from "react";
+import Link from "next/link";
+import { trackContactSubmitted } from "@/lib/posthog/events";
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const form = e.currentTarget
-    const data = new FormData(form)
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
 
     trackContactSubmitted({
       name: data.get("name") as string,
       email: data.get("email") as string,
       website: data.get("website") as string,
       message: (data.get("message") as string) || undefined,
-    })
+    });
 
-    setSubmitted(true)
+    setSubmitted(true);
   }
 
   return (
@@ -29,8 +29,17 @@ export default function ContactPage() {
           href="/"
           className="mb-8 flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
-            <path fillRule="evenodd" d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z" clipRule="evenodd" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="h-4 w-4"
+          >
+            <path
+              fillRule="evenodd"
+              d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z"
+              clipRule="evenodd"
+            />
           </svg>
           Back to listings
         </Link>
@@ -38,16 +47,21 @@ export default function ContactPage() {
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
             <img src="/favicon.svg" alt="" className="h-8 w-8" />
-            <h1 className="text-2xl font-bold text-zinc-900 dark:text-white">Add Your Studio</h1>
+            <h1 className="text-2xl font-bold text-zinc-900 dark:text-white">
+              Add Your Studio
+            </h1>
           </div>
           <p className="text-zinc-500 dark:text-zinc-400">
-            Want your yoga school or studio listed on yogacatalogue.space? Share your details and we&apos;ll get you added.
+            Want your yoga school or studio listed on Yoga Catalogue? Share your
+            details and we&apos;ll get you added.
           </p>
         </div>
 
         {submitted ? (
           <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-6 dark:border-emerald-800 dark:bg-emerald-950">
-            <h2 className="text-lg font-semibold text-emerald-900 dark:text-emerald-100">Thank you!</h2>
+            <h2 className="text-lg font-semibold text-emerald-900 dark:text-emerald-100">
+              Thank you!
+            </h2>
             <p className="mt-1 text-emerald-700 dark:text-emerald-300">
               We&apos;ve received your submission and will review it soon.
             </p>
@@ -61,7 +75,10 @@ export default function ContactPage() {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >
                 Name
               </label>
               <input
@@ -75,7 +92,10 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >
                 Email
               </label>
               <input
@@ -89,7 +109,10 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="website" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+              <label
+                htmlFor="website"
+                className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >
                 Website
               </label>
               <input
@@ -103,8 +126,14 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
-                Message <span className="text-zinc-400 dark:text-zinc-500">(optional)</span>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >
+                Message{" "}
+                <span className="text-zinc-400 dark:text-zinc-500">
+                  (optional)
+                </span>
               </label>
               <textarea
                 id="message"
@@ -125,5 +154,5 @@ export default function ContactPage() {
         )}
       </div>
     </div>
-  )
+  );
 }
