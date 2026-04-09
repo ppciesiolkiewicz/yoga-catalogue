@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import type { Metadata } from "next"
 import type { Location } from "@/data/types"
 import { LocationHeader } from "./location-header"
 
@@ -12,6 +13,26 @@ export function generateStaticParams() {
 }
 
 export const dynamicParams = false
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ location: string }>
+}): Promise<Metadata> {
+  const { location } = await params
+  const locationName = VALID_LOCATIONS[location]
+  if (!locationName) return {}
+
+  return {
+    title: `Yoga in ${locationName}`,
+    description: `Browse yoga teacher trainings and retreats in ${locationName}, India`,
+    openGraph: {
+      title: `Yoga in ${locationName}`,
+      description: `Browse yoga teacher trainings and retreats in ${locationName}, India`,
+      images: [{ url: `/og-${location}.png`, width: 1200, height: 630 }],
+    },
+  }
+}
 
 export default async function LocationLayout({
   children,

@@ -34,7 +34,7 @@ function lotusIconSvg(size: number): string {
 </svg>`
 }
 
-function ogImageSvg(): string {
+function ogImageSvg(location: string): string {
   // Embed the lotus inline at a fixed position, add title text
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
@@ -62,7 +62,7 @@ function ogImageSvg(): string {
     <path d="M 32 72 Q 50 66 68 72 Q 50 77 32 72 Z" fill="#E91E63" opacity="0.25"/>
   </g>
   <!-- Title text -->
-  <text x="600" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="700" fill="white">Yoga Courses in Rishikesh</text>
+  <text x="600" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="700" fill="white">Yoga in ${location}</text>
   <!-- Subtitle -->
   <text x="600" y="490" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#94a3b8">Browse yoga teacher trainings &amp; retreats</text>
 </svg>`
@@ -124,10 +124,20 @@ async function main() {
   writeFileSync(join(publicDir, "favicon.svg"), svgContent)
   console.log("✓ favicon.svg")
 
-  // Generate OG image
-  const ogSvg = ogImageSvg()
-  const ogPng = await sharp(Buffer.from(ogSvg)).png().toBuffer()
-  writeFileSync(join(publicDir, "og-image.png"), ogPng)
+  // Generate per-location OG images
+  const locations = ["Rishikesh", "Dharamshala"]
+  for (const location of locations) {
+    const ogSvg = ogImageSvg(location)
+    const ogPng = await sharp(Buffer.from(ogSvg)).png().toBuffer()
+    const slug = location.toLowerCase()
+    writeFileSync(join(publicDir, `og-${slug}.png`), ogPng)
+    console.log(`✓ og-${slug}.png (1200x630)`)
+  }
+
+  // Generate generic fallback OG image
+  const ogFallbackSvg = ogImageSvg("India")
+  const ogFallbackPng = await sharp(Buffer.from(ogFallbackSvg)).png().toBuffer()
+  writeFileSync(join(publicDir, "og-image.png"), ogFallbackPng)
   console.log("✓ og-image.png (1200x630)")
 
   console.log("\nAll assets generated in public/")

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yoga Courses in Rishikesh",
-  description: "Browse yoga teacher trainings and retreats in Rishikesh, India",
+  title: "Yoga in India",
+  description: "Browse yoga teacher trainings and retreats in India",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
