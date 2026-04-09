@@ -64,7 +64,7 @@ function ogImageSvg(location: string): string {
   <!-- Title text -->
   <text x="600" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="700" fill="white">Yoga in ${location}</text>
   <!-- Subtitle -->
-  <text x="600" y="490" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#94a3b8">Browse yoga teacher trainings &amp; retreats</text>
+  <text x="600" y="490" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#94a3b8">Browse yoga teacher trainings, retreats &amp; drop-in classes</text>
 </svg>`
 }
 

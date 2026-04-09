@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Yoga in India",
-  description: "Browse yoga teacher trainings and retreats in India",
+  description: "Browse yoga teacher trainings, retreats and drop-in classes in India",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },

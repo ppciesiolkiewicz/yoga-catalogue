@@ -25,10 +25,10 @@ export async function generateMetadata({
 
   return {
     title: `Yoga in ${locationName}`,
-    description: `Browse yoga teacher trainings and retreats in ${locationName}, India`,
+    description: `Browse yoga teacher trainings, retreats and drop-in classes in ${locationName}, India`,
     openGraph: {
       title: `Yoga in ${locationName}`,
-      description: `Browse yoga teacher trainings and retreats in ${locationName}, India`,
+      description: `Browse yoga teacher trainings, retreats and drop-in classes in ${locationName}, India`,
       images: [{ url: `/og-${location}.png`, width: 1200, height: 630 }],
     },
   }
