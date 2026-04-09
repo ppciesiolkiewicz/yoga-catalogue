@@ -6590,13 +6590,22 @@ export const courses: YogaCourse[] = [
     "url": "https://mahiyoga.com/100-hour-yoga-teacher-training-dharamshala/",
     "type": "Multi-Style Yoga Teacher Training",
     "certificationLevel": "100hr",
-    "durationDays": 12,
+    "durationDays": 10,
     "price": {
-      "amount": 799,
+      "amount": 800,
       "currency": "USD"
     },
     "description": "A 100-hour foundational yoga teacher training in the Kangra Valley of Dharamshala, covering Hatha, Vinyasa, and Ashtanga styles along with meditation, pranayama, and yoga philosophy. Ideal for beginners seeking a solid foundation in yoga practice and teaching.",
-    "upcomingDates": [],
+    "upcomingDates": [
+      "2026-04-15",
+      "2026-05-10",
+      "2026-06-04",
+      "2026-07-05",
+      "2026-08-02",
+      "2026-09-05",
+      "2026-09-28",
+      "2026-10-20"
+    ],
     "accommodation": "Private or shared room included",
     "meals": "3 vegetarian meals daily",
     "rating": null,
@@ -6613,7 +6622,7 @@ export const courses: YogaCourse[] = [
         "category": "certification"
       },
       {
-        "label": "12 days",
+        "label": "10 days",
         "category": "duration"
       }
     ]
@@ -6624,13 +6633,22 @@ export const courses: YogaCourse[] = [
     "url": "https://mahiyoga.com/200-hour-yoga-teacher-training-india/",
     "type": "Multi-Style Yoga Teacher Training",
     "certificationLevel": "200hr RYT",
-    "durationDays": 25,
+    "durationDays": 22,
     "price": {
-      "amount": 1299,
+      "amount": 1200,
       "currency": "USD"
     },
     "description": "A comprehensive 200-hour multi-style yoga teacher training in Dharamshala covering traditional Hatha, Vinyasa, and Ashtanga styles along with meditation, breathwork, anatomy, and yoga philosophy. Yoga Alliance USA certified. Set against the backdrop of the majestic Dhauladhar mountain range.",
-    "upcomingDates": [],
+    "upcomingDates": [
+      "2026-04-15",
+      "2026-05-10",
+      "2026-06-04",
+      "2026-07-05",
+      "2026-08-02",
+      "2026-09-05",
+      "2026-09-28",
+      "2026-10-20"
+    ],
     "accommodation": "Private or shared room included",
     "meals": "3 vegetarian meals daily",
     "rating": null,
@@ -6647,7 +6665,7 @@ export const courses: YogaCourse[] = [
         "category": "certification"
       },
       {
-        "label": "25 days",
+        "label": "22 days",
         "category": "duration"
       }
     ]
@@ -6660,11 +6678,15 @@ export const courses: YogaCourse[] = [
     "certificationLevel": "300hr",
     "durationDays": 28,
     "price": {
-      "amount": 1599,
+      "amount": 1800,
       "currency": "USD"
     },
     "description": "An advanced 300-hour yoga teacher training for those who have completed a 200-hour TTC. Explores advanced Hatha, Vinyasa, and Ashtanga practices along with sound healing, Ayurveda, and teaching refinement. Graduates qualify as 500hr RYT.",
-    "upcomingDates": [],
+    "upcomingDates": [
+      "2026-04-15",
+      "2026-08-02",
+      "2026-09-28"
+    ],
     "accommodation": "Private or shared room included",
     "meals": "3 vegetarian meals daily",
     "rating": null,
@@ -6692,13 +6714,16 @@ export const courses: YogaCourse[] = [
     "url": "https://mahiyoga.com/500-hour-yoga-teacher-training-india/",
     "type": "Multi-Style Yoga Teacher Training",
     "certificationLevel": "500hr",
-    "durationDays": 55,
+    "durationDays": 53,
     "price": {
-      "amount": 2499,
+      "amount": 2800,
       "currency": "USD"
     },
     "description": "A complete 500-hour yoga teacher training combining 200-hour and 300-hour programs. Covers Hatha, Vinyasa, Ashtanga, sound healing, Ayurveda, meditation, pranayama, and advanced teaching methodology in the scenic Kangra Valley of Dharamshala.",
-    "upcomingDates": [],
+    "upcomingDates": [
+      "2026-07-05",
+      "2026-09-05"
+    ],
     "accommodation": "Private or shared room included",
     "meals": "3 vegetarian meals daily",
     "rating": null,
@@ -6715,7 +6740,7 @@ export const courses: YogaCourse[] = [
         "category": "certification"
       },
       {
-        "label": "55 days",
+        "label": "53 days",
         "category": "duration"
       }
     ]
@@ -7144,7 +7169,16 @@ export const courses: YogaCourse[] = [
       "currency": "USD"
     },
     "description": "A 100-hour Yin and Therapeutic Yoga teacher training in Upper Bhagsu, Dharamshala. Blends ancient Eastern sciences from India and China with modern teaching techniques. Covers Yin Yoga practice, Yoga Nidra, sequencing, and therapeutic approaches to relieve trauma from physical and mental bodies.",
-    "upcomingDates": [],
+    "upcomingDates": [
+      "2026-04-15",
+      "2026-05-10",
+      "2026-06-04",
+      "2026-07-05",
+      "2026-08-02",
+      "2026-09-05",
+      "2026-09-28",
+      "2026-10-20"
+    ],
     "accommodation": "Private room included",
     "meals": "3 vegetarian meals daily",
     "rating": null,
