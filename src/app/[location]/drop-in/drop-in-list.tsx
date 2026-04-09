@@ -146,6 +146,10 @@ export function DropInList({ classes }: { classes: DropInClass[] }) {
         />
       )}
 
+      <p className="mt-3 text-xs text-zinc-400 dark:text-zinc-500">
+        Information shown may not be fully accurate. Click on a card to get details directly from the studio&apos;s website.
+      </p>
+
       {/* Drop-in cards */}
       <div className="mt-4 flex flex-col gap-3">
         {displayedClasses.length === 0 ? (

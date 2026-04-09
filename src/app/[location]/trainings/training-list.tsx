@@ -255,6 +255,10 @@ export function TrainingList({ courses }: { courses: YogaCourse[] }) {
         onToggleCategoryAll={toggleCategoryAll}
       />
 
+      <p className="mt-3 text-xs text-zinc-400 dark:text-zinc-500">
+        Information shown may not be fully accurate. Click on a card to get details directly from the studio&apos;s website.
+      </p>
+
       {/* Course cards */}
       <div className="mt-4">
         {displayedCourses.length === 0 ? (
