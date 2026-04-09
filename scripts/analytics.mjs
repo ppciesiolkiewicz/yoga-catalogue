@@ -4,7 +4,6 @@
  * CLI tool for pulling PostHog analytics data.
  *
  * Usage:
- *   node scripts/analytics.mjs projects                     — list org projects
  *   node scripts/analytics.mjs usage [--days 7] [--project name]
  *   node scripts/analytics.mjs contacts [--days 30] [--project name]
  *
@@ -101,15 +100,6 @@ function isLocalhost(event) {
 
 // --- Commands ---
 
-async function cmdProjects() {
-  const projects = await getProjects();
-  console.log(`\nOrg projects (${projects.length})\n${"─".repeat(40)}`);
-  for (const p of projects) {
-    console.log(`  ${p.name} (id: ${p.id})`);
-  }
-  console.log("");
-}
-
 async function cmdUsage(days, projectName) {
   const projectId = await getProjectId(projectName);
   const after = daysAgo(days);
@@ -189,7 +179,6 @@ const KNOWN_FLAGS = new Set(["--days", "--project"]);
 function showHelp(exitCode = 0) {
   console.log(
     "Usage:\n" +
-      "  node scripts/analytics.mjs projects                              — list org projects\n" +
       "  node scripts/analytics.mjs usage    [--days 7] [--project name]  — pageviews, visitors, key events\n" +
       "  node scripts/analytics.mjs contacts [--days 30] [--project name] — contact form submissions"
   );
@@ -225,9 +214,6 @@ function parseArgs() {
 const { command, days, project } = parseArgs();
 
 switch (command) {
-  case "projects":
-    await cmdProjects();
-    break;
   case "usage":
     await cmdUsage(days, project);
     break;

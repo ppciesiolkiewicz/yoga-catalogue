@@ -12,9 +12,8 @@
     "scrape:drop-in": "tsx scripts/scrape-drop-in.ts",
     "generate-assets": "tsx scripts/generate-assets.ts",
     "analytics": "node scripts/analytics.mjs usage",
-    "analytics:usage": "node scripts/analytics.mjs usage",
-    "analytics:contacts": "node scripts/analytics.mjs contacts --project yoga-catalogue",
-    "analytics:projects": "node scripts/analytics.mjs projects --project yoga-catalogue"
+    "analytics:usage": "node scripts/analytics.mjs usage  --project yoga-catalogue",
+    "analytics:contacts": "node scripts/analytics.mjs contacts --project yoga-catalogue"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.81.0",
