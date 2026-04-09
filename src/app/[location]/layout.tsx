@@ -52,7 +52,10 @@ export default async function LocationLayout({
         {children}
       </div>
       <footer className="mt-auto border-t border-zinc-200 bg-zinc-100 py-6 dark:border-zinc-800 dark:bg-zinc-900">
-        <p className="text-center text-sm text-zinc-400 dark:text-zinc-500">
+        <p className="mx-auto max-w-md text-center text-xs text-zinc-400 dark:text-zinc-500">
+          Information may not be fully accurate or up to date. Click on a course or class to verify details on the studio&apos;s website.
+        </p>
+        <p className="mt-4 text-center text-sm text-zinc-400 dark:text-zinc-500">
           &copy; {new Date().getFullYear()} rishikeshyoga.info
         </p>
         <p className="mt-2 text-center text-sm text-zinc-400 dark:text-zinc-500">
